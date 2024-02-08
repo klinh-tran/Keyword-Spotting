@@ -54,16 +54,33 @@ TODO:
 """
 import re
 
-give_val = "k ae t"
-phoneme_pattern = give_val.split()  # split phonemes
 phonemes_list = pronunciation_dict.values()   # list of phonemes from dictionary
+# Subsitutions - filter to match length of words as well
+def substitution(given_val):
+    phoneme_pattern = given_val.split()  # split selected phoneme
+    print('Original:', given_val, find_word(given_val))
+    for i in range(len(phoneme_pattern)):
+        regex_pattern = ' '. join('.' if j == i else col for j, col in enumerate(phoneme_pattern)) # '.' for 1, or '.*' for multiple
+        #print(regex_pattern)
+        r = re.compile(regex_pattern)
+        matches = [match for match in phonemes_list if r.match(match) and len(match.split()) == len(phoneme_pattern)] # find matches and return the list
+        #print(matches)
+        for match in matches:
+            print(regex_pattern, '->',match, find_word(match))
+#substitution("k ae t")
 
-# find when one wildcard at a place
-for i in range(len(phoneme_pattern)):
-    regex_pattern = ' '. join('.' if j == i else col for j, col in enumerate(phoneme_pattern)) # '.' for 1, or '.*' for multiple
-    #print(regex_pattern)
-    r = re.compile(regex_pattern)
-    matches = [match for match in phonemes_list if r.match(match) and len(match.split()) == len(phoneme_pattern)] # find matches and return the list
-    #print(matches)
-    for match in matches:
-        print(find_word(match))
+# Deletion - filter to match length of words as well
+test_val = "m ae t"
+
+def deletion(given_val):
+    phoneme_pattern = given_val.split()  # split selected phoneme
+    print('Original:', given_val, find_word(given_val))
+    for i in range(len(phoneme_pattern)):
+        regex_pattern = ' '. join('' if j == i else col for j, col in enumerate(phoneme_pattern)) 
+        r = re.compile(regex_pattern)
+        matches = [match for match in phonemes_list if r.match(match) and len(match.split()) == len(phoneme_pattern)] # find matches and return the list
+        for match in matches:
+                print(regex_pattern, '->', match, find_word(match))
+deletion("m ae t")
+
+# QUESTION: what is the difference between of deletion and substitution? example where these 2 will be different?

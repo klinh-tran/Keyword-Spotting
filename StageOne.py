@@ -70,8 +70,6 @@ def substitution(given_val):
 #substitution("k ae t")
 
 # Deletion - filter to match length of words as well
-test_val = "m ae t"
-
 def deletion(given_val):
     phoneme_pattern = given_val.split()  # split selected phoneme
     print('Original:', given_val, find_word(given_val))
@@ -81,6 +79,24 @@ def deletion(given_val):
         matches = [match for match in phonemes_list if r.match(match) and len(match.split()) == len(phoneme_pattern)] # find matches and return the list
         for match in matches:
                 print(regex_pattern, '->', match, find_word(match))
-deletion("m ae t")
+#deletion("m ae t")
 
 # QUESTION: what is the difference between of deletion and substitution? example where these 2 will be different?
+
+# Insertion
+def insertion(given_val):
+    phoneme_pattern = given_val.split()  # split selected phoneme
+    print('Original:', given_val, find_word(given_val))
+
+    for i in range(len(phoneme_pattern) + 1):
+        phoneme_pattern = given_val.split()
+        
+        # regex insertion patterns
+        phoneme_pattern.insert(i, '.')
+        regex_pattern = ' '.join(phoneme_pattern)
+        
+        r = re.compile(regex_pattern)
+        matches = [match for match in phonemes_list if r.match(match) and len(match.split()) == len(phoneme_pattern)] # find matches and return the list
+        for match in matches:
+                print(regex_pattern, '->', match, find_word(match))
+#insertion("ih ng k ah m")

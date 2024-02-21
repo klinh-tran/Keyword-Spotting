@@ -1,3 +1,5 @@
+import os
+
 """
 TODO: 
 1. Get the phonetic parts only
@@ -6,33 +8,55 @@ TODO:
    For the given phonetic, find the corr. word
 """
 
+# Get the beep-1.0 file
+current_directory = os.path.dirname(os.path.abspath(__file__))
+file_to_access = '\\beep-1.0'
 pronunciation_dict = {}
 
 # Open the file
-with open('beep-1.0', 'r') as file:
+#with open(current_directory + file_to_access, 'r') as file:
     # Read each line in the file
-    for line in file:
+#    for line in file:
         # Split the line into columns using space as delimiter
-        columns = line.split()
+#        columns = line.split()
         
         # Get the word content
-        word = columns[0]   # key
+#        word = columns[0]   # key
         
         # Get the phonemes only
-        phoneme = ' '.join(columns[1:])   # value   
+#        phoneme = ' '.join(columns[1:])   # value   
         #print(word, phoneme)
         #print(phoneme)
-        pronunciation_dict[word] = phoneme
+#        pronunciation_dict[word] = phoneme
 #print(pronunciation_dict)
 
+file = open(current_directory + file_to_access, 'r')
+lines = file.readlines()
+file.close()
+
+for line in lines:
+    # Split the line into columns using space as delimiter
+        columns = line.split()
+    
+    # Get the word content
+        word = columns[0]   # key
+    
+    # Get the phonemes only
+        phoneme = ' '.join(columns[1:])   # value   
+    #print(word, phoneme)
+    #print(phoneme)
+        pronunciation_dict[word] = phoneme
+        print(word, phoneme)
+
 ######
-def test():
-    given_key = "A"
+# For the given word, find the corr. phoentic
+def find_phoneme(given_key):
+    given_key = given_key.upper()
     if given_key in pronunciation_dict:
         for key, value in pronunciation_dict.items():
             #print(pronunciation_dict[given_key])
             return(pronunciation_dict[given_key])
-
+#print(find_phoneme('income'))
 #######
 # from the given phoneme, return corr. word
 def find_word(given_phoneme):
@@ -55,6 +79,7 @@ TODO:
 import re
 
 phonemes_list = pronunciation_dict.values()   # list of phonemes from dictionary
+
 # Subsitutions - filter to match length of words as well
 def substitution(given_val):
     phoneme_pattern = given_val.split()  # split selected phoneme
@@ -84,7 +109,8 @@ def deletion(given_val):
 # QUESTION: what is the difference between of deletion and substitution? example where these 2 will be different?
 
 # Insertion
-def insertion(given_val):
+def insertion(given_word):
+    given_val = find_phoneme(given_word)
     phoneme_pattern = given_val.split()  # split selected phoneme
     print('Original:', given_val, find_word(given_val))
 
@@ -99,4 +125,4 @@ def insertion(given_val):
         matches = [match for match in phonemes_list if r.match(match) and len(match.split()) == len(phoneme_pattern)] # find matches and return the list
         for match in matches:
                 print(regex_pattern, '->', match, find_word(match))
-#insertion("ih ng k ah m")
+insertion("income")

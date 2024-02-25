@@ -1,0 +1,33 @@
+x MR x (MR.)
+x MR
+x 'TYPICAL
+ALGORITHM
+x 'CRITICAL
+HALF-LIGHT
+OVER-CONSCIENTIOUS
+B  (no B alone)
+x 'NEWS
+x SUNDAY'
+x MR
+FETE (no FETE alone, but there is FETE-DAY)
+FETE
+K (no K alone)
+AIDE (no AIDE alone, there is AIDE'S though)
+CUT-OFF
+JULIUS (personal name)
+FAIRY-TALE
+x 'LACE
+x MR
+x MR
+
+
+***After final manual filter, the words not in dict:
+ALGORITHM
+HALF-LIGHT
+OVER-CONSCIENTIOUS
+B  (no B alone)
+FETE (no FETE alone, but there is FETE-DAY)
+K (no K alone)
+AIDE (no AIDE alone, there is AIDE'S though)
+CUT-OFF
+FAIRY-TALE

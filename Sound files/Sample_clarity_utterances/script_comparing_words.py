@@ -67,7 +67,6 @@ result_file = open(filename, 'w')
 
 # compare and write mismatch words to the text file
 for sentence in audio_prompt_sentences:
-    #print(sentence)
     sentence = sentence.split()
 
     for indiv_word in sentence:

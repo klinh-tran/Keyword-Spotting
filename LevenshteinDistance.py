@@ -36,50 +36,56 @@ def levenshteinDistanceDP(token1, token2):
     return distances[len(token1)][len(token2)]
 #print(levenshteinDistanceDP("m ae m", "m ae k "))
 
-# For the given word, find the corr. phoentic
-def find_phoneme(given_key, pronunciation_dict):
-    given_key = given_key.upper()
-    if given_key in pronunciation_dict:
-        for key, value in pronunciation_dict.items():
-            return(pronunciation_dict[given_key])
+# For the given word, find the corr. phoneme
+def find_phoneme(given_word, pronunciation_dict):
+    for phonemes, words in pronunciation_dict.items():
+        if given_word.upper() in words:
+            return phonemes
+    return None 
         
+# from the given phoneme, return corr. words
+def find_word(given_phoneme, pronunciation_dict):
+    for phonemes, words in pronunciation_dict.items():
+        if given_phoneme in phonemes:
+            return pronunciation_dict[given_phoneme]
+    return None
 
-def calcDictDistance(chosen_word, numWords, lines, pronunciation_dict):
-    chosen_phoneme = find_phoneme(chosen_word, pronunciation_dict)
-    dictPhonemeDist = []
-    phonemeIdx = 0
+
+def calcDictDistance(chosen_phoneme, pronunciation_dict, dictPhonemeDist, phonemeIdx, dict_phonemes):
     
+    """
     for line in lines: 
         columns = line.split()  # Split the line into columns using space as delimiter
         dict_word = columns[0]   # word - key
         dict_phoneme = ' '.join(columns[1:])   # phoneme - value   
-        pronunciation_dict[dict_word] = dict_phoneme # add pair to dict
-        
-        phonemeDistance = levenshteinDistanceDP(chosen_phoneme, dict_phoneme)
-        #if phonemeDistance >= 3:
-        #    phonemeDistance = 2
+        if dict_phoneme in pronunciation_dict:
+            pronunciation_dict[dict_phoneme].append(dict_word)  # Append the word to the existing list
+        else:
+            pronunciation_dict[dict_phoneme] = [dict_word]
+            
+    """
+    for phoneme in dict_phonemes:
+        phonemeDistance = levenshteinDistanceDP(chosen_phoneme, phoneme)
         if phonemeDistance > 0 and phonemeDistance <= 1: # not adding the original word to the list; distance not more than 2
-            dictPhonemeDist.append(str(int(phonemeDistance)) + " - " + dict_phoneme + " ~ " + find_word(dict_phoneme, pronunciation_dict))
+            dictPhonemeDist.append(str(int(phonemeDistance)) + " - " + phoneme + " ~ " + ', '.join(find_word(phoneme, pronunciation_dict)))
             phonemeIdx = phonemeIdx + 1
+    
+    return dictPhonemeDist
+    
+
+def select_top_alternatives(numWords, dictPhonemeDist):
 
     closestWords = []
     wordDetails = []
     currWordDist = 0
     dictPhonemeDist.sort()
-    print(dictPhonemeDist)
+    #print(dictPhonemeDist)
     for i in range(numWords):
         currWordDist = dictPhonemeDist[i]
         wordDetails = currWordDist.split("-")
         closestWords.append(wordDetails[1])
     return (f"Top {numWords} alternatives: {closestWords}")
 
-# from the given phoneme, return corr. word
-def find_word(given_phoneme, pronunciation_dict):
-    if given_phoneme in pronunciation_dict.values():
-        for key, value in pronunciation_dict.items():
-            if value == given_phoneme:
-                #print(key) 
-                return key
 
 def main():
     # Get the beep-1.0 file
@@ -91,14 +97,26 @@ def main():
     file = open(current_directory + file_to_access, 'r')
     lines = file.readlines()
     file.close()
-        
+    
+    phonemes_list = []
+    dictPhonemeDist = []
+    phonemeIdx = 0
+    
+    
     for line in lines:
         columns = line.split()  # Split the line into columns using space as delimiter
-        word = columns[0]   # word - key
-        phoneme = ' '.join(columns[1:])   # phoneme - value   
-        pronunciation_dict[word] = phoneme # add pair to dict
+        word = columns[0]   # word - value
+        phoneme = ' '.join(columns[1:])   # phoneme - key  
+        phonemes_list.append(phoneme) 
     
-    print(calcDictDistance("cat", 3, lines, pronunciation_dict))
+        if phoneme in pronunciation_dict:
+            pronunciation_dict[phoneme].append(word)  # Append the word to the existing list
+        else:
+            pronunciation_dict[phoneme] = [word]
+    chosen_phoneme = find_phoneme("cat", pronunciation_dict)
+    calcDictDistance(chosen_phoneme, pronunciation_dict, dictPhonemeDist, phonemeIdx, phonemes_list)
+        
+    print(select_top_alternatives(3, dictPhonemeDist))
         
 if __name__ == "__main__":
     main()

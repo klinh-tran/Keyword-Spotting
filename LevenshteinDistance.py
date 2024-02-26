@@ -51,7 +51,7 @@ def find_word(given_phoneme, pronunciation_dict):
     return None
 
 
-def calcDictDistance(chosen_phoneme, pronunciation_dict, dictPhonemeDist, phonemeIdx, dict_phonemes):
+def calcDictDistance(chosen_phoneme, pronunciation_dict, lvt_dist, dictPhonemeDist, phonemeIdx, dict_phonemes):
     
     """
     for line in lines: 
@@ -65,10 +65,12 @@ def calcDictDistance(chosen_phoneme, pronunciation_dict, dictPhonemeDist, phonem
             
     """
     for phoneme in dict_phonemes:
-        phonemeDistance = levenshteinDistanceDP(chosen_phoneme, phoneme)
-        if phonemeDistance > 0 and phonemeDistance <= 1: # not adding the original word to the list; distance not more than 2
-            dictPhonemeDist.append(str(int(phonemeDistance)) + " - " + phoneme + " ~ " + ', '.join(find_word(phoneme, pronunciation_dict)))
-            phonemeIdx = phonemeIdx + 1
+        # filter to compare phonemes with the distance = 1
+        if (len(phoneme.split()) >= (len(chosen_phoneme.split())-lvt_dist)) and (len(phoneme.split()) <= (len(chosen_phoneme.split())+lvt_dist)):
+            phonemeDistance = levenshteinDistanceDP(chosen_phoneme, phoneme)
+            if phonemeDistance > 0 and phonemeDistance <= lvt_dist: # not adding the original word to the list; distance not more than 2
+                dictPhonemeDist.append(str(int(phonemeDistance)) + " - " + phoneme + " ~ " + ', '.join(find_word(phoneme, pronunciation_dict)))
+                phonemeIdx = phonemeIdx + 1
     
     return dictPhonemeDist
     
@@ -100,8 +102,8 @@ def main():
     
     phonemes_list = []
     dictPhonemeDist = []
+    lvt_dist = 1 # levenshtein distance
     phonemeIdx = 0
-    
     
     for line in lines:
         columns = line.split()  # Split the line into columns using space as delimiter
@@ -114,7 +116,7 @@ def main():
         else:
             pronunciation_dict[phoneme] = [word]
     chosen_phoneme = find_phoneme("cat", pronunciation_dict)
-    calcDictDistance(chosen_phoneme, pronunciation_dict, dictPhonemeDist, phonemeIdx, phonemes_list)
+    calcDictDistance(chosen_phoneme, pronunciation_dict, lvt_dist, dictPhonemeDist, phonemeIdx, phonemes_list)
         
     print(select_top_alternatives(3, dictPhonemeDist))
         

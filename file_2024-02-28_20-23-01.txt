@@ -1,0 +1,17 @@
+// This file comapres sound script with beep-2.0
+MR
+MR
+'TYPICAL
+'CRITICAL
+B
+'NEWS
+SUNDAY'
+MR
+K
+JULIUS
+'LACE
+MR
+MR
+
+// these words are actually in the dictionary, but with or without punctuations 
+// punctuation issue when extracting data

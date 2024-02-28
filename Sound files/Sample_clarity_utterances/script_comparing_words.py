@@ -6,7 +6,7 @@ current_directory = os.path.dirname(os.path.abspath(__file__))
 
 ######
 # DEAL WITH DICTIONARY
-dict_file_directory = '\\beep-1.0'
+dict_file_directory = '\\beep-2.0'
 pronunciation_dict = {}
 dict_file = open(os.getcwd() + dict_file_directory, 'r')
 

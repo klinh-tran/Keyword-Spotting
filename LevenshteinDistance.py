@@ -50,7 +50,6 @@ def find_word(given_phoneme, pronunciation_dict):
 
 def calc_dict_distance(chosen_word, pronunciation_dict, lvt_dist, dict_phoneme_dists, phoneme_idx, dict_phonemes):
     chosen_phoneme = find_phoneme(chosen_word, pronunciation_dict)
-    alternative_phonemes = []
     
     if chosen_phoneme != None:
         for phoneme in dict_phonemes:
@@ -58,18 +57,17 @@ def calc_dict_distance(chosen_word, pronunciation_dict, lvt_dist, dict_phoneme_d
             if (len(phoneme.split()) >= (len(chosen_phoneme.split())-lvt_dist)) and (len(phoneme.split()) <= (len(chosen_phoneme.split())+lvt_dist)):
                 phoneme_distance = levenshtein_distance_DP(chosen_phoneme, phoneme)
                 if phoneme_distance >= 0 and phoneme_distance <= lvt_dist: # distance is not more than 2
-                    if (phoneme not in alternative_phonemes) and (find_word(phoneme, pronunciation_dict) != chosen_word.upper().split()):  # avoid duplicates of phonemes or original word
-                        alternative_phonemes.append(phoneme)
+                    if (find_word(phoneme, pronunciation_dict) != chosen_word.upper().split()):  # avoid duplicates of original word
                         dict_phoneme_dists.append(str(int(phoneme_distance)) + " - " + phoneme + " ~ " + ', '.join(find_word(phoneme, pronunciation_dict)))
                         phoneme_idx = phoneme_idx + 1
-        
+
         return dict_phoneme_dists
 
 def select_top_alternatives(num_words, dict_phoneme_dists):
     closest_words = []
     word_details = []
+    dict_phoneme_dists = list(set(dict_phoneme_dists)) # remove duplicated phonemes (set store unique items only)
     dict_phoneme_dists.sort()
-    #print(dict_phoneme_dist)
     if (num_words <= len(dict_phoneme_dists)):
         for i in range(num_words):
             word_details = dict_phoneme_dists[i].split("-")
@@ -84,7 +82,7 @@ def select_top_alternatives(num_words, dict_phoneme_dists):
 def main():
     # Get the beep-1.0 file
     current_directory = os.path.dirname(os.path.abspath(__file__))
-    file_to_access = '\\beep-1.0'
+    file_to_access = '\\beep-2.0'
     pronunciation_dict = {}
 
     # Open beep-1.0 file
@@ -92,8 +90,8 @@ def main():
     lines = file.readlines()
     file.close()
     
-    phonemes_list = []
-    dict_phoneme_dists = []
+    phonemes_list = []  # list of all phonemes in dictionary
+    dict_phoneme_dists = []  # list of alternative phonemes with corr. distances
     lvt_dist = 1 # levenshtein distance
     phoneme_idx = 0
     
@@ -108,7 +106,7 @@ def main():
         else:
             pronunciation_dict[dict_phoneme] = [dict_word]
             
-    calc_dict_distance("easter", pronunciation_dict, lvt_dist, dict_phoneme_dists, phoneme_idx, phonemes_list)
+    calc_dict_distance("low", pronunciation_dict, lvt_dist, dict_phoneme_dists, phoneme_idx, phonemes_list)
     print(select_top_alternatives(3, dict_phoneme_dists))
         
 if __name__ == "__main__":

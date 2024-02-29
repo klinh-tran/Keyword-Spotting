@@ -80,12 +80,12 @@ def select_top_alternatives(num_words, dict_phoneme_dists):
         return (f"There are {len(dict_phoneme_dists)} alternative(s) in total: {closest_words}")
 
 def main():
-    # Get the beep-1.0 file
+    # Get the beep-2.0 file
     current_directory = os.path.dirname(os.path.abspath(__file__))
     file_to_access = '\\beep-2.0'
     pronunciation_dict = {}
 
-    # Open beep-1.0 file
+    # Open beep-2.0 file
     file = open(current_directory + file_to_access, 'r')
     lines = file.readlines()
     file.close()
@@ -95,10 +95,11 @@ def main():
     lvt_dist = 1 # levenshtein distance
     phoneme_idx = 0
     
+    # extract dictionary
     for line in lines:
-        columns = line.split()  # Split the line into columns using space as delimiter
-        dict_word = columns[0]   # word - value
-        dict_phoneme = ' '.join(columns[1:])   # phoneme - key  
+        columns = line.split()
+        dict_word = columns[0]   # value
+        dict_phoneme = ' '.join(columns[1:])   # key  
         phonemes_list.append(dict_phoneme) 
     
         if dict_phoneme in pronunciation_dict:
@@ -106,7 +107,7 @@ def main():
         else:
             pronunciation_dict[dict_phoneme] = [dict_word]
             
-    calc_dict_distance("low", pronunciation_dict, lvt_dist, dict_phoneme_dists, phoneme_idx, phonemes_list)
+    calc_dict_distance("love", pronunciation_dict, lvt_dist, dict_phoneme_dists, phoneme_idx, phonemes_list)
     print(select_top_alternatives(3, dict_phoneme_dists))
         
 if __name__ == "__main__":

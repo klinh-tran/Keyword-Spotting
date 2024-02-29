@@ -1,4 +1,4 @@
-// This file comapres sound script with beep-1.0
+// This file comapres sound script with beep-1.0  - non-optimised
 x MR x (MR.)
 x MR
 x 'TYPICAL

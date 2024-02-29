@@ -1,0 +1,4 @@
+// This file comapres sound script with beep-2.0  - optimised
+B
+K
+JULIUS

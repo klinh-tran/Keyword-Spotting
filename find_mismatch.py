@@ -26,7 +26,7 @@ def extract_dictionary(dict_words):
 ######
 # DEAL WITH AUDIO FILE
 def extract_audio_script(audio_prompt_sentences):
-    audio_script_file = '\\clarity_master.json'
+    audio_script_file = '\\Sound files\\Sample_clarity_utterances\\clarity_master.json'
     audio_file = open(current_directory + audio_script_file, 'r')
 
     for line in audio_file:

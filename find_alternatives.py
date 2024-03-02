@@ -43,7 +43,7 @@ def find_phoneme(given_word, pronunciation_dict):
         
 # from the given phoneme, return corr. words
 def find_word(given_phoneme, pronunciation_dict):
-    for phonemes, words in pronunciation_dict.items():
+    for phonemes in pronunciation_dict.items():
         if given_phoneme in phonemes:
             return pronunciation_dict[given_phoneme]
     return None
@@ -58,42 +58,41 @@ def calc_dict_distance(chosen_word, pronunciation_dict, lvt_dist, dict_phoneme_d
                 phoneme_distance = levenshtein_distance_DP(chosen_phoneme, phoneme)
                 if phoneme_distance >= 0 and phoneme_distance <= lvt_dist: # distance is not more than 2
                     if (find_word(phoneme, pronunciation_dict) != chosen_word.upper().split()):  # avoid duplicates of original word
-                        dict_phoneme_dists.append(str(int(phoneme_distance)) + " - " + phoneme + " ~ " + ', '.join(find_word(phoneme, pronunciation_dict)))
+                        #dict_phoneme_dists.append(str(int(phoneme_distance)) + " - " + phoneme + " ~ " + ', '.join(find_word(phoneme, pronunciation_dict)))
+                        dict_phoneme_dists.append(phoneme)
                         phoneme_idx = phoneme_idx + 1
-
+        dict_phoneme_dists = list(set(dict_phoneme_dists)) # remove duplicated phonemes (set store unique items only)
+        dict_phoneme_dists.sort()
         return dict_phoneme_dists
+    return None
 
 def select_top_alternatives(num_words, dict_phoneme_dists):
     closest_words = []
-    word_details = []
-    dict_phoneme_dists = list(set(dict_phoneme_dists)) # remove duplicated phonemes (set store unique items only)
+    #word_details = []
     dict_phoneme_dists.sort()
     if (num_words <= len(dict_phoneme_dists)):
         for i in range(num_words):
-            word_details = dict_phoneme_dists[i].split("-")
-            closest_words.append(word_details[1])
-        return (f"Top {num_words} alternatives: {closest_words}")
+            # word_details = dict_phoneme_dists[i].split("-")
+            closest_words.append(dict_phoneme_dists[i])
+        #return (f"Top {num_words} alternatives: {closest_words}")
+        return closest_words
     else:
         for i in range(len(dict_phoneme_dists)):
-            word_details = dict_phoneme_dists[i].split("-")
-            closest_words.append(word_details[1])
-        return (f"There are {len(dict_phoneme_dists)} alternative(s) in total: {closest_words}")
+            #word_details = dict_phoneme_dists[i].split("-")
+            closest_words.append(dict_phoneme_dists[i])
+        #return (f"There are {len(dict_phoneme_dists)} alternative(s) in total: {closest_words}")
+        return closest_words
 
-def main():
-    # Get the beep-2.0 file
-    current_directory = os.path.dirname(os.path.abspath(__file__))
-    file_to_access = '\\beep-2.0'
+def extract_dictionary(file_to_access):
     pronunciation_dict = {}
 
     # Open beep-2.0 file
+    current_directory = os.path.dirname(os.path.abspath(__file__))
     file = open(current_directory + file_to_access, 'r')
     lines = file.readlines()
     file.close()
     
     phonemes_list = []  # list of all phonemes in dictionary
-    dict_phoneme_dists = []  # list of alternative phonemes with corr. distances
-    lvt_dist = 1 # levenshtein distance
-    phoneme_idx = 0
     
     # extract dictionary
     for line in lines:
@@ -106,8 +105,16 @@ def main():
             pronunciation_dict[dict_phoneme].append(dict_word)  # Append the word to the existing list
         else:
             pronunciation_dict[dict_phoneme] = [dict_word]
+    return pronunciation_dict, phonemes_list
             
-    calc_dict_distance("love", pronunciation_dict, lvt_dist, dict_phoneme_dists, phoneme_idx, phonemes_list)
+def main():
+    dict_phoneme_dists = []  # list of alternative phonemes with corr. distances
+    lvt_dist = 1 # levenshtein distance
+    phoneme_idx = 0
+    pronunciation_dict, phonemes_list = extract_dictionary(file_to_access='\\beep-2.0')
+    
+    x = calc_dict_distance("ADJACENT", pronunciation_dict, lvt_dist, dict_phoneme_dists, phoneme_idx, phonemes_list)
+    #print(x)
     print(select_top_alternatives(3, dict_phoneme_dists))
         
 if __name__ == "__main__":

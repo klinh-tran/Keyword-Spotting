@@ -50,7 +50,7 @@ def extract_audio_script(audio_prompt_sentences):
     audio_file.close()
 
 ######
-# Text file to store mismatch words
+# Store mismatch words in a text file
 def main():
     timestamp = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
     filename = f"file_{timestamp}.txt"
@@ -67,7 +67,7 @@ def main():
         sentence = sentence.split()
 
         for indiv_word in sentence:
-            indiv_word = indiv_word.strip("'").upper()
+            indiv_word = indiv_word.strip("'").upper() # remove remaining ' and put uppercase to match dictionary
             if indiv_word not in dict_words:
                 result_file.write(str(indiv_word) + '\n')
 

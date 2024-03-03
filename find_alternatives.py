@@ -57,11 +57,10 @@ def calc_dict_distance(chosen_word, pronunciation_dict, lvt_dist, dict_phoneme_d
             if (len(phoneme.split()) >= (len(chosen_phoneme.split())-lvt_dist)) and (len(phoneme.split()) <= (len(chosen_phoneme.split())+lvt_dist)):
                 phoneme_distance = levenshtein_distance_DP(chosen_phoneme, phoneme)
                 if phoneme_distance >= 0 and phoneme_distance <= lvt_dist: # distance is not more than 2
-                    if (find_word(phoneme, pronunciation_dict) != chosen_word.upper().split()):  # avoid duplicates of original word
+                    if (phoneme not in dict_phoneme_dists) and (find_word(phoneme, pronunciation_dict) != chosen_word.upper().split()):  # avoid duplicates of original word
                         #dict_phoneme_dists.append(str(int(phoneme_distance)) + " - " + phoneme + " ~ " + ', '.join(find_word(phoneme, pronunciation_dict)))
                         dict_phoneme_dists.append(phoneme)
                         phoneme_idx = phoneme_idx + 1
-        dict_phoneme_dists = list(set(dict_phoneme_dists)) # remove duplicated phonemes (set store unique items only)
         dict_phoneme_dists.sort()
         return dict_phoneme_dists
     return None
@@ -69,7 +68,6 @@ def calc_dict_distance(chosen_word, pronunciation_dict, lvt_dist, dict_phoneme_d
 def select_top_alternatives(num_words, dict_phoneme_dists):
     closest_words = []
     #word_details = []
-    dict_phoneme_dists.sort()
     if (num_words <= len(dict_phoneme_dists)):
         for i in range(num_words):
             # word_details = dict_phoneme_dists[i].split("-")
@@ -113,8 +111,8 @@ def main():
     phoneme_idx = 0
     pronunciation_dict, phonemes_list = extract_dictionary(file_to_access='\\beep-2.0')
     
-    x = calc_dict_distance("ADJACENT", pronunciation_dict, lvt_dist, dict_phoneme_dists, phoneme_idx, phonemes_list)
-    #print(x)
+    x = calc_dict_distance("gentle", pronunciation_dict, lvt_dist, dict_phoneme_dists, phoneme_idx, phonemes_list)
+    print(x)
     print(select_top_alternatives(3, dict_phoneme_dists))
         
 if __name__ == "__main__":

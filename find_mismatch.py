@@ -6,7 +6,7 @@ current_directory = os.path.dirname(os.path.abspath(__file__))
 ######
 # DEAL WITH DICTIONARY
 def extract_dictionary(dict_words):
-    dict_file_directory = '\\beep-2.0'
+    dict_file_directory = '\\dictionaries\\beep-2.0'
     pronunciation_dict = {}
     dict_file = open(os.getcwd() + dict_file_directory, 'r')
 
@@ -54,7 +54,7 @@ def extract_audio_script(audio_prompt_sentences):
 def main():
     timestamp = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
     filename = f"file_{timestamp}.txt"
-    result_file = open(filename, 'w')
+    result_file = open(f"{current_directory}\\text_files\\{filename}", 'w')
     
     dict_words = []
     extract_dictionary(dict_words)

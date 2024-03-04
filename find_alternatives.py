@@ -109,7 +109,7 @@ def main():
     dict_phoneme_dists = []  # list of alternative phonemes with corr. distances
     lvt_dist = 1 # levenshtein distance
     phoneme_idx = 0
-    pronunciation_dict, phonemes_list = extract_dictionary(file_to_access='\\beep-2.0')
+    pronunciation_dict, phonemes_list = extract_dictionary(file_to_access='\\dictionaries\\beep-2.0')
     
     x = calc_dict_distance("a", pronunciation_dict, lvt_dist, dict_phoneme_dists, phoneme_idx, phonemes_list)
     print(x)

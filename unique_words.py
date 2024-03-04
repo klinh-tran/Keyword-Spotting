@@ -1,8 +1,11 @@
+import os
 import json
 from find_mismatch import extract_audio_script
-from find_alternatives import extract_dictionary, calc_dict_distance, select_top_alternatives
+from find_alternatives import extract_dictionary, calc_dict_distance
 
 def extract_single_words(audio_prompt_sentences, unique_words_list = []):
+    current_directory = os.path.dirname(os.path.abspath(__file__))
+    text_file = open(f"{current_directory}\\text_files\\unique_words.txt", 'w')
     for sentence in audio_prompt_sentences:
         sentence = sentence.split()
         for indiv_word in sentence:
@@ -10,6 +13,8 @@ def extract_single_words(audio_prompt_sentences, unique_words_list = []):
             if indiv_word not in unique_words_list:
                 unique_words_list.append(indiv_word)
     unique_words_list.sort()
+    for word in unique_words_list:
+        text_file.write(str(word) + '\n')
 
     return unique_words_list
 
@@ -72,7 +77,7 @@ def main():
 
     #######
     # Parse unique words to JSON file
-    parse_to_json(unique_words_list)
+    #parse_to_json(unique_words_list)
     
 if __name__ == "__main__":
     main()

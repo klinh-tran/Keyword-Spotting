@@ -35,17 +35,17 @@ def parse_to_json(unique_words_list):
             formatted_list = [] # store formatted alternative phonemes, i.e. 'd ah v' -> ['d', 'ah', 'v']
             alternative_phonemes = (calc_dict_distance(unique_words_list[i], pronunciation_dict, lvt_dist, dict_phoneme_dists, phoneme_idx, phonemes_list))
             for phoneme in alternative_phonemes:
-                splitted_phoneme = phoneme.split()
-                #[indiv_phoneme.upper() for indiv_phoneme in splitted_phoneme]  # make phonemes in uppercase
-                formatted_list.append(splitted_phoneme)
-            print('word number ', i+1, 'th')
+            #     splitted_phoneme = phoneme.split()
+            #     #[indiv_phoneme.upper() for indiv_phoneme in splitted_phoneme]  # make phonemes in uppercase
+                formatted_list.append([phoneme])
             word_dict[unique_words_list[i]] = formatted_list   # parse keys to JSON file
+            print('word number ', i+1, 'th')
         except Exception:
             print('word number ', i+1, 'th')
             word_dict[unique_words_list[i]] =[]
         
     # Define json file path
-    file_path = 'words_with_alternative_phonemes.json'
+    file_path = 'words_to_alternative_phonemes.json'
     
     # Read existing JSON content
     try:

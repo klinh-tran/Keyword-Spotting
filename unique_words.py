@@ -67,7 +67,7 @@ def parse_to_json(unique_words_list, pronunciation_dict, phonemes_list):
     with open(file_path, 'w') as json_file:
         json_file.write(format_json(existing_data))
 
-# Get alternative phonemes used for the script words
+# Retrieve unique alternative phonemes used for the script words
 def retrieve_alt_phonemes(unique_phonemes = set()):
     # Read the JSON file
     with open('words_to_alternative_phonemes.json', 'r') as f:
@@ -77,12 +77,14 @@ def retrieve_alt_phonemes(unique_phonemes = set()):
             unique_phonemes.update(elem)
     unique_phonemes_list = list(unique_phonemes)
     unique_phonemes_list.sort()
+    print(f"There are {len(unique_phonemes_list)} phonemes")
     return unique_phonemes_list
 
 def bind_phonemes_words(phonemes_list, pronunciation_dict, phoneme_words_dict={}):
-    for i in range(3):
+    for i in range(len(phonemes_list)   ):
             corr_words = find_word(phonemes_list[i], pronunciation_dict)
-            phoneme_words_dict[phonemes_list[i]] = corr_words
+            phoneme_words_dict[phonemes_list[i]] = [[corr_word] for corr_word in corr_words]
+            print(f"On {i+1}th phoneme")
     return phoneme_words_dict    
 
 def parse_phonemes_words_dict(phoneme_words_dict):

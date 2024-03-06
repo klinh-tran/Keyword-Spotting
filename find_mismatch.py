@@ -4,8 +4,10 @@ from datetime import datetime
 current_directory = os.path.dirname(os.path.abspath(__file__))
 
 ######
-# DEAL WITH DICTIONARY
 def extract_dictionary(dict_words):
+    '''
+    Deal with dictionary
+    '''
     dict_file_directory = '\\dictionaries\\beep-2.0'
     pronunciation_dict = {}
     dict_file = open(os.getcwd() + dict_file_directory, 'r')
@@ -24,18 +26,18 @@ def extract_dictionary(dict_words):
     dict_file.close()
 
 ######
-# DEAL WITH AUDIO FILE
 def extract_audio_script(audio_prompt_sentences):
+    '''
+    Deal with audio file
+    '''
     audio_script_file = '\\Sound files\\Sample_clarity_utterances\\clarity_master.json'
     audio_file = open(current_directory + audio_script_file, 'r')
 
     for line in audio_file:
         line = line.strip()
         if line.startswith('{'):
-            # Initialize a variable to store the prompt sentence
-            dot_sentence = None
+            dot_sentence = None  # Initialize a variable to store the dot sentence
             
-            # Keep reading lines until the end of the paragraph (denoted by a '}')
             while '}' not in line:
                 # Check and extract "dot" lines, remove unnecessary punctuations " and \
                 if '"dot"' in line:
@@ -50,8 +52,10 @@ def extract_audio_script(audio_prompt_sentences):
     audio_file.close()
 
 ######
-# Store mismatch words in a text file
 def main():
+    '''
+    Store mismatch words in a text file
+    '''
     timestamp = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
     filename = f"file_{timestamp}.txt"
     result_file = open(f"{current_directory}\\text_files\\{filename}", 'w')

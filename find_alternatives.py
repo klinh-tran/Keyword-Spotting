@@ -34,21 +34,31 @@ def levenshtein_distance_DP(token1, token2):
 
     return distances[len(token1)][len(token2)]
 
-# For the given word, find the corr. phoneme
 def find_phoneme(given_word, pronunciation_dict):
+    '''
+    For the given word, find the corr. phoneme
+    If the given word is not found in the dictionary, return None
+    '''
     for phonemes, words in pronunciation_dict.items():
         if given_word.upper() in words:
             return phonemes
     return None 
         
-# from the given phoneme, return corr. words
 def find_word(given_phoneme, pronunciation_dict):
+    '''
+    For the given phoneme, find the corr. words
+    If the given phoneme is not found in the dictionary, return None
+    '''
     for phonemes in pronunciation_dict.items():
         if given_phoneme in phonemes:
             return pronunciation_dict[given_phoneme]
     return None
 
-def calc_dict_distance(chosen_word, pronunciation_dict, lvt_dist, dict_phoneme_dists, phoneme_idx, dict_phonemes):
+def calc_dict_distance(chosen_word, pronunciation_dict, lvt_dist, alt_phonemes_list, phoneme_idx, dict_phonemes):
+    '''
+    Return the list of alternative phonemes of distance 1 to the chosen word
+    If the chosen word is not found in the dictionary, return None
+    '''
     chosen_phoneme = find_phoneme(chosen_word, pronunciation_dict)
     
     if chosen_phoneme != None:
@@ -57,31 +67,39 @@ def calc_dict_distance(chosen_word, pronunciation_dict, lvt_dist, dict_phoneme_d
             if (len(phoneme.split()) >= (len(chosen_phoneme.split())-lvt_dist)) and (len(phoneme.split()) <= (len(chosen_phoneme.split())+lvt_dist)):
                 phoneme_distance = levenshtein_distance_DP(chosen_phoneme, phoneme)
                 if phoneme_distance >= 0 and phoneme_distance <= lvt_dist: # distance is not more than 2
-                    if (phoneme not in dict_phoneme_dists) and (find_word(phoneme, pronunciation_dict) != chosen_word.upper().split()):  # avoid duplicates of original word
+                    if (phoneme not in alt_phonemes_list) and (find_word(phoneme, pronunciation_dict) != chosen_word.upper().split()):  # avoid duplicates of original word
                         #dict_phoneme_dists.append(str(int(phoneme_distance)) + " - " + phoneme + " ~ " + ', '.join(find_word(phoneme, pronunciation_dict)))
-                        dict_phoneme_dists.append(phoneme)
+                        alt_phonemes_list.append(phoneme)
                         phoneme_idx = phoneme_idx + 1
-        dict_phoneme_dists.sort()
-        return dict_phoneme_dists
+        alt_phonemes_list.sort()
+        return alt_phonemes_list
     return None
 
-def select_top_alternatives(num_words, dict_phoneme_dists):
+def select_top_alternatives(num_words, alt_phonemes_list):
+    '''
+    Select N top alternative phonemes
+    '''
     closest_words = []
     #word_details = []
-    if (num_words <= len(dict_phoneme_dists)):
+    if (num_words <= len(alt_phonemes_list)):
         for i in range(num_words):
             # word_details = dict_phoneme_dists[i].split("-")
-            closest_words.append(dict_phoneme_dists[i])
+            closest_words.append(alt_phonemes_list[i])
         #return (f"Top {num_words} alternatives: {closest_words}")
         return closest_words
     else:
-        for i in range(len(dict_phoneme_dists)):
+        for i in range(len(alt_phonemes_list)):
             #word_details = dict_phoneme_dists[i].split("-")
-            closest_words.append(dict_phoneme_dists[i])
+            closest_words.append(alt_phonemes_list[i])
         #return (f"There are {len(dict_phoneme_dists)} alternative(s) in total: {closest_words}")
         return closest_words
 
 def extract_dictionary(file_to_access):
+    '''
+    Access dictionary
+    Store phonemes (key) and corresponding words (value) in a dictionary variable
+    Return phonemes-words pair dictionary, and the list of phonemes only
+    '''
     pronunciation_dict = {}
 
     # Open beep-2.0 file
@@ -106,14 +124,14 @@ def extract_dictionary(file_to_access):
     return pronunciation_dict, phonemes_list
             
 def main():
-    dict_phoneme_dists = []  # list of alternative phonemes with corr. distances
+    alt_phonemes_list = []  # list of alternative phonemes with corr. distances
     lvt_dist = 1 # levenshtein distance
     phoneme_idx = 0
     pronunciation_dict, phonemes_list = extract_dictionary(file_to_access='\\dictionaries\\beep-2.0')
     
-    x = calc_dict_distance("a", pronunciation_dict, lvt_dist, dict_phoneme_dists, phoneme_idx, phonemes_list)
+    x = calc_dict_distance("a", pronunciation_dict, lvt_dist, alt_phonemes_list, phoneme_idx, phonemes_list)
     print(x)
-    print(select_top_alternatives(3, dict_phoneme_dists))
+    print(select_top_alternatives(3, alt_phonemes_list))
         
 if __name__ == "__main__":
     main()

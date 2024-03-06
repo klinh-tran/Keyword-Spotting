@@ -12,7 +12,9 @@ def extract_single_words(audio_prompt_sentences, unique_words_list = []):
                 unique_words_list.append(indiv_word)
     unique_words_list.sort()
     
-    # Store unique words to text file
+    '''
+    Store unique words to text file
+    '''
     # current_directory = os.path.dirname(os.path.abspath(__file__))
     # text_file = open(f"{current_directory}\\text_files\\unique_words.txt", 'w')
     # for word in unique_words_list:
@@ -20,18 +22,21 @@ def extract_single_words(audio_prompt_sentences, unique_words_list = []):
 
     return unique_words_list
 
-# Put JSON file in desired format
 def format_json(dict):
+    '''
+    Format the content when storing in JSON file
+    '''
     pairs = []
     for k, v in dict.items():
         pairs.append(f'  "{k}": {json.dumps(v, separators=(",", ":"))}')
     return '{\n' + ',\n'.join(pairs) + '\n}'
 
-# Dictionary of words
 def parse_to_json(unique_words_list, pronunciation_dict, phonemes_list):
+    '''
+    Map each unique word to the alternative distance-1 phonemes
+    Store the pairs in JSON file
+    '''
     word_dict = {}
-    
-    # parse alternatives to each key
     lvt_dist = 1 # levenshtein distance
     phoneme_idx = 0
     
@@ -39,7 +44,9 @@ def parse_to_json(unique_words_list, pronunciation_dict, phonemes_list):
         try:
             dict_phoneme_dists = []  # list of alternative phonemes with corr. distances
             formatted_list = [] # store formatted alternative phonemes, i.e. 'd ah v' -> ['d', 'ah', 'v']
+            
             alternative_phonemes = (calc_dict_distance(unique_words_list[i], pronunciation_dict, lvt_dist, dict_phoneme_dists, phoneme_idx, phonemes_list))
+            
             for phoneme in alternative_phonemes:
             #     splitted_phoneme = phoneme.split()
             #     #[indiv_phoneme.upper() for indiv_phoneme in splitted_phoneme]  # make phonemes in uppercase
@@ -69,6 +76,11 @@ def parse_to_json(unique_words_list, pronunciation_dict, phonemes_list):
 
 # Retrieve unique alternative phonemes used for the script words
 def retrieve_alt_phonemes(unique_phonemes = set()):
+    '''
+    From words-phonemes dictionary in JSON file, filter unique phonemes
+    Store unique phonemes in a list
+    Return the list of unique phonemes
+    '''
     # Read the JSON file
     with open('words_to_alternative_phonemes.json', 'r') as f:
         data = json.load(f)
@@ -81,13 +93,20 @@ def retrieve_alt_phonemes(unique_phonemes = set()):
     return unique_phonemes_list
 
 def bind_phonemes_words(phonemes_list, pronunciation_dict, phoneme_words_dict={}):
-    for i in range(len(phonemes_list)   ):
+    '''
+    From the list of unique phonemes, find the corrsponding words
+    Store unique phoneme-word(s) pair in a dictionary
+    '''
+    for i in range(len(phonemes_list)):
             corr_words = find_word(phonemes_list[i], pronunciation_dict)
             phoneme_words_dict[phonemes_list[i]] = [[corr_word] for corr_word in corr_words]
             print(f"On {i+1}th phoneme")
     return phoneme_words_dict    
 
 def parse_phonemes_words_dict(phoneme_words_dict):
+    '''
+    Store unique phoneme-word(s) dictionary in the JSON file
+    '''
     # Define json file path
     file_path = 'phonemes_to_corr_words.json'
     # Read existing JSON content
@@ -119,7 +138,6 @@ def main():
     
     ######
     # Retrieve unique phonemes from JSON file
-    #print(retrieve_alt_phonemes())
     unique_phoneme_list = retrieve_alt_phonemes()
     phoneme_words_dict = bind_phonemes_words(unique_phoneme_list, pronunciation_dict)
     parse_phonemes_words_dict(phoneme_words_dict)

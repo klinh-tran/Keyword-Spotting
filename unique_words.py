@@ -3,15 +3,24 @@ import json
 from find_mismatch import extract_audio_script
 from find_alternatives import extract_dictionary, calc_dict_distance, find_word
 
+def format_json(dict):
+    '''
+    Format the content when storing in JSON file
+    '''
+    pairs = []
+    for k, v in dict.items():
+        pairs.append(f'  "{k}": {json.dumps(v, separators=(",", ":"))}')
+    return '{\n' + ',\n'.join(pairs) + '\n}'
+
 def extract_single_words(audio_prompt_sentences, unique_words_list = []):
     for sentence in audio_prompt_sentences:
         sentence = sentence.split()
-        for indiv_word in sentence:
+        for indiv_word in sentence:  # iterating
             indiv_word = indiv_word.strip("'").upper()
             if indiv_word not in unique_words_list:
                 unique_words_list.append(indiv_word)
     unique_words_list.sort()
-    
+
     '''
     Store unique words to text file
     '''
@@ -22,14 +31,50 @@ def extract_single_words(audio_prompt_sentences, unique_words_list = []):
 
     return unique_words_list
 
-def format_json(dict):
+def count_appearances(audio_prompt_sentences, unique_words_list):
     '''
-    Format the content when storing in JSON file
+    Count the number of time each word appears in audio script
+    Parse to the JSON file
+    Order in an increasing order of occurrence time
     '''
-    pairs = []
-    for k, v in dict.items():
-        pairs.append(f'  "{k}": {json.dumps(v, separators=(",", ":"))}')
-    return '{\n' + ',\n'.join(pairs) + '\n}'
+    indiv_words_list = []
+    word_count_dict = {}
+    
+    # put all sentences into a string
+    for sentence in audio_prompt_sentences:
+        sentence = sentence.split()
+        for indiv_word in sentence:
+            indiv_word = indiv_word.strip("'").upper()
+            indiv_words_list.append(indiv_word)
+
+    for word in unique_words_list:  # indexing
+        counter = indiv_words_list.count(word)
+        word_count_dict[word] = counter
+
+    ordered_word_count_dict = dict(sorted(word_count_dict.items(), key= lambda x:x[1]))  # order based on occurrence time. sorted() returns a list
+    
+    ''' for test 
+    # count = 0
+    # for k,v in ordered_word_count_dict.items():
+    #     count += v
+    # print(count) '''
+        
+    # Define json file path
+    file_path = 'words_occurrences.json'
+    
+    # Read existing JSON content
+    try:
+        with open(file_path, 'r') as json_file:
+            existing_data = json.load(json_file)
+    except Exception:
+        existing_data = {}  # If file doesn't exist, initialize with empty dictionary
+        
+    # Update existing data with new data
+    existing_data.update(ordered_word_count_dict)
+    
+    # Write the dictionary to a JSON files
+    with open(file_path, 'w') as json_file:
+        json_file.write(format_json(existing_data))
 
 def parse_to_json(unique_words_list, pronunciation_dict, phonemes_list):
     '''
@@ -132,15 +177,20 @@ def main():
     print(f"There are {len(unique_words_list)} unique words in clarity_master.json script.")
 
     pronunciation_dict, phonemes_list = extract_dictionary(file_to_access='\\dictionaries\\beep-2.0')
+    
+    #######
+    # Parse unique words with their occurrences to JSON file
+    count_appearances(audio_prompt_sentences, unique_words_list)
+    
     #######
     # Parse unique words to JSON file
     #parse_to_json(unique_words_list, pronunciation_dict, phonemes_list)
     
     ######
     # Retrieve unique phonemes from JSON file
-    unique_phoneme_list = retrieve_alt_phonemes()
-    phoneme_words_dict = bind_phonemes_words(unique_phoneme_list, pronunciation_dict)
-    parse_phonemes_words_dict(phoneme_words_dict)
+    # unique_phoneme_list = retrieve_alt_phonemes()
+    # phoneme_words_dict = bind_phonemes_words(unique_phoneme_list, pronunciation_dict)
+    # parse_phonemes_words_dict(phoneme_words_dict)
     
     
 if __name__ == "__main__":

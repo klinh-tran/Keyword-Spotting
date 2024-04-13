@@ -1,6 +1,6 @@
 #import os
 import json
-from find_mismatch import extract_audio_script
+from find_mismatch import extract_dot_sentences
 from find_alternatives import extract_dictionary, calc_dict_distance, find_word
 
 def format_json(dict):
@@ -46,7 +46,7 @@ def extract_single_words(audio_prompt_sentences, unique_words_list = []):
 
     return unique_words_list
 
-def count_appearances(audio_prompt_sentences, unique_words_list):
+def parse_word_freq_pairs(audio_prompt_sentences, unique_words_list):
     '''
     Count the number of time each word appears in audio script
     Parse to the JSON file
@@ -78,7 +78,7 @@ def count_appearances(audio_prompt_sentences, unique_words_list):
     file_path = 'words_occurrences.json'
     write_to_json_file(file_path, ordered_word_count_dict)
 
-def parse_to_json(unique_words_list, pronunciation_dict, phonemes_list):
+def parse_word_alt_phonemes_pairs(unique_words_list, pronunciation_dict, phonemes_list):
     '''
     Map each unique word to the alternative distance-1 phonemes
     Store the pairs in JSON file
@@ -126,7 +126,7 @@ def deduplicate_alt_phonemes(unique_phonemes = set()):
     print(f"There are {len(unique_phonemes_list)} phonemes")
     return unique_phonemes_list
 
-def bind_phonemes_words(phonemes_list, pronunciation_dict, phoneme_words_dict={}):
+def bind_phonemes_homophones(phonemes_list, pronunciation_dict, phoneme_words_dict={}):
     '''
     From the list of unique phonemes, find the corrsponding words
     Store unique phoneme-word(s) pair in a dictionary
@@ -134,12 +134,12 @@ def bind_phonemes_words(phonemes_list, pronunciation_dict, phoneme_words_dict={}
     for i in range(len(phonemes_list)):
             corr_words = find_word(phonemes_list[i], pronunciation_dict)
             phoneme_words_dict[phonemes_list[i]] = [[corr_word] for corr_word in corr_words]
-            #print(f"On {i+1}th phoneme")
+            print(f"On {i+1}th phoneme")
     return phoneme_words_dict    
 
-def parse_phonemes_words_dict(phoneme_words_dict):
+def parse_phoneme_homonphones_pairs(phoneme_words_dict):
     '''
-    Store unique phoneme-word(s) dictionary in the JSON file
+    Store unique phoneme-corr. homophone(s) dictionary in the JSON file
     '''
     # Define json file path
     file_path = 'phonemes_to_corr_words.json'
@@ -149,45 +149,27 @@ def main():
     #######
     # Find unique words in the audio script
     audio_prompt_sentences = []
-    extract_audio_script(audio_prompt_sentences)
+    extract_dot_sentences(audio_prompt_sentences)
     unique_words_list = extract_single_words(audio_prompt_sentences)
     print(f"There are {len(unique_words_list)} unique words in clarity_master.json script.")
 
     pronunciation_dict, phonemes_list = extract_dictionary(file_to_access='\\dictionaries\\beep-2.0')
+    print(pronunciation_dict)
     
     #######
     # Parse unique words with their occurrences to JSON file
-    count_appearances(audio_prompt_sentences, unique_words_list)
+    parse_word_freq_pairs(audio_prompt_sentences, unique_words_list)
     
     #######
-    # Parse unique words to JSON file
-    #parse_to_json(unique_words_list, pronunciation_dict, phonemes_list)
+    # Parse unique words with corr. distance-1 phonemes to JSON file
+    parse_word_alt_phonemes_pairs(unique_words_list, pronunciation_dict, phonemes_list)
     
     ######
     # Get, parse unique phonemes and corr. words to JSON file
     unique_phoneme_list = deduplicate_alt_phonemes()
-    phoneme_words_dict = bind_phonemes_words(unique_phoneme_list, pronunciation_dict)
-    parse_phonemes_words_dict(phoneme_words_dict)
+    phoneme_words_dict = bind_phonemes_homophones(unique_phoneme_list, pronunciation_dict)
+    parse_phoneme_homonphones_pairs(phoneme_words_dict)
     
     
 if __name__ == "__main__":
     main()
-    
-    
-"""
-def count_appearances(audio_prompt_sentences, indiv_words_list = []):
-    counter = 0
-    for sentence in audio_prompt_sentences:
-        sentence = sentence.split()
-        for indiv_word in sentence:
-            indiv_word = indiv_word.strip("'").upper()
-            indiv_words_list.append(indiv_word)
-    
-    non_dupe = list(set(indiv_words_list))
-    non_dupe.sort()
-    for i in range(len(non_dupe)):
-        counter += indiv_words_list.count(non_dupe[i])
-    print(counter)
-"""
-
-

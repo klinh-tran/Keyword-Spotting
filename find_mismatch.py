@@ -26,9 +26,10 @@ def extract_dictionary(dict_words):
     dict_file.close()
 
 ######
-def extract_audio_script(audio_prompt_sentences):
-    '''
-    Deal with audio file
+def extract_dot_sentences(audio_prompt_sentences):
+    '''Deal with audio file
+    
+    Collect all sentences followed by "dot" in "Sound files\Sample_clarity_utterances\clarity_master.json"
     '''
     audio_script_file = '\\Sound files\\Sample_clarity_utterances\\clarity_master.json'
     audio_file = open(current_directory + audio_script_file, 'r')
@@ -64,7 +65,7 @@ def main():
     extract_dictionary(dict_words)
     
     audio_prompt_sentences = []
-    extract_audio_script(audio_prompt_sentences)
+    extract_dot_sentences(audio_prompt_sentences)
     
     # Compare and write mismatch words to the text file
     for sentence in audio_prompt_sentences:

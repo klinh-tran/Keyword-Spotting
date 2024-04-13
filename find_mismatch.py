@@ -31,7 +31,7 @@ def extract_dot_sentences(audio_prompt_sentences):
     
     Collect all sentences followed by "dot" in "Sound files\Sample_clarity_utterances\clarity_master.json"
     '''
-    audio_script_file = '\\Sound files\\Sample_clarity_utterances\\clarity_master.json'
+    audio_script_file = '\\updated_clarity_master.json'
     audio_file = open(current_directory + audio_script_file, 'r')
 
     for line in audio_file:

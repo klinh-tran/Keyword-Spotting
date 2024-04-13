@@ -8,18 +8,11 @@ import nltk
 from nltk.stem import PorterStemmer
 from language_tool_python import LanguageTool
 
-''' Access unique words file and eliminate those with high frequencies (> 150)'''
-# def content_words(content_words = []):
-#     with open('words_occurrences.json', 'r') as f:
-#         unique_word_data = json.load(f)
-#         for k,v in unique_word_data.items():
-#             if v <=150:
-#                 content_words.append(k)
-#     return content_words
-
 def extract_content_words(sentence):
-    ''' Remove stop words in the sentence
-        Return list of content words of a sentence'''
+    ''' 
+    Remove stop words in the sentence
+    Return list of content words of a sentence
+    '''
     doc = nlp(sentence)
     filtered_words = [token.text for token in doc if ((not token.is_stop) and (not token.pos_ in ['PROPN', 'PRON']))]  # eliminate stop words and pronounces in sentences
     return filtered_words    
@@ -29,9 +22,8 @@ def update_json_file(file_path, data_to_update):
         with open(file_path, 'r') as file:
             existing_data = json.load(file)
     except Exception:
-        # If the file doesn't exist, create an empty list
         existing_data = []
-    # Append the new data to the existing list
+        
     existing_data.append(data_to_update)
     
     # Write the updated list back to the file
@@ -48,7 +40,7 @@ def sentence_score_dict(original_sentence, alt_sentences, scorer, reduce_option)
     modified_sentence_score_dict = {}
     
     for sentence in alt_sentences:
-        if is_grammar_issue(sentence) == False:
+        # if is_grammar_issue(sentence) == False:
             score = scorer.sentence_score(sentence, log=True, reduce=reduce_option)
             modified_sentence_score_dict[sentence] = score
 
@@ -57,12 +49,12 @@ def sentence_score_dict(original_sentence, alt_sentences, scorer, reduce_option)
     new_dict.update(modified_sentence_score_dict)
     print(new_dict)
     print()
-    # file_path = 'modified_sentence_score.json'
-    # update_json_file(file_path, new_dict)
+    file_path = 'modified_sentence_score.json'
+    update_json_file(file_path, new_dict)
 
 def main(sentences, word_alt_phonemes_dict, scorer, reduce_option, ps):
     #for sentence in sentences:
-    for i in range(0,5): # get individual sentence
+    for i in range(4,5): # get individual sentence
         # print(sentences[i])
 
         content_words = []
@@ -99,6 +91,7 @@ def main(sentences, word_alt_phonemes_dict, scorer, reduce_option, ps):
         
         # Rank each new sentence for each content word's position
         for key, new_sentences in content_word_modified_sentences_dict.items():
+            #x=0
             # print(key, new_sentences)
             sentence_score_dict(sentences[i], new_sentences, scorer, reduce_option)
         #         for phoneme in word_alt_phonemes_data[word.upper()]:  # get distance-1 phonemes of content words of each sentence
@@ -135,6 +128,9 @@ if __name__ == '__main__':
     ''' Gather sentences'''
     prompt_sentences = []
     extract_dot_sentences(prompt_sentences)
+    # for s in prompt_sentences:
+    #     if is_grammar_issue(s) == True:
+    #         print(s)
     # print(sentences)   
 
     device = "cuda:0" if torch.cuda.is_available() else "cpu"

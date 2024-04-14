@@ -22,7 +22,9 @@ def update_json_file(file_path, data_to_update):
     try:
         with open(file_path, 'r') as file:
             existing_data = json.load(file)
-    except Exception:
+            print(existing_data)
+    except Exception as e:
+        print(e)
         existing_data = []
         
     existing_data.append(data_to_update)
@@ -30,11 +32,6 @@ def update_json_file(file_path, data_to_update):
     # Write the updated list back to the file
     with open(file_path, 'w') as file:
         json.dump(existing_data, file, indent=4)
-        
-def is_grammar_issue(sentence):
-    '''Check for grammar errors in a sentence'''
-    matches = tool.check(sentence)
-    return True if matches else False
         
 def sentence_score_dict(original_sentence, alt_sentences, scorer, reduce_option):
     new_dict={}
@@ -48,29 +45,39 @@ def sentence_score_dict(original_sentence, alt_sentences, scorer, reduce_option)
     modified_sentence_score_dict = dict(sorted(modified_sentence_score_dict.items(), key=lambda x:x[1], reverse=True))
     new_dict[original_sentence] = "Original sentence"
     new_dict.update(modified_sentence_score_dict)
-    print(new_dict)
-    print()
+    # print(new_dict)
+    # print()
     file_path = 'modified_sentence_score.json'
     update_json_file(file_path, new_dict)
 
 def phoneme_score(origin, alternative):
     diff = 0
+    invalid_phonemes = []
     # print(alternative.split())
     if (len(origin.split()) == len(alternative.split())):
-        for i in range(len(origin.split())):
-            diff += abs(phoneme_percentage_data[origin.split()[i]] - phoneme_percentage_data[alternative.split()[i]])
+        try:
+            for i in range(len(origin.split())):
+                diff += abs(phoneme_percentage_data[origin.split()[i]] - phoneme_percentage_data[alternative.split()[i]])
+        except Exception as e:
+            invalid_phonemes.append(e)
     else:
-        unique_chars = [char for char in origin.split() if char not in alternative.split()]
-        unique_chars += [char for char in alternative.split() if char not in origin.split()]
-        for elem in unique_chars:
-            diff+=phoneme_percentage_data[elem]
+        try:
+            unique_chars = [char for char in origin.split() if char not in alternative.split()]
+            unique_chars += [char for char in alternative.split() if char not in origin.split()]
+            for elem in unique_chars:
+                diff+=phoneme_percentage_data[elem]
+        except Exception as e:
+                invalid_phonemes.append(e)
+                
+    for elem in invalid_phonemes:
+        print('Error: ', elem)
     return round(diff,2)
     
 # def main(sentences, word_alt_phonemes_dict, scorer, reduce_option, ps):
 def main(sentences, word_alt_phonemes_dict):
     #for sentence in sentences:
     print('There are', len(sentences), 'sentences')
-    for i in range(0,5): # get individual sentence
+    for i in range(0, len(sentences)): # get individual sentence
         # print(sentences[i])
         content_words = []
         # gather all prompts' content words
@@ -99,21 +106,25 @@ def main(sentences, word_alt_phonemes_dict):
         for key_elem, elem in temp_score_dict.items():
             alternatives_to_scores_dict = {}
             for key,value in elem.items():
-        #         # content_word_modified_sentences_dict.setdefault(key, [])
+        #       # retrieve lemma form
+                key_lemma = [token.lemma_ for token in nlp(key.lower())][0]
+                key_elem_lemma = [token.lemma_ for token in nlp(key_elem)][0]
+
                 ''' Replace each content word by the alternative words '''
-                if (key.lower() not in sentences[i].split() and ps.stem(key.lower())!=key and ps.stem(key.lower())!=(key+"er") and ps.stem(key.lower())!=(key+"'")): # and ps.stem(v.lower())!=(key+"r")
+                if (key.lower() not in sentences[i].split() 
+                    and key.lower().isalnum()    # contain alphanumeric symbols only (a-z in this given maerials) - reject if contain symbols
+                    and key_lemma != key_elem_lemma):
+                    # Stemming approach - try different one: lemmitisation
+                    # and ps.stem(key.lower())!=key_elem 
+                    # and ps.stem(key.lower())!=(key_elem+"er") 
+                    # and ps.stem(key.lower())!=(key_elem+"r")):
+                    #and ps.stem(key.lower())!=(key_elem+"'")): # and ps.stem(v.lower())!=(key+"r")
+                    # print(key_elem, key)
                     modified_words = [key.lower() if (key_elem==word) else word for word in sentences[i].split()]  # replace chosen word by candidate words
                     modified_sentence = " ".join(modified_words)  # new sentence with candidate words
                     alternatives_to_scores_dict[modified_sentence] = value
             origin_alternatives_to_scores_dict[key_elem] = alternatives_to_scores_dict
-        # print(origin_alternatives_to_scores_dict)
-        # print()
-        # print(origin_alternatives_to_scores_dict)
-        
-        # alternatives_to_scores_dict[key_elem] = elem
-        # print(alternatives_to_scores_dict)
-        # print()
-        
+            
         # Rank each new sentence for each content word's position
         word_new_sentences_scores = {}
         new_dict={}
@@ -121,33 +132,19 @@ def main(sentences, word_alt_phonemes_dict):
             modified_sentence_score_dict = {}
             for new_sentence, phoneme_diff in values.items():
                 
-                score = scorer.sentence_score(new_sentence, log=True, reduce=reduce_option)*0.6 - phoneme_diff*0.4 #more weighing on meaning, then about phonetic similarity
+                score = scorer.sentence_score(new_sentence, log=True, reduce=reduce_option)*1.1 - phoneme_diff*0.1 #more weighing on meaning, then about phonetic similarity
                 modified_sentence_score_dict[new_sentence] = score
             modified_sentence_score_dict = dict(sorted(modified_sentence_score_dict.items(), key=lambda x:x[1], reverse=True))
             # print(modified_sentence_score_dict)
             word_new_sentences_scores[key] = modified_sentence_score_dict # content_word:{sentence:score}
         # print(word_new_sentences_scores)
         # print()
-        new_dict[sentences[i]] = "Original sentence"
+        new_dict['id'] = i+1
+        new_dict[sentences[i]] = 'Original sentence'
         new_dict.update(word_new_sentences_scores)
         file_path = 'modified_sentence_score.json'
         update_json_file(file_path, new_dict)
-        print('completed',i,'th sentence')
-            
-            
-            
-        #         for phoneme in word_alt_phonemes_data[word.upper()]:  # get distance-1 phonemes of content words of each sentence
-        #             for alt_words in find_word(phoneme[0], pronunciation_dict):
-        #                 if (alt_words.lower() not in sentences[i].split()) and (alt_words.title() not in sentences[i].split()):
-        #                     modified_words = [alt_words.lower() if word==content_word else word for word in sentences[i].split()]  # replace chosen word by candidate words
-        #                     modified_sentence = " ".join(modified_words)  # new sentence with candidate words
-        #                     print(modified_sentence)
-        #                     modified_sentences.append(modified_sentence)
-        # print(modified_sentences)                  
-        # language model score and parse to JSON file
-        #sentence_score_dict(sentences[i], modified_sentences)
-
-
+        print('completed',i+1,'th sentence')
 
 if __name__ == '__main__':
     ''' Refer to 'JSON dicitonaries'''
@@ -168,10 +165,6 @@ if __name__ == '__main__':
     # Initialize Python porter stemmer
     ps = PorterStemmer()
     
-    # # Initialize LanguageTool with British English
-    # tool = LanguageTool('en-GB')
-    # tool.enable_spellchecking()
-      
     ''' Gather sentences'''
     prompt_sentences = []
     extract_dot_sentences(prompt_sentences)

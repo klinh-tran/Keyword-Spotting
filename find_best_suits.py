@@ -8,6 +8,7 @@ import spacy
 import nltk
 from nltk.stem import PorterStemmer
 from language_tool_python import LanguageTool
+from dictionaries.consonant_vowel_distance import phoneme_distance_dict
 
 def extract_content_words(sentence):
     ''' 
@@ -22,7 +23,6 @@ def update_json_file(file_path, data_to_update):
     try:
         with open(file_path, 'r') as file:
             existing_data = json.load(file)
-            print(existing_data)
     except Exception as e:
         print(e)
         existing_data = []
@@ -52,31 +52,37 @@ def sentence_score_dict(original_sentence, alt_sentences, scorer, reduce_option)
 
 def phoneme_score(origin, alternative):
     diff = 0
-    invalid_phonemes = []
-    # print(alternative.split())
     if (len(origin.split()) == len(alternative.split())):
         try:
             for i in range(len(origin.split())):
-                diff += abs(phoneme_percentage_data[origin.split()[i]] - phoneme_percentage_data[alternative.split()[i]])
+                diff += phoneme_distance_dict[origin.split()[i]][alternative.split()[i]]
         except Exception as e:
-            invalid_phonemes.append(e)
+            print('Error calc phoneme difference: ', e)
     else:
         try:
             unique_chars = [char for char in origin.split() if char not in alternative.split()]
             unique_chars += [char for char in alternative.split() if char not in origin.split()]
             for elem in unique_chars:
-                diff+=phoneme_percentage_data[elem]
+                diff+=phoneme_distance_dict[elem]['']
         except Exception as e:
-                invalid_phonemes.append(e)
-                
-    for elem in invalid_phonemes:
-        print('Error: ', elem)
+            print('Error calc phoneme difference: ', e)
+
     return round(diff,2)
     
+def normalized_phoneme_score(score, min, max):
+    try:
+        if (max-min) !=0:
+            return round(((score-min)/(max-min)),2)
+        else: return round(score,2)
+    except Exception as e:
+        print('Error when norm-ing phoneme score:', e)
+
 # def main(sentences, word_alt_phonemes_dict, scorer, reduce_option, ps):
 def main(sentences, word_alt_phonemes_dict):
-    #for sentence in sentences:
     print('There are', len(sentences), 'sentences')
+    lm_weight = 0.7
+    phoneme_weight = 0.3
+    
     for i in range(0, len(sentences)): # get individual sentence
         # print(sentences[i])
         content_words = []
@@ -92,11 +98,10 @@ def main(sentences, word_alt_phonemes_dict):
             content_word_pronunciation = find_phoneme(content_word, pronunciation_dict)
             alt_word_phoneme_score_dict = {}
             # alternatives_to_scores_dict.setdefault(content_word, [])
-            if content_word != 'matt':
-                for phoneme in word_alt_phonemes_dict[content_word.upper()]:  # distance-1 phonemes of each content word
-                    phoneme_distance = phoneme_score(content_word_pronunciation, phoneme[0])  # phoneme difference between content word and the candidate
-                    for alt_word in find_word(phoneme[0], pronunciation_dict):
-                        alt_word_phoneme_score_dict[alt_word] = phoneme_distance
+            for phoneme in word_alt_phonemes_dict[content_word.upper()]:  # distance-1 phonemes of each content word
+                phoneme_distance = phoneme_score(content_word_pronunciation, phoneme[0])  # phoneme difference between content word and the candidate
+                for alt_word in find_word(phoneme[0], pronunciation_dict):
+                    alt_word_phoneme_score_dict[alt_word] = phoneme_distance
             temp_score_dict[content_word] = alt_word_phoneme_score_dict
         # print(temp_score_dict)
         # print('next')
@@ -113,13 +118,9 @@ def main(sentences, word_alt_phonemes_dict):
                 ''' Replace each content word by the alternative words '''
                 if (key.lower() not in sentences[i].split() 
                     and key.lower().isalnum()    # contain alphanumeric symbols only (a-z in this given maerials) - reject if contain symbols
-                    and key_lemma != key_elem_lemma):
-                    # Stemming approach - try different one: lemmitisation
-                    # and ps.stem(key.lower())!=key_elem 
-                    # and ps.stem(key.lower())!=(key_elem+"er") 
-                    # and ps.stem(key.lower())!=(key_elem+"r")):
-                    #and ps.stem(key.lower())!=(key_elem+"'")): # and ps.stem(v.lower())!=(key+"r")
-                    # print(key_elem, key)
+                    and key_lemma != key_elem_lemma
+                    and key.lower() != key_elem+'er'
+                    and key.lower() != key_elem+'r'):
                     modified_words = [key.lower() if (key_elem==word) else word for word in sentences[i].split()]  # replace chosen word by candidate words
                     modified_sentence = " ".join(modified_words)  # new sentence with candidate words
                     alternatives_to_scores_dict[modified_sentence] = value
@@ -128,17 +129,28 @@ def main(sentences, word_alt_phonemes_dict):
         # Rank each new sentence for each content word's position
         word_new_sentences_scores = {}
         new_dict={}
+
         for key, values in origin_alternatives_to_scores_dict.items():
-            modified_sentence_score_dict = {}
-            for new_sentence, phoneme_diff in values.items():
-                
-                score = scorer.sentence_score(new_sentence, log=True, reduce=reduce_option)*1.1 - phoneme_diff*0.1 #more weighing on meaning, then about phonetic similarity
-                modified_sentence_score_dict[new_sentence] = score
-            modified_sentence_score_dict = dict(sorted(modified_sentence_score_dict.items(), key=lambda x:x[1], reverse=True))
-            # print(modified_sentence_score_dict)
-            word_new_sentences_scores[key] = modified_sentence_score_dict # content_word:{sentence:score}
+            if values:
+                modified_sentence_score_dict = {}
+                max_phoneme_score = max(values.values())
+                min_phoneme_score = min(values.values())
+
+                for new_sentence, phoneme_diff in values.items():
+                    norm_phoneme_score = normalized_phoneme_score(phoneme_diff, min_phoneme_score, max_phoneme_score)
+                    weighted_phoneme_score = phoneme_weight*norm_phoneme_score  # if norm_phoneme_score!=0 else 0
+                    lm_score = scorer.sentence_score(new_sentence, log=True, reduce=reduce_option)
+                    
+                    # score = scorer.sentence_score(new_sentence, log=True, reduce=reduce_option)*1.1 - phoneme_diff*0.1 #more weighing on meaning, then about phonetic similarity
+                    score = lm_score*lm_weight - weighted_phoneme_score
+                    modified_sentence_score_dict[new_sentence] = score
+                modified_sentence_score_dict = sorted(modified_sentence_score_dict.items(), key=lambda x:x[1], reverse=True) # sort based on score, descending order
+                # print(modified_sentence_score_dict)
+            # Select top 10 results per content word
+            word_new_sentences_scores[key] = dict(modified_sentence_score_dict[:10]) # content_word:{sentence:score}
         # print(word_new_sentences_scores)
         # print()
+        
         new_dict['id'] = i+1
         new_dict[sentences[i]] = 'Original sentence'
         new_dict.update(word_new_sentences_scores)
@@ -150,11 +162,6 @@ if __name__ == '__main__':
     ''' Refer to 'JSON dicitonaries'''
     with open('words_to_alternative_phonemes.json', 'r') as f:
             word_alt_phonemes_data = json.load(f)
-
-    # Open phoneme_percentage file
-    current_directory = os.path.dirname(os.path.abspath(__file__))
-    with open(current_directory + '\\dictionaries\\CMU_phoneme_percentage.json', 'r') as f:
-            phoneme_percentage_data = json.load(f)
 
     pronunciation_dict, phonemes_list = extract_dictionary(file_to_access='\\dictionaries\\beep-2.0')
     
@@ -182,3 +189,6 @@ if __name__ == '__main__':
     # main(prompt_sentences, word_alt_phonemes_data, scorer, reduce_option, ps)
     main(prompt_sentences, word_alt_phonemes_data)
     
+    # x = 's t r ey t'
+    # y = 'aw t r ey t'
+    # phoneme_score(x,y)

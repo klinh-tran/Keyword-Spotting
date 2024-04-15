@@ -10,6 +10,7 @@ from nltk.stem import PorterStemmer
 from language_tool_python import LanguageTool
 from dictionaries.consonant_vowel_distance import phoneme_distance_dict
 
+
 def extract_content_words(sentence):
     ''' 
     Remove stop words in the sentence
@@ -79,21 +80,22 @@ def normalized_phoneme_score(score, min, max):
 
 # def main(sentences, word_alt_phonemes_dict, scorer, reduce_option, ps):
 def main(sentences, word_alt_phonemes_dict):
+    current_directory = os.path.dirname(os.path.abspath(__file__))
     print('There are', len(sentences), 'sentences')
     lm_weight = 0.7
     phoneme_weight = 0.3
     
-    for i in range(0, len(sentences)): # get individual sentence
+    for i in range(200, len(sentences)): # get individual sentence
         # print(sentences[i])
         content_words = []
-        # gather all prompts' content words
+        # Gather all prompts' content words
         for word in sentences[i].split(): # split sentence into words
             if (word in extract_content_words(sentences[i])):  # get content words of each sentence only
                 # content_word = word
                 content_words.append(word)
         
-        # map alternative words to each content word
-        temp_score_dict = {}
+        # Map alternative words to each content word
+        temp_score_dict = {}  # {content_word:{alternative1:phoneme_distance1, alternative2:phoneme_distance2,...},...}
         for content_word in content_words:
             content_word_pronunciation = find_phoneme(content_word, pronunciation_dict)
             alt_word_phoneme_score_dict = {}
@@ -111,13 +113,13 @@ def main(sentences, word_alt_phonemes_dict):
         for key_elem, elem in temp_score_dict.items():
             alternatives_to_scores_dict = {}
             for key,value in elem.items():
-        #       # retrieve lemma form
+                # Retrieve lemma form for comparison
                 key_lemma = [token.lemma_ for token in nlp(key.lower())][0]
                 key_elem_lemma = [token.lemma_ for token in nlp(key_elem)][0]
 
                 ''' Replace each content word by the alternative words '''
                 if (key.lower() not in sentences[i].split() 
-                    and key.lower().isalnum()    # contain alphanumeric symbols only (a-z in this given maerials) - reject if contain symbols
+                    and key.lower().isalnum()    # Contain alphanumeric symbols only (a-z in this given maerials) - reject if contain symbols
                     and key_lemma != key_elem_lemma
                     and key.lower() != key_elem+'er'
                     and key.lower() != key_elem+'r'):
@@ -154,8 +156,10 @@ def main(sentences, word_alt_phonemes_dict):
         new_dict['id'] = i+1
         new_dict[sentences[i]] = 'Original sentence'
         new_dict.update(word_new_sentences_scores)
-        file_path = 'modified_sentence_score.json'
-        update_json_file(file_path, new_dict)
+        if i==0 and i!=1 or (i+1)%100 == 1:
+            filename = f"questions_{i+1}_{i+100}.json"
+        # file_path = 'modified_sentence_score.json'
+        update_json_file(current_directory+'\\test_designs\\'+filename, new_dict)
         print('completed',i+1,'th sentence')
 
 if __name__ == '__main__':
@@ -175,10 +179,6 @@ if __name__ == '__main__':
     ''' Gather sentences'''
     prompt_sentences = []
     extract_dot_sentences(prompt_sentences)
-    # for s in prompt_sentences:
-    #     if is_grammar_issue(s) == True:
-    #         print(s)
-    # print(sentences)   
 
     device = "cuda:0" if torch.cuda.is_available() else "cpu"
     batch_size = 1

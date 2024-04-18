@@ -46,37 +46,37 @@ def extract_single_words(audio_prompt_sentences, unique_words_list = []):
 
     return unique_words_list
 
-def parse_word_freq_pairs(audio_prompt_sentences, unique_words_list):
-    '''
-    Count the number of time each word appears in audio script
-    Parse to the JSON file
-    Order in an increasing order of occurrence time
-    '''
-    indiv_words_list = []
-    word_count_dict = {}
+# def parse_word_freq_pairs(audio_prompt_sentences, unique_words_list):
+#     '''
+#     Count the number of time each word appears in audio script
+#     Parse to the JSON file
+#     Order in an increasing order of occurrence time
+#     '''
+#     indiv_words_list = []
+#     word_count_dict = {}
     
-    # put all sentences into a string
-    for sentence in audio_prompt_sentences:
-        sentence = sentence.split()
-        for indiv_word in sentence:
-            indiv_word = indiv_word.strip("'").upper()
-            indiv_words_list.append(indiv_word)
+#     # put all sentences into a string
+#     for sentence in audio_prompt_sentences:
+#         sentence = sentence.split()
+#         for indiv_word in sentence:
+#             indiv_word = indiv_word.strip("'").upper()
+#             indiv_words_list.append(indiv_word)
 
-    for word in unique_words_list:  # indexing
-        counter = indiv_words_list.count(word)
-        word_count_dict[word] = counter
+#     for word in unique_words_list:  # indexing
+#         counter = indiv_words_list.count(word)
+#         word_count_dict[word] = counter
 
-    ordered_word_count_dict = dict(sorted(word_count_dict.items(), key= lambda x:x[1]))  # order based on occurrence time. sorted() returns a list
+#     ordered_word_count_dict = dict(sorted(word_count_dict.items(), key= lambda x:x[1]))  # order based on occurrence time. sorted() returns a list
     
-    ''' for test 
-    # count = 0
-    # for k,v in ordered_word_count_dict.items():
-    #     count += v
-    # print(count) '''
+#     ''' for test 
+#     # count = 0
+#     # for k,v in ordered_word_count_dict.items():
+#     #     count += v
+#     # print(count) '''
         
-    # Define json file path
-    file_path = 'words_occurrences.json'
-    write_to_json_file(file_path, ordered_word_count_dict)
+#     # Define json file path
+#     file_path = 'words_occurrences.json'
+#     write_to_json_file(file_path, ordered_word_count_dict)
 
 def parse_word_alt_phonemes_pairs(unique_words_list, pronunciation_dict, phonemes_list):
     '''
@@ -105,7 +105,7 @@ def parse_word_alt_phonemes_pairs(unique_words_list, pronunciation_dict, phoneme
             word_dict[unique_words_list[i]] =[]
         
     # Define json file path
-    file_path = 'words_to_alternative_phonemes.json'
+    file_path = 'test_materials\\words_to_alternative_phonemes.json'
     write_to_json_file(file_path, word_dict)
 
 # deduplicate alternative phonemes used for the script words
@@ -116,7 +116,7 @@ def deduplicate_alt_phonemes(unique_phonemes = set()):
     Return the list of unique phonemes
     '''
     # Read the JSON file
-    with open('words_to_alternative_phonemes.json', 'r') as f:
+    with open('test_materials\\words_to_alternative_phonemes.json', 'r') as f:
         data = json.load(f)
     for v in data.values():
         for elem in v:
@@ -142,7 +142,7 @@ def parse_phoneme_homonphones_pairs(phoneme_words_dict):
     Store unique phoneme-corr. homophone(s) dictionary in the JSON file
     '''
     # Define json file path
-    file_path = 'phonemes_to_corr_words.json'
+    file_path = 'test_materials\\phonemes_to_corr_words.json'
     write_to_json_file(file_path, phoneme_words_dict)
         
 def main():
@@ -154,15 +154,15 @@ def main():
     print(f"There are {len(unique_words_list)} unique words in clarity_master.json script.")
 
     pronunciation_dict, phonemes_list = extract_dictionary(file_to_access='\\dictionaries\\beep-2.0')
-    print(pronunciation_dict)
+    # print(pronunciation_dict)
     
     #######
     # Parse unique words with their occurrences to JSON file
-    parse_word_freq_pairs(audio_prompt_sentences, unique_words_list)
+    # parse_word_freq_pairs(audio_prompt_sentences, unique_words_list)
     
     #######
     # Parse unique words with corr. distance-1 phonemes to JSON file
-    parse_word_alt_phonemes_pairs(unique_words_list, pronunciation_dict, phonemes_list)
+    # parse_word_alt_phonemes_pairs(unique_words_list, pronunciation_dict, phonemes_list)
     
     ######
     # Get, parse unique phonemes and corr. words to JSON file

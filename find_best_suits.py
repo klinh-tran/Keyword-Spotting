@@ -33,23 +33,6 @@ def update_json_file(file_path, data_to_update):
     # Write the updated list back to the file
     with open(file_path, 'w') as file:
         json.dump(existing_data, file, indent=4)
-        
-def sentence_score_dict(original_sentence, alt_sentences, scorer, reduce_option):
-    new_dict={}
-    modified_sentence_score_dict = {}
-    
-    for sentence in alt_sentences:
-        # if is_grammar_issue(sentence) == False:
-            score = scorer.sentence_score(sentence, log=True, reduce=reduce_option)
-            modified_sentence_score_dict[sentence] = score
-
-    modified_sentence_score_dict = dict(sorted(modified_sentence_score_dict.items(), key=lambda x:x[1], reverse=True))
-    new_dict[original_sentence] = "Original sentence"
-    new_dict.update(modified_sentence_score_dict)
-    # print(new_dict)
-    # print()
-    file_path = 'modified_sentence_score.json'
-    update_json_file(file_path, new_dict)
 
 def phoneme_score(origin, alternative):
     diff = 0
@@ -78,14 +61,13 @@ def normalized_phoneme_score(score, min, max):
     except Exception as e:
         print('Error when norm-ing phoneme score:', e)
 
-# def main(sentences, word_alt_phonemes_dict, scorer, reduce_option, ps):
 def main(sentences, word_alt_phonemes_dict):
     current_directory = os.path.dirname(os.path.abspath(__file__))
     print('There are', len(sentences), 'sentences')
     lm_weight = 0.7
     phoneme_weight = 0.3
     
-    for i in range(200, len(sentences)): # get individual sentence
+    for i in range(len(sentences)): # get individual sentence
         # print(sentences[i])
         content_words = []
         # Gather all prompts' content words
@@ -158,13 +140,12 @@ def main(sentences, word_alt_phonemes_dict):
         new_dict.update(word_new_sentences_scores)
         if i==0 and i!=1 or (i+1)%100 == 1:
             filename = f"questions_{i+1}_{i+100}.json"
-        # file_path = 'modified_sentence_score.json'
         update_json_file(current_directory+'\\test_designs\\'+filename, new_dict)
         print('completed',i+1,'th sentence')
 
 if __name__ == '__main__':
-    ''' Refer to 'JSON dicitonaries'''
-    with open('words_to_alternative_phonemes.json', 'r') as f:
+    ''' Refer to JSON dicitonaries'''
+    with open('test_materials\\words_to_alternative_phonemes.json', 'r') as f:
             word_alt_phonemes_data = json.load(f)
 
     pronunciation_dict, phonemes_list = extract_dictionary(file_to_access='\\dictionaries\\beep-2.0')
@@ -186,9 +167,4 @@ if __name__ == '__main__':
     reduce_option = 'gmean'
     
     ''' main function '''
-    # main(prompt_sentences, word_alt_phonemes_data, scorer, reduce_option, ps)
     main(prompt_sentences, word_alt_phonemes_data)
-    
-    # x = 's t r ey t'
-    # y = 'aw t r ey t'
-    # phoneme_score(x,y)

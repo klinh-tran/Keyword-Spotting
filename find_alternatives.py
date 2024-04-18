@@ -66,7 +66,7 @@ def calc_dict_distance(chosen_word, pronunciation_dict, lvt_dist, alt_phonemes_l
             # filter to compare phonemes with the distance = 1
             if (len(phoneme.split()) >= (len(chosen_phoneme.split())-lvt_dist)) and (len(phoneme.split()) <= (len(chosen_phoneme.split())+lvt_dist)):
                 phoneme_distance = levenshtein_distance_DP(chosen_phoneme, phoneme)
-                if phoneme_distance >= 0 and phoneme_distance <= lvt_dist: # distance is not more than 2
+                if phoneme_distance > 0 and phoneme_distance <= lvt_dist: # distance is of 1
                     if (phoneme not in alt_phonemes_list) and (find_word(phoneme, pronunciation_dict) != chosen_word.upper().split()):  # avoid duplicates of original word
                         #dict_phoneme_dists.append(str(int(phoneme_distance)) + " - " + phoneme + " ~ " + ', '.join(find_word(phoneme, pronunciation_dict)))
                         alt_phonemes_list.append(phoneme)
@@ -129,9 +129,10 @@ def main():
     phoneme_idx = 0
     pronunciation_dict, phonemes_list = extract_dictionary(file_to_access='\\dictionaries\\beep-2.0')
     
-    x = calc_dict_distance("cat", pronunciation_dict, lvt_dist, alt_phonemes_list, phoneme_idx, phonemes_list)
+    x = calc_dict_distance("straight", pronunciation_dict, lvt_dist, alt_phonemes_list, phoneme_idx, phonemes_list)
     print(x)
-    print(select_top_alternatives(3, alt_phonemes_list))
+    for i in x:
+        print(find_word(i, pronunciation_dict))
         
 if __name__ == "__main__":
     main()

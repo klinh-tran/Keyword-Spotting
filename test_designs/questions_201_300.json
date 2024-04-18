@@ -1,0 +1,3228 @@
+[
+    {
+        "id": 201,
+        "It made her go a little crazy": "Original sentence",
+        "little": {
+            "It made her go a leetle crazy": -3.866974639892578,
+            "It made her go a tittle crazy": -4.228148010253905,
+            "It made her go a litts crazy": -4.467219305038452,
+            "It made her go a lickle crazy": -4.562076644897461,
+            "It made her go a lites crazy": -4.656939935684204,
+            "It made her go a kittle crazy": -4.713167701721191,
+            "It made her go a lit crazy": -4.896053981781005,
+            "It made her go a whittle crazy": -4.9473840007781975,
+            "It made her go a pittle crazy": -4.9829919776916505,
+            "It made her go a lintel crazy": -5.084444990158081
+        },
+        "crazy": {
+            "It made her go a little crazed": -3.8816233634948727,
+            "It made her go a little craze": -3.902805089950561
+        }
+    },
+    {
+        "id": 202,
+        "Yes but this was no sheep dog": "Original sentence",
+        "Yes": {
+            "guess but this was no sheep dog": -4.823162845611572,
+            "yet but this was no sheep dog": -4.915625524520873,
+            "yell but this was no sheep dog": -5.015999584197998,
+            "tess but this was no sheep dog": -5.025580568313599,
+            "bess but this was no sheep dog": -5.116584663391113,
+            "yen but this was no sheep dog": -5.132644453048705,
+            "chess but this was no sheep dog": -5.13993542098999,
+            "jess but this was no sheep dog": -5.164582719802856,
+            "less but this was no sheep dog": -5.420905479431152,
+            "mess but this was no sheep dog": -5.49717226409912
+        },
+        "sheep": {
+            "Yes but this was no peep dog": -3.995664451599121,
+            "Yes but this was no beep dog": -4.306627098083496,
+            "Yes but this was no jeep dog": -4.338255434036255,
+            "Yes but this was no cheep dog": -4.339152994155883,
+            "Yes but this was no seep dog": -4.3892643356323235,
+            "Yes but this was no cheap dog": -4.4437601947784415,
+            "Yes but this was no sheen dog": -4.482335441589355,
+            "Yes but this was no sheaf dog": -4.483921384811401,
+            "Yes but this was no sheath dog": -4.536059822082519,
+            "Yes but this was no ship dog": -4.6099314060211185
+        },
+        "dog": {
+            "Yes but this was no sheep doggo": -4.245197105407715,
+            "Yes but this was no sheep doggie": -4.485588455200195,
+            "Yes but this was no sheep doggy": -4.508189105987548,
+            "Yes but this was no sheep doff": -4.7287481536865235,
+            "Yes but this was no sheep tog": -4.749385738372802,
+            "Yes but this was no sheep dogger": -4.765626907348632,
+            "Yes but this was no sheep doug": -4.802876880645751,
+            "Yes but this was no sheep doss": -4.87601621055603,
+            "Yes but this was no sheep don": -4.928122268676757,
+            "Yes but this was no sheep dodge": -4.928468847274781
+        }
+    },
+    {
+        "id": 203,
+        "He can be the scourge of the corrupt old guard": "Original sentence",
+        "scourge": {
+            "He can be the scurve of the corrupt old guard": -3.611415180206299,
+            "He can be the sturge of the corrupt old guard": -3.6407495498657223,
+            "He can be the scurf of the corrupt old guard": -3.763817455291748,
+            "He can be the skirt of the corrupt old guard": -4.052964525222778,
+            "He can be the skirl of the corrupt old guard": -4.177396318435669,
+            "He can be the serge of the corrupt old guard": -4.2762795925140376,
+            "He can be the surge of the corrupt old guard": -4.28466830253601
+        },
+        "corrupt": {
+            "He can be the scourge of the corruptor old guard": -3.9649345397949216
+        },
+        "old": {
+            "He can be the scourge of the corrupt auld guard": -4.126031087875366,
+            "He can be the scourge of the corrupt aisled guard": -4.143938983917236,
+            "He can be the scourge of the corrupt ogled guard": -4.1803131103515625,
+            "He can be the scourge of the corrupt oiled guard": -4.214331369400025,
+            "He can be the scourge of the corrupt isled guard": -4.399669469833373,
+            "He can be the scourge of the corrupt ailed guard": -4.406810419082642,
+            "He can be the scourge of the corrupt hold guard": -4.464241895675658,
+            "He can be the scourge of the corrupt wold guard": -4.481702184677124,
+            "He can be the scourge of the corrupt gold guard": -4.4864586353302,
+            "He can be the scourge of the corrupt knolled guard": -4.514848508834839
+        },
+        "guard": {
+            "He can be the scourge of the corrupt old bard": -3.886584548950195,
+            "He can be the scourge of the corrupt old gourd": -3.9615993442535395,
+            "He can be the scourge of the corrupt old god": -3.9788357257843017,
+            "He can be the scourge of the corrupt old garb": -3.9794805526733397,
+            "He can be the scourge of the corrupt old card": -4.111999616622924,
+            "He can be the scourge of the corrupt old shard": -4.113548532485962,
+            "He can be the scourge of the corrupt old shahed": -4.152401224136352,
+            "He can be the scourge of the corrupt old gaud": -4.200446578979492,
+            "He can be the scourge of the corrupt old good": -4.234271806716919,
+            "He can be the scourge of the corrupt old tarred": -4.255069952011109
+        }
+    },
+    {
+        "id": 204,
+        "My you are in a mess Jenny said": "Original sentence",
+        "mess": {
+            "My you are in a ness Jenny said": -4.6934415645599366,
+            "My you are in a moose Jenny said": -4.925785022735595,
+            "My you are in a tess Jenny said": -5.002226022720336,
+            "My you are in a miss Jenny said": -5.024784105300903,
+            "My you are in a med Jenny said": -5.045310020446777,
+            "My you are in a jess Jenny said": -5.071834131240845,
+            "My you are in a mace Jenny said": -5.075845825195312,
+            "My you are in a bess Jenny said": -5.082014455795288,
+            "My you are in a merce Jenny said": -5.142499660491943,
+            "My you are in a muss Jenny said": -5.1855569972991935
+        },
+        "said": {
+            "My you are in a mess Jenny sad": -4.93899645614624,
+            "My you are in a mess Jenny surd": -4.998989582061768,
+            "My you are in a mess Jenny side": -5.01509264755249,
+            "My you are in a mess Jenny sudd": -5.032738098144531,
+            "My you are in a mess Jenny sawed": -5.034575542449951,
+            "My you are in a mess Jenny had": -5.053211887359619,
+            "My you are in a mess Jenny sired": -5.062780237197876,
+            "My you are in a mess Jenny sewed": -5.067865612030029,
+            "My you are in a mess Jenny seared": -5.073891351699829,
+            "My you are in a mess Jenny would": -5.086221378326416
+        }
+    },
+    {
+        "id": 205,
+        "But Jacob still does not belong to his world": "Original sentence",
+        "belong": {
+            "But Jacob still does not belongd to his world": -4.549762010574341,
+            "But Jacob still does not biltong to his world": -4.869049501419067,
+            "But Jacob still does not billing to his world": -5.159398962020874
+        },
+        "world": {
+            "But Jacob still does not belong to his whorls": -3.977830009460449,
+            "But Jacob still does not belong to his whirls": -4.074713401794433,
+            "But Jacob still does not belong to his whorl": -4.110057563781738,
+            "But Jacob still does not belong to his word": -4.201890439987182,
+            "But Jacob still does not belong to his wold": -4.255578809738159,
+            "But Jacob still does not belong to his wild": -4.28893272781372,
+            "But Jacob still does not belong to his waleed": -4.320636548995971,
+            "But Jacob still does not belong to his wheeld": -4.342295600891113,
+            "But Jacob still does not belong to his whirl": -4.345561952590942,
+            "But Jacob still does not belong to his walled": -4.347096071243286
+        }
+    },
+    {
+        "id": 206,
+        "Perhaps you could ask her about it": "Original sentence",
+        "ask": {
+            "Perhaps you could arse her about it": -4.5387735843658445,
+            "Perhaps you could cask her about it": -4.553938007354736,
+            "Perhaps you could esq her about it": -4.689825740814209,
+            "Perhaps you could task her about it": -4.704416561126709,
+            "Perhaps you could ark her about it": -4.7747473144531245,
+            "Perhaps you could mask her about it": -4.823166942596435,
+            "Perhaps you could askey her about it": -4.900072574615478,
+            "Perhaps you could masque her about it": -5.0277624130249015,
+            "Perhaps you could maske her about it": -5.120121002197265,
+            "Perhaps you could arc her about it": -5.1822132492065425
+        }
+    },
+    {
+        "id": 207,
+        "He also read some philosophy at university": "Original sentence",
+        "read": {
+            "He also rowed some philosophy at university": -4.387772197723389,
+            "He also ryde some philosophy at university": -4.426851890563965,
+            "He also reared some philosophy at university": -4.455881889343261,
+            "He also said some philosophy at university": -4.583088966369629,
+            "He also fed some philosophy at university": -4.604746337890625,
+            "He also reed some philosophy at university": -4.607885261535644,
+            "He also reades some philosophy at university": -4.646127882003784,
+            "He also rued some philosophy at university": -4.684310733795166,
+            "He also rayed some philosophy at university": -4.726766063690185,
+            "He also led some philosophy at university": -4.769431739807129
+        },
+        "philosophy": {
+            "He also read some philosopher at university": -4.6555820655822755
+        },
+        "university": {
+            "He also read some philosophy at univer": -4.662958669662475,
+            "He also read some philosophy at unived": -4.882688856124878,
+            "He also read some philosophy at unives": -4.945632957458496
+        }
+    },
+    {
+        "id": 208,
+        "That aside it was a good performance": "Original sentence",
+        "aside": {
+            "That assize it was a good performance": -4.51159324645996,
+            "That assayed it was a good performance": -4.549389829635619,
+            "That side it was a good performance": -4.6244177341461175,
+            "That assignd it was a good performance": -4.660307523727417,
+            "That assayd it was a good performance": -4.7535266780853265,
+            "That sighed it was a good performance": -4.824700021743774,
+            "That assigned it was a good performance": -4.848799821853638,
+            "That assign it was a good performance": -4.894158981323242,
+            "That allied it was a good performance": -5.035265712738037,
+            "That abide it was a good performance": -5.092136133193969
+        },
+        "good": {
+            "That aside it was a gourd performance": -4.180334663391113,
+            "That aside it was a goad performance": -4.6288997879028315,
+            "That aside it was a goodes performance": -4.643910875320435,
+            "That aside it was a gourg performance": -4.680908203125,
+            "That aside it was a gored performance": -4.754367221832275,
+            "That aside it was a gird performance": -4.790243171691895,
+            "That aside it was a garde performance": -4.8518109741210935,
+            "That aside it was a guide performance": -4.853106485366821,
+            "That aside it was a god performance": -4.921932739257812,
+            "That aside it was a guard performance": -4.988105482101441
+        },
+        "performance": {
+            "That aside it was a good performant": -3.9919431686401365,
+            "That aside it was a good performan": -4.606166982650756,
+            "That aside it was a good performand": -4.652551889419555
+        }
+    },
+    {
+        "id": 209,
+        "I've lost interest in it I said": "Original sentence",
+        "lost": {
+            "I've dossed interest in it I said": -4.135136436462402,
+            "I've loosed interest in it I said": -4.299869092941284,
+            "I've last interest in it I said": -4.35573314666748,
+            "I've flossed interest in it I said": -4.370194959640503,
+            "I've least interest in it I said": -4.385230016708373,
+            "I've lopped interest in it I said": -4.392186878204345,
+            "I've lot interest in it I said": -4.464640092849731,
+            "I've loused interest in it I said": -4.5037860622406,
+            "I've locked interest in it I said": -4.5595370826721195,
+            "I've lensed interest in it I said": -4.595279932022094
+        },
+        "interest": {
+            "I've lost entrust in it I said": -4.549895191192626,
+            "I've lost intrust in it I said": -4.777765560150146,
+            "I've lost intrant in it I said": -5.065770959854126
+        },
+        "said": {
+            "I've lost interest in it I sighed": -3.874124610900879,
+            "I've lost interest in it I would": -3.9022917442321776,
+            "I've lost interest in it I sad": -3.9058576564788816,
+            "I've lost interest in it I had": -3.9172636585235594,
+            "I've lost interest in it I soured": -3.961970996856689,
+            "I've lost interest in it I sowed": -3.9707433719635006,
+            "I've lost interest in it I sewed": -4.005851985931396,
+            "I've lost interest in it I seared": -4.012211177825927,
+            "I've lost interest in it I cede": -4.06933066368103,
+            "I've lost interest in it I sudd": -4.180434211730956
+        }
+    },
+    {
+        "id": 210,
+        "He bent and threw a log on to the fire": "Original sentence",
+        "bent": {
+            "He went and threw a log on to the fire": -3.2127645053863523,
+            "He burnt and threw a log on to the fire": -3.3487122764587403,
+            "He bant and threw a log on to the fire": -3.6318958759307858,
+            "He kent and threw a log on to the fire": -3.7127644824981685,
+            "He bunt and threw a log on to the fire": -3.7301932468414303,
+            "He becked and threw a log on to the fire": -3.7610925941467284,
+            "He leant and threw a log on to the fire": -3.7878360004425042,
+            "He brent and threw a log on to the fire": -3.78864277267456,
+            "He bens and threw a log on to the fire": -3.818341016769409,
+            "He ben and threw a log on to the fire": -3.843974637985229
+        },
+        "threw": {
+            "He bent and drew a log on to the fire": -4.016139898300171,
+            "He bent and throughs a log on to the fire": -4.37163963317871,
+            "He bent and grew a log on to the fire": -4.396554735183715,
+            "He bent and throe a log on to the fire": -4.513767862319946,
+            "He bent and brew a log on to the fire": -4.631156311035156,
+            "He bent and true a log on to the fire": -4.663864679336547,
+            "He bent and crewe a log on to the fire": -4.671682802200317,
+            "He bent and pru a log on to the fire": -4.747888298034668,
+            "He bent and crew a log on to the fire": -4.76041180229187,
+            "He bent and three a log on to the fire": -5.038370573043823
+        },
+        "log": {
+            "He bent and threw a dog on to the fire": -3.89913397026062,
+            "He bent and threw a lock on to the fire": -3.907394170761108,
+            "He bent and threw a leg on to the fire": -3.9338203449249263,
+            "He bent and threw a lough on to the fire": -3.9927232265472408,
+            "He bent and threw a lop on to the fire": -4.052128076553345,
+            "He bent and threw a loch on to the fire": -4.090022850036621,
+            "He bent and threw a clog on to the fire": -4.156677389144897,
+            "He bent and threw a lot on to the fire": -4.158613903045654,
+            "He bent and threw a loll on to the fire": -4.18918864440918,
+            "He bent and threw a lug on to the fire": -4.1918381958007815
+        },
+        "fire": {
+            "He bent and threw a log on to the pyre": -3.731586164474487,
+            "He bent and threw a log on to the mire": -3.9691378993988033,
+            "He bent and threw a log on to the lyre": -4.12048064994812,
+            "He bent and threw a log on to the byre": -4.137783899307251,
+            "He bent and threw a log on to the gyre": -4.145567270278931,
+            "He bent and threw a log on to the fryer": -4.160982599258422,
+            "He bent and threw a log on to the shire": -4.1885439453125,
+            "He bent and threw a log on to the afire": -4.190469741821289,
+            "He bent and threw a log on to the wire": -4.1926796436309814,
+            "He bent and threw a log on to the dyer": -4.212136117935181
+        }
+    },
+    {
+        "id": 211,
+        "And what did she say about that": "Original sentence"
+    },
+    {
+        "id": 212,
+        "I have not seen their like before": "Original sentence",
+        "seen": {
+            "I have not been their like before": -3.7763813858032225,
+            "I have not ween their like before": -4.0478864231109615,
+            "I have not sewn their like before": -4.0747266979217525,
+            "I have not sheen their like before": -4.1615782165527335,
+            "I have not sown their like before": -4.198420783996582,
+            "I have not sine their like before": -4.2259293632507315,
+            "I have not seem their like before": -4.253893550872803,
+            "I have not sign their like before": -4.3102597312927236,
+            "I have not seethe their like before": -4.316080341339111,
+            "I have not sawn their like before": -4.331944692611694
+        },
+        "like": {
+            "I have not seen their light before": -3.653177671432495,
+            "I have not seen their look before": -3.687137542724609,
+            "I have not seen their lies before": -3.7205572967529292,
+            "I have not seen their life before": -3.748102260589599,
+            "I have not seen their line before": -3.7771047706604,
+            "I have not seen their pike before": -3.778406663894653,
+            "I have not seen their mike before": -3.783975412368774,
+            "I have not seen their bike before": -3.8267414894104,
+            "I have not seen their lurk before": -3.829580867767334,
+            "I have not seen their lake before": -3.835276847839355
+        }
+    },
+    {
+        "id": 213,
+        "I am not doing so badly at all": "Original sentence",
+        "badly": {
+            "I am not doing so madly at all": -3.3423374061584474,
+            "I am not doing so bradly at all": -3.504171495437622,
+            "I am not doing so radley at all": -3.5459984245300293,
+            "I am not doing so sadly at all": -3.6348086414337155,
+            "I am not doing so bradlee at all": -3.643130950927734,
+            "I am not doing so chadly at all": -3.6749258632659907,
+            "I am not doing so madley at all": -3.6910917167663575,
+            "I am not doing so batley at all": -3.860777950286865,
+            "I am not doing so tadley at all": -3.864331604003906,
+            "I am not doing so badlees at all": -3.9019753265380857
+        }
+    },
+    {
+        "id": 214,
+        "Frantic sheep ran out of the way": "Original sentence",
+        "Frantic": {
+            "frantin sheep ran out of the way": -4.599773502349853,
+            "franic sheep ran out of the way": -4.706300449371337
+        },
+        "sheep": {
+            "Frantic she ran out of the way": -3.95271143913269,
+            "Frantic peep ran out of the way": -3.956800411224365,
+            "Frantic ship ran out of the way": -3.993244060516357,
+            "Frantic sheath ran out of the way": -4.073937763214111,
+            "Frantic seep ran out of the way": -4.088352909088134,
+            "Frantic leap ran out of the way": -4.136170083999633,
+            "Frantic sheen ran out of the way": -4.153392999649047,
+            "Frantic beep ran out of the way": -4.212983432769775,
+            "Frantic sheaf ran out of the way": -4.2240859985351555,
+            "Frantic jeep ran out of the way": -4.239974145889282
+        },
+        "ran": {
+            "Frantic sheep ram out of the way": -3.839429695129394,
+            "Frantic sheep fan out of the way": -3.8944659347534176,
+            "Frantic sheep wrap out of the way": -4.152349094390869,
+            "Frantic sheep roan out of the way": -4.181550718307495,
+            "Frantic sheep pan out of the way": -4.18663143157959,
+            "Frantic sheep ron out of the way": -4.224342868804932,
+            "Frantic sheep anne out of the way": -4.2410830345153805,
+            "Frantic sheep wrack out of the way": -4.245368030548095,
+            "Frantic sheep wren out of the way": -4.249251127243042,
+            "Frantic sheep ratch out of the way": -4.280443649291992
+        },
+        "way": {
+            "Frantic sheep ran out of the weir": -3.711691427230835,
+            "Frantic sheep ran out of the wail": -3.883320526123047,
+            "Frantic sheep ran out of the whirr": -3.9494703636169435,
+            "Frantic sheep ran out of the weigher": -3.977539110183715,
+            "Frantic sheep ran out of the wale": -3.982336811065674,
+            "Frantic sheep ran out of the woe": -4.051320110321045,
+            "Frantic sheep ran out of the bay": -4.07729423713684,
+            "Frantic sheep ran out of the wade": -4.103441385269165,
+            "Frantic sheep ran out of the tay": -4.1049156093597405,
+            "Frantic sheep ran out of the airway": -4.107088470458984
+        }
+    },
+    {
+        "id": 215,
+        "But it was still a beautiful voice": "Original sentence",
+        "beautiful": {
+            "But it was still a dutiful voice": -3.523854970932007
+        },
+        "voice": {
+            "But it was still a beautiful choice": -3.864440910339355,
+            "But it was still a beautiful verse": -3.962182994842529,
+            "But it was still a beautiful void": -3.9623643875122068,
+            "But it was still a beautiful voile": -3.9769718761444093,
+            "But it was still a beautiful vice": -4.118087577819824,
+            "But it was still a beautiful vis": -4.22344337272644,
+            "But it was still a beautiful joyce": -4.274292158126831,
+            "But it was still a beautiful neuss": -4.385747409820556,
+            "But it was still a beautiful voiceed": -4.638623666763305
+        }
+    },
+    {
+        "id": 216,
+        "I've found another room Mother told them": "Original sentence",
+        "found": {
+            "I've ferned another room Mother told them": -4.879084880828858,
+            "I've phoned another room Mother told them": -4.944468799591064,
+            "I've fouled another room Mother told them": -5.0006006221771235,
+            "I've fowled another room Mother told them": -5.044523523330688,
+            "I've towned another room Mother told them": -5.091291193008423,
+            "I've fawned another room Mother told them": -5.147507020950317,
+            "I've fanned another room Mother told them": -5.234654287338257,
+            "I've founds another room Mother told them": -5.247976446151733,
+            "I've gowned another room Mother told them": -5.2842471828460695,
+            "I've frownd another room Mother told them": -5.372030687332153
+        },
+        "room": {
+            "I've found another rhyme Mother told them": -4.695170745849609,
+            "I've found another ruse Mother told them": -4.801172119140625,
+            "I've found another ruche Mother told them": -4.909970857620239,
+            "I've found another loom Mother told them": -4.946193363189697,
+            "I've found another rome Mother told them": -5.029074716567993,
+            "I've found another rouge Mother told them": -5.033794128417968,
+            "I've found another ream Mother told them": -5.087163745880127,
+            "I've found another rued Mother told them": -5.107615911483764,
+            "I've found another rood Mother told them": -5.1828389282226555,
+            "I've found another rule Mother told them": -5.2093465061187745
+        },
+        "told": {
+            "I've found another room Mother tolls them": -4.616682189941406,
+            "I've found another room Mother knolled them": -4.777075548171997,
+            "I've found another room Mother soled them": -4.854042428970336,
+            "I've found another room Mother bowled them": -4.906842752456665,
+            "I've found another room Mother trolled them": -4.940210046768188,
+            "I've found another room Mother toned them": -4.968459543228149,
+            "I've found another room Mother bolled them": -4.97264566040039,
+            "I've found another room Mother sold them": -4.9874984207153314,
+            "I've found another room Mother tailed them": -5.00716695022583,
+            "I've found another room Mother tooled them": -5.03379240989685
+        }
+    },
+    {
+        "id": 217,
+        "James has been kindness itself all day": "Original sentence",
+        "kindness": {
+            "I've found another room Mother tolls them": -4.616682189941406,
+            "I've found another room Mother knolled them": -4.777075548171997,
+            "I've found another room Mother soled them": -4.854042428970336,
+            "I've found another room Mother bowled them": -4.906842752456665,
+            "I've found another room Mother trolled them": -4.940210046768188,
+            "I've found another room Mother toned them": -4.968459543228149,
+            "I've found another room Mother bolled them": -4.97264566040039,
+            "I've found another room Mother sold them": -4.9874984207153314,
+            "I've found another room Mother tailed them": -5.00716695022583,
+            "I've found another room Mother tooled them": -5.03379240989685
+        },
+        "day": {
+            "James has been kindness itself all doe": -5.257270942687988,
+            "James has been kindness itself all shay": -5.275821481704711,
+            "James has been kindness itself all tay": -5.292304609298705,
+            "James has been kindness itself all aye": -5.301742509841918,
+            "James has been kindness itself all nee": -5.315987630844116,
+            "James has been kindness itself all bey": -5.3558404331207266,
+            "James has been kindness itself all fay": -5.392947395324707,
+            "James has been kindness itself all doh": -5.4927940235137935,
+            "James has been kindness itself all fey": -5.496192749023437,
+            "James has been kindness itself all jay": -5.508339124679565
+        }
+    },
+    {
+        "id": 218,
+        "He cut the sleeve on my leather jacket": "Original sentence",
+        "cut": {
+            "He put the sleeve on my leather jacket": -3.8217220134735106,
+            "He caught the sleeve on my leather jacket": -3.9342335128784174,
+            "He cud the sleeve on my leather jacket": -4.221273183822632,
+            "He cuffed the sleeve on my leather jacket": -4.2702250480651855,
+            "He shut the sleeve on my leather jacket": -4.293792879104614,
+            "He cup the sleeve on my leather jacket": -4.3103529148101805,
+            "He cupped the sleeve on my leather jacket": -4.3692650318145745,
+            "He but the sleeve on my leather jacket": -4.381970739364624,
+            "He cot the sleeve on my leather jacket": -4.384920051574706,
+            "He jut the sleeve on my leather jacket": -4.42040253829956
+        },
+        "sleeve": {
+            "He cut the cleave on my leather jacket": -4.089065975189209,
+            "He cut the steeve on my leather jacket": -4.131197624206544,
+            "He cut the sleet on my leather jacket": -4.290827877044678,
+            "He cut the steve on my leather jacket": -4.367435674667359,
+            "He cut the cleve on my leather jacket": -4.484802669525146,
+            "He cut the cleeve on my leather jacket": -4.523812908172607,
+            "He cut the sleep on my leather jacket": -4.629493328094482,
+            "He cut the slease on my leather jacket": -4.666578151702881,
+            "He cut the slav on my leather jacket": -4.705063772201537,
+            "He cut the slave on my leather jacket": -4.736186170578002
+        },
+        "leather": {
+            "He cut the sleeve on my letter jacket": -4.016876649856568,
+            "He cut the sleeve on my heather jacket": -4.231557607650757,
+            "He cut the sleeve on my weather jacket": -4.481887914657592,
+            "He cut the sleeve on my lather jacket": -4.493334819793701,
+            "He cut the sleeve on my nether jacket": -4.520732830047607,
+            "He cut the sleeve on my feather jacket": -4.5307094192504875,
+            "He cut the sleeve on my leper jacket": -4.554097471237182,
+            "He cut the sleeve on my leisure jacket": -4.56549861907959,
+            "He cut the sleeve on my legger jacket": -4.6074203166961665,
+            "He cut the sleeve on my wether jacket": -4.60963382911682
+        },
+        "jacket": {
+            "He cut the sleeve on my leather jacking": -4.33050365447998,
+            "He cut the sleeve on my leather racquet": -4.442975688934326,
+            "He cut the sleeve on my leather packet": -4.691896821975708,
+            "He cut the sleeve on my leather racket": -4.725579954147339,
+            "He cut the sleeve on my leather jacked": -4.766589212417602,
+            "He cut the sleeve on my leather janet": -4.810922527313232,
+            "He cut the sleeve on my leather jackety": -5.059108591079712
+        }
+    },
+    {
+        "id": 219,
+        "She said she didn't know anything about it": "Original sentence",
+        "said": {
+            "She sad she didn't know anything about it": -2.947275302886963,
+            "She saids she didn't know anything about it": -3.0554028892517087,
+            "She sighed she didn't know anything about it": -3.122372425079346,
+            "She sewed she didn't know anything about it": -3.129953433990478,
+            "She sered she didn't know anything about it": -3.284528968811035,
+            "She sowed she didn't know anything about it": -3.30543074798584,
+            "She surd she didn't know anything about it": -3.311309766769409,
+            "She seared she didn't know anything about it": -3.3302149276733393,
+            "She had she didn't know anything about it": -3.3880456047058103,
+            "She sired she didn't know anything about it": -3.4627542972564695
+        },
+        "know": {
+            "She said she didn't knowes anything about it": -3.170466938018799,
+            "She said she didn't nee anything about it": -3.245874969482422,
+            "She said she didn't now anything about it": -3.2747422351837154,
+            "She said she didn't note anything about it": -3.2957825183868406,
+            "She said she didn't so anything about it": -3.3517052097320557,
+            "She said she didn't doh anything about it": -3.353126411437988,
+            "She said she didn't doe anything about it": -3.3717082786560058,
+            "She said she didn't show anything about it": -3.4174678478240965,
+            "She said she didn't nor anything about it": -3.431255506515503,
+            "She said she didn't nay anything about it": -3.4358058853149416
+        }
+    },
+    {
+        "id": 220,
+        "As always we had the idea but not the money": "Original sentence",
+        "idea": {
+            "As always we had the ideaed but not the money": -3.864979314804077,
+            "As always we had the ida but not the money": -3.9144422512054438,
+            "As always we had the idol but not the money": -3.9373696327209466,
+            "As always we had the ideal but not the money": -3.9986878490447997,
+            "As always we had the ides but not the money": -4.12110481262207,
+            "As always we had the deer but not the money": -4.15835633277893,
+            "As always we had the eider but not the money": -4.159451196670532,
+            "As always we had the idle but not the money": -4.233326005935669,
+            "As always we had the eyed but not the money": -4.245548582077026,
+            "As always we had the tidier but not the money": -4.261345672607422
+        },
+        "money": {
+            "As always we had the idea but not the muzzy": -3.6944909439086913,
+            "As always we had the idea but not the manny": -3.8075878353118893,
+            "As always we had the idea but not the runny": -3.8172279987335203,
+            "As always we had the idea but not the gunny": -3.8591685047149658,
+            "As always we had the idea but not the mushy": -3.9081104869842527,
+            "As always we had the idea but not the many": -3.9304738941192623,
+            "As always we had the idea but not the mucky": -3.931015531539917,
+            "As always we had the idea but not the bunny": -3.9358765735626218,
+            "As always we had the idea but not the funny": -3.9483303852081297,
+            "As always we had the idea but not the tunny": -3.949302350997925
+        }
+    },
+    {
+        "id": 221,
+        "Finally one of their number stepped forward": "Original sentence",
+        "Finally": {
+            "signalee one of their number stepped forward": -4.814708995819092,
+            "finely one of their number stepped forward": -4.901513528823852,
+            "finially one of their number stepped forward": -4.947350109100341,
+            "finery one of their number stepped forward": -4.97041562461853
+        },
+        "number": {
+            "Finally one of their rhumba stepped forward": -4.482580343246459,
+            "Finally one of their rumba stepped forward": -4.637886301040649,
+            "Finally one of their lumbar stepped forward": -4.687649475097656,
+            "Finally one of their umber stepped forward": -4.861292499542237,
+            "Finally one of their mumber stepped forward": -4.879237174987793,
+            "Finally one of their tumber stepped forward": -4.951713428497314,
+            "Finally one of their numberd stepped forward": -4.957384376525878,
+            "Finally one of their bumber stepped forward": -5.011597702026367,
+            "Finally one of their cumber stepped forward": -5.024752513885498,
+            "Finally one of their jumber stepped forward": -5.165555921554565
+        },
+        "stepped": {
+            "Finally one of their number steppes forward": -4.387582820892334,
+            "Finally one of their number stooped forward": -4.570483695983887,
+            "Finally one of their number stopped forward": -4.5945825729370116,
+            "Finally one of their number sept forward": -4.76427960395813,
+            "Finally one of their number swept forward": -4.85213317489624,
+            "Finally one of their number steeped forward": -4.913201328277588,
+            "Finally one of their number steppe forward": -5.060762023925781,
+            "Finally one of their number stent forward": -5.064894739151001,
+            "Finally one of their number stoped forward": -5.082684532165527,
+            "Finally one of their number slept forward": -5.104842975616454
+        },
+        "forward": {
+            "Finally one of their number stepped foreword": -4.481694030761719,
+            "Finally one of their number stepped forwards": -4.69793643951416,
+            "Finally one of their number stepped shoreward": -4.8608983058929445
+        }
+    },
+    {
+        "id": 222,
+        "She said Thank you Father and began the uneasy descent": "Original sentence",
+        "said": {
+            "She sighed Thank you Father and began the uneasy descent": -5.049937236785888,
+            "She seared Thank you Father and began the uneasy descent": -5.194323347091674,
+            "She sewed Thank you Father and began the uneasy descent": -5.26186304283142,
+            "She sowed Thank you Father and began the uneasy descent": -5.276732542037963,
+            "She surd Thank you Father and began the uneasy descent": -5.347194814682006,
+            "She sired Thank you Father and began the uneasy descent": -5.398872709274292,
+            "She sered Thank you Father and began the uneasy descent": -5.4113576869964595,
+            "She sawed Thank you Father and began the uneasy descent": -5.438342460632324,
+            "She cered Thank you Father and began the uneasy descent": -5.443750284194946,
+            "She saids Thank you Father and began the uneasy descent": -5.46418098449707
+        },
+        "Thank": {
+            "She said yank you Father and began the uneasy descent": -5.2669559192657465,
+            "She said shank you Father and began the uneasy descent": -5.3987741489410395,
+            "She said dank you Father and began the uneasy descent": -5.479101461410522,
+            "She said lank you Father and began the uneasy descent": -5.613890016555786,
+            "She said hank you Father and began the uneasy descent": -5.635029266357421,
+            "She said sank you Father and began the uneasy descent": -5.69546231842041,
+            "She said wank you Father and began the uneasy descent": -5.723477972030639,
+            "She said think you Father and began the uneasy descent": -5.7919523239135735,
+            "She said bank you Father and began the uneasy descent": -5.85937685394287,
+            "She said rank you Father and began the uneasy descent": -5.894653785705566
+        },
+        "began": {
+            "She said Thank you Father and begat the uneasy descent": -5.27817879486084,
+            "She said Thank you Father and begone the uneasy descent": -5.356192174911499,
+            "She said Thank you Father and begad the uneasy descent": -5.390569639205932,
+            "She said Thank you Father and biggin the uneasy descent": -5.565089086532593,
+            "She said Thank you Father and begans the uneasy descent": -5.74435257911682,
+            "She said Thank you Father and begand the uneasy descent": -5.747661575317382
+        },
+        "uneasy": {
+            "She said Thank you Father and began the unease descent": -4.858843851089477
+        },
+        "descent": {
+            "She said Thank you Father and began the uneasy dissents": -5.1950925350189205,
+            "She said Thank you Father and began the uneasy detent": -5.280900329589843,
+            "She said Thank you Father and began the uneasy distent": -5.306996297836303,
+            "She said Thank you Father and began the uneasy docent": -5.4320489749908445,
+            "She said Thank you Father and began the uneasy descend": -5.442404565811157,
+            "She said Thank you Father and began the uneasy dissenter": -5.446453237533569,
+            "She said Thank you Father and began the uneasy descente": -5.475562047958373,
+            "She said Thank you Father and began the uneasy essent": -5.499628744125366,
+            "She said Thank you Father and began the uneasy missent": -5.55862327003479,
+            "She said Thank you Father and began the uneasy dissect": -5.847509300231933
+        }
+    },
+    {
+        "id": 223,
+        "Perhaps I have not been trying hard enough": "Original sentence",
+        "trying": {
+            "Perhaps I have not been prying hard enough": -3.2659144573211667,
+            "Perhaps I have not been crying hard enough": -3.571464616775512,
+            "Perhaps I have not been drying hard enough": -3.7901398181915282,
+            "Perhaps I have not been treeing hard enough": -3.869158975601196,
+            "Perhaps I have not been wrying hard enough": -3.947163915634155,
+            "Perhaps I have not been trowing hard enough": -3.96140071105957,
+            "Perhaps I have not been truing hard enough": -3.9798269367218015,
+            "Perhaps I have not been frying hard enough": -4.000491193771362,
+            "Perhaps I have not been tring hard enough": -4.033803415298462,
+            "Perhaps I have not been tying hard enough": -4.120906257629394
+        },
+        "hard": {
+            "Perhaps I have not been trying harsh enough": -3.956180257797241,
+            "Perhaps I have not been trying had enough": -3.9676044273376463,
+            "Perhaps I have not been trying hardy enough": -4.003357791900634,
+            "Perhaps I have not been trying harp enough": -4.056947132110595,
+            "Perhaps I have not been trying hart enough": -4.088453016281127,
+            "Perhaps I have not been trying half enough": -4.127373497009277,
+            "Perhaps I have not been trying lard enough": -4.218090677261352,
+            "Perhaps I have not been trying hark enough": -4.218281383514404,
+            "Perhaps I have not been trying harden enough": -4.231855716705322,
+            "Perhaps I have not been trying halve enough": -4.27856888961792
+        }
+    },
+    {
+        "id": 224,
+        "And he's still living in the World": "Original sentence",
+        "living": {
+            "And he's still laving in the World": -3.5694588661193847,
+            "And he's still livid in the World": -3.6831662940979,
+            "And he's still leaving in the World": -3.7023422298431394,
+            "And he's still lipping in the World": -3.841432117462158,
+            "And he's still leving in the World": -3.8595948677062983,
+            "And he's still libbing in the World": -3.911497089385986,
+            "And he's still sieving in the World": -3.9700073051452636,
+            "And he's still loving in the World": -4.041358375549316,
+            "And he's still lilling in the World": -4.08379341506958,
+            "And he's still liping in the World": -4.104257558822632
+        },
+        "World": {
+            "And he's still living in the wild": -3.0113530864715576,
+            "And he's still living in the whorls": -3.284105186462402,
+            "And he's still living in the wold": -3.3145906505584715,
+            "And he's still living in the walled": -3.37679048538208,
+            "And he's still living in the whirls": -3.4084007549285884,
+            "And he's still living in the whorl": -3.4140950393676754,
+            "And he's still living in the wheeld": -3.4463782329559325,
+            "And he's still living in the word": -3.4677715015411374,
+            "And he's still living in the waleed": -3.5383125686645505,
+            "And he's still living in the weald": -3.5575706977844237
+        }
+    },
+    {
+        "id": 225,
+        "I always do walk out in the end": "Original sentence",
+        "walk": {
+            "I always do work out in the end": -3.530780796051025,
+            "I always do baulk out in the end": -3.891475849151611,
+            "I always do york out in the end": -3.913788509368896,
+            "I always do fork out in the end": -3.945266859054565,
+            "I always do whack out in the end": -3.9885378475189204,
+            "I always do cork out in the end": -3.999261390686035,
+            "I always do walkes out in the end": -4.053697040557861,
+            "I always do gawk out in the end": -4.065537214279175,
+            "I always do talk out in the end": -4.070383924484252,
+            "I always do wake out in the end": -4.143952453613281
+        },
+        "end": {
+            "I always do walk out in the and": -4.161340236663818,
+            "I always do walk out in the awned": -4.302254905700684,
+            "I always do walk out in the genned": -4.314639282226562,
+            "I always do walk out in the endear": -4.3553551673889155,
+            "I always do walk out in the rende": -4.443904500961303,
+            "I always do walk out in the inned": -4.4650049476623535,
+            "I always do walk out in the yenned": -4.490663915634155,
+            "I always do walk out in the kenned": -4.501459312438964,
+            "I always do walk out in the enc": -4.557813539505005,
+            "I always do walk out in the egged": -4.595465780258179
+        }
+    },
+    {
+        "id": 226,
+        "He wouldn't want to know any more": "Original sentence",
+        "want": {
+            "He wouldn't wan to know any more": -3.452394914627075,
+            "He wouldn't what to know any more": -3.7125975131988525,
+            "He wouldn't wanner to know any more": -3.7722203254699704,
+            "He wouldn't waner to know any more": -3.817862224578857,
+            "He wouldn't wot to know any more": -3.8237669467926025,
+            "He wouldn't wanna to know any more": -3.8946790695190425,
+            "He wouldn't waft to know any more": -4.084762119293212,
+            "He wouldn't went to know any more": -4.143346168518066,
+            "He wouldn't wast to know any more": -4.231783124923706,
+            "He wouldn't watched to know any more": -4.430931484222412
+        },
+        "know": {
+            "He wouldn't want to go any more": -3.0696395874023437,
+            "He wouldn't want to show any more": -3.0746248874664306,
+            "He wouldn't want to mow any more": -3.2836278438568116,
+            "He wouldn't want to gnaw any more": -3.346632074356079,
+            "He wouldn't want to shew any more": -3.390403142929077,
+            "He wouldn't want to sew any more": -3.3913860244750973,
+            "He wouldn't want to hoe any more": -3.448301107406616,
+            "He wouldn't want to bow any more": -3.450116733551025,
+            "He wouldn't want to sow any more": -3.4577583713531492,
+            "He wouldn't want to row any more": -3.460306386947632
+        }
+    },
+    {
+        "id": 227,
+        "It's not the first time he's gone off by himself": "Original sentence",
+        "time": {
+            "It's not the first term he's gone off by himself": -2.8755567245483395,
+            "It's not the first rhyme he's gone off by himself": -3.084539794921875,
+            "It's not the first team he's gone off by himself": -3.1498242149353026,
+            "It's not the first chyme he's gone off by himself": -3.1983333053588865,
+            "It's not the first chime he's gone off by himself": -3.2016239261627195,
+            "It's not the first dime he's gone off by himself": -3.2293879890441892,
+            "It's not the first tim he's gone off by himself": -3.2455866050720212,
+            "It's not the first tine he's gone off by himself": -3.2660282688140865,
+            "It's not the first mime he's gone off by himself": -3.296940742492676,
+            "It's not the first tyke he's gone off by himself": -3.3015427684783933
+        },
+        "gone": {
+            "It's not the first time he's got off by himself": -2.4694194555282594,
+            "It's not the first time he's gotten off by himself": -2.7160055637359615,
+            "It's not the first time he's gong off by himself": -2.816839367866516,
+            "It's not the first time he's jean off by himself": -3.0539811248779296,
+            "It's not the first time he's ron off by himself": -3.1088440895080565,
+            "It's not the first time he's shone off by himself": -3.1200293560028074,
+            "It's not the first time he's gown off by himself": -3.1502379913330074,
+            "It's not the first time he's goon off by himself": -3.2030969257354736,
+            "It's not the first time he's goth off by himself": -3.22709873008728,
+            "It's not the first time he's wan off by himself": -3.2328847141265866
+        }
+    },
+    {
+        "id": 228,
+        "Why have they let us come so far": "Original sentence",
+        "let": {
+            "Why have they led us come so far": -3.9780537052154537,
+            "Why have they lead us come so far": -4.184433595657349,
+            "Why have they left us come so far": -4.207045364379883,
+            "Why have they leant us come so far": -4.34435008430481,
+            "Why have they set us come so far": -4.353528392791747,
+            "Why have they lied us come so far": -4.437986385345458,
+            "Why have they yet us come so far": -4.510651119232177,
+            "Why have they lent us come so far": -4.546723875045776,
+            "Why have they get us come so far": -4.586807411193847,
+            "Why have they met us come so far": -4.625024574279785
+        },
+        "come": {
+            "Why have they let us chum so far": -3.8960540294647212,
+            "Why have they let us cut so far": -3.899198057174682,
+            "Why have they let us cuss so far": -4.086265491485595,
+            "Why have they let us chyme so far": -4.093242286682129,
+            "Why have they let us bum so far": -4.196007204055786,
+            "Why have they let us coz so far": -4.208404546737671,
+            "Why have they let us cull so far": -4.298313972473145,
+            "Why have they let us some so far": -4.315052848815918,
+            "Why have they let us cud so far": -4.320065509796142,
+            "Why have they let us cam so far": -4.320270454406738
+        },
+        "far": {
+            "Why have they let us come so baa": -4.020154811859131,
+            "Why have they let us come so bah": -4.118181421279907,
+            "Why have they let us come so fowey": -4.132132078170777,
+            "Why have they let us come so lah": -4.181255630493164,
+            "Why have they let us come so shah": -4.241259279251098,
+            "Why have they let us come so la": -4.267717889785766,
+            "Why have they let us come so parr": -4.268394088745117,
+            "Why have they let us come so rah": -4.276165277481079,
+            "Why have they let us come so fie": -4.277452434539795,
+            "Why have they let us come so farce": -4.298454448699951
+        }
+    },
+    {
+        "id": 229,
+        "I knew I had to tell him soon": "Original sentence",
+        "knew": {
+            "I knewed I had to tell him soon": -3.7175449180603026,
+            "I mew I had to tell him soon": -3.9221475124359126,
+            "I dew I had to tell him soon": -3.9916849269866943,
+            "I hew I had to tell him soon": -4.0589010009765625,
+            "I whew I had to tell him soon": -4.061591371536254,
+            "I phew I had to tell him soon": -4.0621334400177,
+            "I news I had to tell him soon": -4.1189961376190185,
+            "I pew I had to tell him soon": -4.1934668178558345,
+            "I yew I had to tell him soon": -4.2748044433593755,
+            "I newt I had to tell him soon": -4.303171396255493
+        },
+        "tell": {
+            "I knew I had to sell him soon": -3.156370090484619,
+            "I knew I had to dell him soon": -3.3977656745910645,
+            "I knew I had to tail him soon": -3.4903725032806396,
+            "I knew I had to teal him soon": -3.5626803131103513,
+            "I knew I had to jell him soon": -3.651093482971191,
+            "I knew I had to till him soon": -3.6646583290100097,
+            "I knew I had to stell him soon": -3.7338692932128907,
+            "I knew I had to fell him soon": -3.7402220134735105,
+            "I knew I had to tile him soon": -3.7646001815795898,
+            "I knew I had to nell him soon": -3.772162115097046
+        },
+        "soon": {
+            "I knew I had to tell him goon": -3.4692940940856936,
+            "I knew I had to tell him sous": -3.5000414886474607,
+            "I knew I had to tell him coon": -3.50649729347229,
+            "I knew I had to tell him sooth": -3.5383688716888426,
+            "I knew I had to tell him son": -3.5505035839080805,
+            "I knew I had to tell him sewn": -3.596965169906616,
+            "I knew I had to tell him soothe": -3.657295766830444,
+            "I knew I had to tell him susan": -3.678823709487915,
+            "I knew I had to tell him sown": -3.6851143836975093,
+            "I knew I had to tell him june": -3.6947239284515376
+        }
+    },
+    {
+        "id": 230,
+        "Better to be safe and all that": "Original sentence",
+        "Better": {
+            "butter to be safe and all that": -4.025709749221802,
+            "beggar to be safe and all that": -4.087100811004638,
+            "batter to be safe and all that": -4.101822706222534,
+            "bitter to be safe and all that": -4.104974325180053,
+            "abettor to be safe and all that": -4.200150203704833,
+            "debtor to be safe and all that": -4.225930118560791,
+            "besser to be safe and all that": -4.23817085647583,
+            "betty to be safe and all that": -4.251271409988403,
+            "setter to be safe and all that": -4.305922309875488,
+            "meta to be safe and all that": -4.3087143707275395
+        },
+        "safe": {
+            "Better to be serf and all that": -3.9083767890930177,
+            "Better to be sane and all that": -3.976486944198608,
+            "Better to be sage and all that": -4.010401714324951,
+            "Better to be sate and all that": -4.135753969192505,
+            "Better to be same and all that": -4.211496946334838,
+            "Better to be sale and all that": -4.277876863479614,
+            "Better to be save and all that": -4.283522605895996,
+            "Better to be seine and all that": -4.308488868713379,
+            "Better to be waif and all that": -4.32453914642334,
+            "Better to be chafe and all that": -4.330792568206787
+        }
+    },
+    {
+        "id": 231,
+        "Even that the poor little kid didn't like": "Original sentence",
+        "poor": {
+            "Even that the dour little kid didn't like": -4.188066553115845,
+            "Even that the pooh little kid didn't like": -4.448192096710205,
+            "Even that the pea little kid didn't like": -4.483076066970824,
+            "Even that the purr little kid didn't like": -4.589097291946411,
+            "Even that the boor little kid didn't like": -4.593723131179809,
+            "Even that the tour little kid didn't like": -4.641698047637939,
+            "Even that the moor little kid didn't like": -4.672647649765014,
+            "Even that the pie little kid didn't like": -4.715544366836547,
+            "Even that the pore little kid didn't like": -4.7374506721496585,
+            "Even that the spoor little kid didn't like": -4.7732292175292965
+        },
+        "little": {
+            "Even that the poor leetle kid didn't like": -4.274246644973755,
+            "Even that the poor writtle kid didn't like": -4.584795671463013,
+            "Even that the poor tittle kid didn't like": -4.590168645858764,
+            "Even that the poor litts kid didn't like": -4.687783432006836,
+            "Even that the poor kittle kid didn't like": -4.723611865997314,
+            "Even that the poor lit kid didn't like": -4.7531962394714355,
+            "Even that the poor lickle kid didn't like": -4.757342462539673,
+            "Even that the poor lintel kid didn't like": -4.7683142566680905,
+            "Even that the poor whittle kid didn't like": -4.8556098709106434,
+            "Even that the poor lites kid didn't like": -4.949191284179688
+        },
+        "kid": {
+            "Even that the poor little kip didn't like": -4.308975538253783,
+            "Even that the poor little king didn't like": -4.313261047363281,
+            "Even that the poor little cooed didn't like": -4.337671850204468,
+            "Even that the poor little kiddy didn't like": -4.355994367599487,
+            "Even that the poor little cud didn't like": -4.362751342773437,
+            "Even that the poor little cade didn't like": -4.415689516067505,
+            "Even that the poor little quaid didn't like": -4.430618762969971,
+            "Even that the poor little kith didn't like": -4.433577405929565,
+            "Even that the poor little kitsch didn't like": -4.456797426223755,
+            "Even that the poor little quid didn't like": -4.506835937499999
+        },
+        "like": {
+            "Even that the poor little kid didn't lurk": -4.112445152282715,
+            "Even that the poor little kid didn't look": -4.136715255737305,
+            "Even that the poor little kid didn't live": -4.195697677612304,
+            "Even that the poor little kid didn't dyke": -4.34403111076355,
+            "Even that the poor little kid didn't leak": -4.347956493377685,
+            "Even that the poor little kid didn't lithe": -4.351654823303222,
+            "Even that the poor little kid didn't lice": -4.390407348632812,
+            "Even that the poor little kid didn't mike": -4.3909856338500965,
+            "Even that the poor little kid didn't lack": -4.39687977218628,
+            "Even that the poor little kid didn't lie": -4.3974282264709466
+        }
+    },
+    {
+        "id": 232,
+        "And I don't really think you need to ask why": "Original sentence",
+        "think": {
+            "And I don't really thank you need to ask why": -3.4292109966278073,
+            "And I don't really kink you need to ask why": -3.4707819252014156,
+            "And I don't really things you need to ask why": -3.4824415111541747,
+            "And I don't really thing you need to ask why": -3.563809013366699,
+            "And I don't really cinque you need to ask why": -3.5789489231109615,
+            "And I don't really chink you need to ask why": -3.615545291900635,
+            "And I don't really sink you need to ask why": -3.6409540138244627,
+            "And I don't really mink you need to ask why": -3.656260725021362,
+            "And I don't really link you need to ask why": -3.6900545959472653,
+            "And I don't really jink you need to ask why": -3.8151716117858885
+        },
+        "need": {
+            "And I don't really think you meed to ask why": -3.260071563720703,
+            "And I don't really think you needes to ask why": -3.2727596664428713,
+            "And I don't really think you ned to ask why": -3.324977727890014,
+            "And I don't really think you kneel to ask why": -3.325320545196533,
+            "And I don't really think you reed to ask why": -3.34549334526062,
+            "And I don't really think you read to ask why": -3.445773677825928,
+            "And I don't really think you knowed to ask why": -3.4508608722686764,
+            "And I don't really think you kneeled to ask why": -3.5139744853973385,
+            "And I don't really think you neared to ask why": -3.532261037826538,
+            "And I don't really think you teed to ask why": -3.549591178894043
+        },
+        "ask": {
+            "And I don't really think you need to cask why": -3.3814916133880613,
+            "And I don't really think you need to ark why": -3.4411620521545405,
+            "And I don't really think you need to arse why": -3.4659119129180906,
+            "And I don't really think you need to mask why": -3.534085369110107,
+            "And I don't really think you need to esq why": -3.6301339302062985,
+            "And I don't really think you need to arc why": -3.668833818435669,
+            "And I don't really think you need to task why": -3.715885257720947,
+            "And I don't really think you need to bask why": -3.811484909057617,
+            "And I don't really think you need to masque why": -3.827032327651977,
+            "And I don't really think you need to maske why": -3.8409134864807126
+        }
+    },
+    {
+        "id": 233,
+        "At that point Peter woke up as he always did": "Original sentence",
+        "point": {
+            "At that pointes Peter woke up as he always did": -3.9149936084747314,
+            "At that pointe Peter woke up as he always did": -4.023731088638305,
+            "At that pint Peter woke up as he always did": -4.170559406280518,
+            "At that joint Peter woke up as he always did": -4.17337781906128,
+            "At that eyepoint Peter woke up as he always did": -4.224256706237793,
+            "At that paint Peter woke up as he always did": -4.426526988983154,
+            "At that pant Peter woke up as he always did": -4.455676776885986,
+            "At that punt Peter woke up as he always did": -4.5147609062194825,
+            "At that pent Peter woke up as he always did": -4.7432718887329095,
+            "At that appoint Peter woke up as he always did": -4.933257579803466
+        },
+        "woke": {
+            "At that point Peter coke up as he always did": -3.9577437515258787,
+            "At that point Peter wove up as he always did": -3.979410840988159,
+            "At that point Peter awoke up as he always did": -4.0101072788238525,
+            "At that point Peter walk up as he always did": -4.111625913619995,
+            "At that point Peter toque up as he always did": -4.341867441177368,
+            "At that point Peter woes up as he always did": -4.437336875915527,
+            "At that point Peter poke up as he always did": -4.476856727600097,
+            "At that point Peter roke up as he always did": -4.495383148193358,
+            "At that point Peter work up as he always did": -4.5073143482208256,
+            "At that point Peter whack up as he always did": -4.5187226638793945
+        }
+    },
+    {
+        "id": 234,
+        "And they want everybody to be there": "Original sentence",
+        "want": {
+            "And they wan everybody to be there": -4.35814094543457,
+            "And they wanner everybody to be there": -4.451084995269775,
+            "And they went everybody to be there": -4.470529558181763,
+            "And they waner everybody to be there": -4.478362655639648,
+            "And they waft everybody to be there": -4.563717674255371,
+            "And they wot everybody to be there": -4.599407529830932,
+            "And they wanna everybody to be there": -4.66993613243103,
+            "And they watchd everybody to be there": -4.692673789978027,
+            "And they what everybody to be there": -4.72064528465271,
+            "And they watched everybody to be there": -4.739742958068847
+        }
+    },
+    {
+        "id": 235,
+        "He says that the transitional period may be extended": "Original sentence",
+        "says": {
+            "He seers that the transitional period may be extended": -3.820969699859619,
+            "He saith that the transitional period may be extended": -3.8814164333343504,
+            "He sirs that the transitional period may be extended": -3.8976629734039303,
+            "He saids that the transitional period may be extended": -3.934485750198364,
+            "He sees that the transitional period may be extended": -3.978634328842163,
+            "He sears that the transitional period may be extended": -4.03718826675415,
+            "He sighs that the transitional period may be extended": -4.060061677932739,
+            "He ceres that the transitional period may be extended": -4.114276479721069,
+            "He set that the transitional period may be extended": -4.118921062469482,
+            "He sows that the transitional period may be extended": -4.123069387435913
+        },
+        "transitional": {
+            "He seers that the transitional period may be extended": -3.820969699859619,
+            "He saith that the transitional period may be extended": -3.8814164333343504,
+            "He sirs that the transitional period may be extended": -3.8976629734039303,
+            "He saids that the transitional period may be extended": -3.934485750198364,
+            "He sees that the transitional period may be extended": -3.978634328842163,
+            "He sears that the transitional period may be extended": -4.03718826675415,
+            "He sighs that the transitional period may be extended": -4.060061677932739,
+            "He ceres that the transitional period may be extended": -4.114276479721069,
+            "He set that the transitional period may be extended": -4.118921062469482,
+            "He sows that the transitional period may be extended": -4.123069387435913
+        },
+        "period": {
+            "He says that the transitional perion may be extended": -4.602161340713501,
+            "He says that the transitional aperiod may be extended": -4.604375219345092,
+            "He says that the transitional piered may be extended": -4.8807982921600335,
+            "He says that the transitional perious may be extended": -5.002183189392089
+        },
+        "extended": {
+            "He says that the transitional period may be extented": -3.943113279342651,
+            "He says that the transitional period may be expended": -4.113900350570678,
+            "He says that the transitional period may be extendeds": -4.165465307235718
+        }
+    },
+    {
+        "id": 236,
+        "It was right for the truth to come out": "Original sentence",
+        "right": {
+            "It was trite for the truth to come out": -3.189514589309692,
+            "It was night for the truth to come out": -3.3922030258178713,
+            "It was righto for the truth to come out": -3.4265321731567377,
+            "It was aright for the truth to come out": -3.438380908966064,
+            "It was rote for the truth to come out": -3.4534168376922607,
+            "It was site for the truth to come out": -3.4623740634918208,
+            "It was rime for the truth to come out": -3.4808331165313717,
+            "It was ripe for the truth to come out": -3.486769676208496,
+            "It was ryde for the truth to come out": -3.492269811630249,
+            "It was wrote for the truth to come out": -3.5020831718444825
+        },
+        "truth": {
+            "It was right for the trews to come out": -3.308305017471313,
+            "It was right for the troupe to come out": -3.3191646766662597,
+            "It was right for the trues to come out": -3.5254017753601072,
+            "It was right for the troup to come out": -3.548484010696411,
+            "It was right for the troth to come out": -3.570597410202026,
+            "It was right for the tooth to come out": -3.59423131942749,
+            "It was right for the troop to come out": -3.6336074542999266,
+            "It was right for the truce to come out": -3.8021454353332516,
+            "It was right for the truer to come out": -3.8941066265106197,
+            "It was right for the troon to come out": -3.973369482040405
+        },
+        "come": {
+            "It was right for the truth to cut out": -3.514998008728027,
+            "It was right for the truth to cuss out": -3.7300320377349854,
+            "It was right for the truth to chyme out": -3.7308551540374757,
+            "It was right for the truth to chum out": -3.8021036148071286,
+            "It was right for the truth to bum out": -3.835235261917114,
+            "It was right for the truth to cam out": -3.8491261596679687,
+            "It was right for the truth to calm out": -3.854851511001587,
+            "It was right for the truth to sum out": -3.899831396102905,
+            "It was right for the truth to cull out": -3.932879039764404,
+            "It was right for the truth to scum out": -3.9486005783081053
+        }
+    },
+    {
+        "id": 237,
+        "My colleague was on his feet in a flash": "Original sentence",
+        "colleague": {
+            "My colleen was on his feet in a flash": -3.902194541931152,
+            "My collie was on his feet in a flash": -4.129197120666504,
+            "My collied was on his feet in a flash": -4.1713474750518795,
+            "My colley was on his feet in a flash": -4.340953302383422
+        },
+        "feet": {
+            "My colleague was on his seat in a flash": -4.0429455928802485,
+            "My colleague was on his teat in a flash": -4.056642011642456,
+            "My colleague was on his beat in a flash": -4.140323577880859,
+            "My colleague was on his feed in a flash": -4.163978481292724,
+            "My colleague was on his pete in a flash": -4.199142896652221,
+            "My colleague was on his sheet in a flash": -4.245400287628174,
+            "My colleague was on his fief in a flash": -4.264269594192505,
+            "My colleague was on his peat in a flash": -4.27435556602478,
+            "My colleague was on his foetal in a flash": -4.3284088954925535,
+            "My colleague was on his fete in a flash": -4.362919872283935
+        },
+        "flash": {
+            "My colleague was on his feet in a flack": -3.927072517395019,
+            "My colleague was on his feet in a flat": -3.973102893829345,
+            "My colleague was on his feet in a flap": -4.005907049179077,
+            "My colleague was on his feet in a flak": -4.0268548412323,
+            "My colleague was on his feet in a flamme": -4.118506864547729,
+            "My colleague was on his feet in a flan": -4.121735242843627,
+            "My colleague was on his feet in a fash": -4.133859304428101,
+            "My colleague was on his feet in a flesh": -4.177063894271851,
+            "My colleague was on his feet in a flag": -4.182029346466065,
+            "My colleague was on his feet in a plash": -4.193233324050904
+        }
+    },
+    {
+        "id": 238,
+        "He's written a book but he's only ten": "Original sentence",
+        "written": {
+            "He's writs a book but he's only ten": -3.453989288330078,
+            "He's writ a book but he's only ten": -3.617777919769287,
+            "He's ridden a book but he's only ten": -3.623723459243774,
+            "He's righton a book but he's only ten": -3.7404843883514403,
+            "He's bitten a book but he's only ten": -3.756692911148071,
+            "He's risen a book but he's only ten": -3.771195970535278,
+            "He's riven a book but he's only ten": -3.8720465869903564,
+            "He's mitten a book but he's only ten": -3.890478467941284,
+            "He's rotten a book but he's only ten": -3.960716087341308,
+            "He's wroughton a book but he's only ten": -4.07454879951477
+        },
+        "book": {
+            "He's written a baulk but he's only ten": -3.484438945770264,
+            "He's written a nook but he's only ten": -3.6329008083343504,
+            "He's written a bouquet but he's only ten": -3.737984228134155,
+            "He's written a bush but he's only ten": -3.7502325992584225,
+            "He's written a hook but he's only ten": -3.763351856231689,
+            "He's written a look but he's only ten": -3.793375080108642,
+            "He's written a bike but he's only ten": -3.7946592636108396,
+            "He's written a bull but he's only ten": -3.820881492614746,
+            "He's written a took but he's only ten": -3.84451789855957,
+            "He's written a barque but he's only ten": -3.848787908554077
+        }
+    },
+    {
+        "id": 239,
+        "Unemployment is sure to play its part": "Original sentence",
+        "Unemployment": {
+            "unemploymen is sure to play its part": -4.783493137359619
+        },
+        "sure": {
+            "Unemployment is shire to play its part": -4.1408688392639155,
+            "Unemployment is show to play its part": -4.152010250091553,
+            "Unemployment is shoo to play its part": -4.28783222579956,
+            "Unemployment is shew to play its part": -4.3112568855285645,
+            "Unemployment is shy to play its part": -4.345560695648193,
+            "Unemployment is dour to play its part": -4.394043092727661,
+            "Unemployment is shear to play its part": -4.399348720550536,
+            "Unemployment is poor to play its part": -4.475571071624755,
+            "Unemployment is moor to play its part": -4.508169055938721,
+            "Unemployment is shay to play its part": -4.658266057968139
+        },
+        "play": {
+            "Unemployment is sure to pay its part": -4.3203473644256585,
+            "Unemployment is sure to ply its part": -4.4365744972228995,
+            "Unemployment is sure to playes its part": -4.451208946228028,
+            "Unemployment is sure to allay its part": -4.472346830368042,
+            "Unemployment is sure to flay its part": -4.533630132675171,
+            "Unemployment is sure to ley its part": -4.537022876739502,
+            "Unemployment is sure to plaice its part": -4.548097679138183,
+            "Unemployment is sure to plough its part": -4.612530609130859,
+            "Unemployment is sure to slay its part": -4.623817483901977,
+            "Unemployment is sure to plague its part": -4.701973581314086
+        }
+    },
+    {
+        "id": 240,
+        "I wasn't aware that you knew each other": "Original sentence",
+        "aware": {
+            "I wasn't naware that you knew each other": -3.9932576904296875,
+            "I wasn't away that you knew each other": -4.021561336517334,
+            "I wasn't ware that you knew each other": -4.103592061996459,
+            "I wasn't sware that you knew each other": -4.186817264556884,
+            "I wasn't where that you knew each other": -4.239243030548096,
+            "I wasn't aweigh that you knew each other": -4.245662260055542,
+            "I wasn't affair that you knew each other": -4.264836431503296,
+            "I wasn't swear that you knew each other": -4.301261806488037,
+            "I wasn't wear that you knew each other": -4.43843183517456
+        },
+        "knew": {
+            "I wasn't aware that you sue each other": -3.4092960186004637,
+            "I wasn't aware that you view each other": -3.417841333389282,
+            "I wasn't aware that you mew each other": -3.4223209857940673,
+            "I wasn't aware that you pew each other": -3.469893180847168,
+            "I wasn't aware that you knewed each other": -3.5421590614318847,
+            "I wasn't aware that you phew each other": -3.617207368850708,
+            "I wasn't aware that you dew each other": -3.687414945602417,
+            "I wasn't aware that you due each other": -3.720558895111084,
+            "I wasn't aware that you hew each other": -3.7736371288299555,
+            "I wasn't aware that you feu each other": -3.775254377365112
+        }
+    },
+    {
+        "id": 241,
+        "How else can I stop myself from feeling miserable": "Original sentence",
+        "stop": {
+            "How else can I stopes myself from feeling miserable": -3.8685391426086424,
+            "How else can I stoup myself from feeling miserable": -3.972370933532715,
+            "How else can I stodge myself from feeling miserable": -4.088530849456787,
+            "How else can I stopper myself from feeling miserable": -4.104755973815918,
+            "How else can I stopple myself from feeling miserable": -4.195419988632202,
+            "How else can I strop myself from feeling miserable": -4.255066194534302,
+            "How else can I stoop myself from feeling miserable": -4.33084175491333,
+            "How else can I top myself from feeling miserable": -4.343031492233276,
+            "How else can I slop myself from feeling miserable": -4.3545340805053705,
+            "How else can I step myself from feeling miserable": -4.48066941833496
+        },
+        "feeling": {
+            "How else can I stop myself from peeling miserable": -3.599481641769409,
+            "How else can I stop myself from felling miserable": -3.6950423603057856,
+            "How else can I stop myself from failing miserable": -3.785877292633056,
+            "How else can I stop myself from fowling miserable": -3.8164078578948972,
+            "How else can I stop myself from falling miserable": -3.842654788970947,
+            "How else can I stop myself from pealing miserable": -3.901616727828979,
+            "How else can I stop myself from wheeling miserable": -3.914405475616455,
+            "How else can I stop myself from seeling miserable": -3.9192772083282468,
+            "How else can I stop myself from shieling miserable": -3.9206435222625733,
+            "How else can I stop myself from keeling miserable": -3.954806285858154
+        },
+        "miserable": {
+            "How else can I stop myself from feeling miserably": -3.5154090404510496
+        }
+    },
+    {
+        "id": 242,
+        "Would you like me to stay for company": "Original sentence",
+        "like": {
+            "Would you tyke me to stay for company": -4.384219339370727,
+            "Would you ike me to stay for company": -4.481321725845336,
+            "Would you lurk me to stay for company": -4.489443767547606,
+            "Would you mike me to stay for company": -4.513663007736206,
+            "Would you light me to stay for company": -4.5995518016815184,
+            "Would you lark me to stay for company": -4.674145465850829,
+            "Would you pike me to stay for company": -4.675331731796264,
+            "Would you dike me to stay for company": -4.710343566894531,
+            "Would you lick me to stay for company": -4.721028959274292,
+            "Would you reich me to stay for company": -4.72714839553833
+        },
+        "stay": {
+            "Would you like me to state for company": -3.9300869464874264,
+            "Would you like me to stye for company": -4.012017875671386,
+            "Would you like me to stave for company": -4.045480976104736,
+            "Would you like me to spay for company": -4.064013195037841,
+            "Would you like me to stow for company": -4.0838844699859616,
+            "Would you like me to steer for company": -4.089000787734985,
+            "Would you like me to star for company": -4.1062223434448235,
+            "Would you like me to tay for company": -4.113890399932861,
+            "Would you like me to store for company": -4.128055885314941,
+            "Would you like me to say for company": -4.130431127548218
+        },
+        "company": {
+            "Would you like me to stay for accompani": -3.963344383239746,
+            "Would you like me to stay for accompany": -3.993597412109375,
+            "Would you like me to stay for campani": -4.098396591186523,
+            "Would you like me to stay for compana": -4.1928969097137445,
+            "Would you like me to stay for compant": -4.392771911621093
+        }
+    },
+    {
+        "id": 243,
+        "The judge held that there was no binding compromise": "Original sentence",
+        "judge": {
+            "The jus held that there was no binding compromise": -4.050759357452392,
+            "The budge held that there was no binding compromise": -4.125120214462281,
+            "The george held that there was no binding compromise": -4.139661169052124,
+            "The nudge held that there was no binding compromise": -4.313027631759643,
+            "The fudge held that there was no binding compromise": -4.383397144317627,
+            "The jut held that there was no binding compromise": -4.447491931915283,
+            "The adjudge held that there was no binding compromise": -4.603701972961425,
+            "The jug held that there was no binding compromise": -4.863749181747436
+        },
+        "held": {
+            "The judge howled that there was no binding compromise": -3.7982820186614985,
+            "The judge hedged that there was no binding compromise": -4.0648751602172855,
+            "The judge helds that there was no binding compromise": -4.240686565399169,
+            "The judge yelled that there was no binding compromise": -4.366064495086669,
+            "The judge hailed that there was no binding compromise": -4.368488258361816,
+            "The judge haled that there was no binding compromise": -4.390957063674926,
+            "The judge hemmed that there was no binding compromise": -4.392333942413329,
+            "The judge holed that there was no binding compromise": -4.420870830535888,
+            "The judge telled that there was no binding compromise": -4.499293933868408,
+            "The judge heald that there was no binding compromise": -4.5047859191894535
+        },
+        "binding": {
+            "The judge held that there was no bounding compromise": -3.777006576538086,
+            "The judge held that there was no banding compromise": -3.817901262283325,
+            "The judge held that there was no minding compromise": -3.872157669067383,
+            "The judge held that there was no finding compromise": -3.931025249481201,
+            "The judge held that there was no bonding compromise": -4.089481491088867,
+            "The judge held that there was no bending compromise": -4.112951278686523,
+            "The judge held that there was no biding compromise": -4.141453104019165,
+            "The judge held that there was no winding compromise": -4.2693065147399905,
+            "The judge held that there was no blinding compromise": -4.304195705413818,
+            "The judge held that there was no bindis compromise": -4.359138196945191
+        },
+        "compromise": {
+            "The judge held that there was no bounding compromise": -3.777006576538086,
+            "The judge held that there was no banding compromise": -3.817901262283325,
+            "The judge held that there was no minding compromise": -3.872157669067383,
+            "The judge held that there was no finding compromise": -3.931025249481201,
+            "The judge held that there was no bonding compromise": -4.089481491088867,
+            "The judge held that there was no bending compromise": -4.112951278686523,
+            "The judge held that there was no biding compromise": -4.141453104019165,
+            "The judge held that there was no winding compromise": -4.2693065147399905,
+            "The judge held that there was no blinding compromise": -4.304195705413818,
+            "The judge held that there was no bindis compromise": -4.359138196945191
+        }
+    },
+    {
+        "id": 244,
+        "They felt they might be on to a good thing": "Original sentence",
+        "felt": {
+            "They veldt they might be on to a good thing": -3.5068999862670895,
+            "They knelt they might be on to a good thing": -3.510105550765991,
+            "They pelt they might be on to a good thing": -3.5277764263153073,
+            "They fells they might be on to a good thing": -3.5629156017303463,
+            "They veld they might be on to a good thing": -3.5871464824676513,
+            "They felled they might be on to a good thing": -3.7136804199218747,
+            "They fetched they might be on to a good thing": -3.73133560180664,
+            "They dealt they might be on to a good thing": -3.7429821891784667,
+            "They fessed they might be on to a good thing": -3.7517750263214107,
+            "They fella they might be on to a good thing": -3.755068731307983
+        },
+        "good": {
+            "They felt they might be on to a gourd thing": -3.2729904651641846,
+            "They felt they might be on to a gourg thing": -3.7409387588500973,
+            "They felt they might be on to a god thing": -3.8832437458038327,
+            "They felt they might be on to a goad thing": -3.8998951187133786,
+            "They felt they might be on to a wood thing": -4.002419998168945,
+            "They felt they might be on to a guyed thing": -4.077987609863281,
+            "They felt they might be on to a gird thing": -4.0930826892852785,
+            "They felt they might be on to a gored thing": -4.11133681678772,
+            "They felt they might be on to a goodes thing": -4.173900451660156,
+            "They felt they might be on to a should thing": -4.196822134017944
+        },
+        "thing": {
+            "They felt they might be on to a good thawing": -3.6878395557403563,
+            "They felt they might be on to a good ting": -3.696661260604858,
+            "They felt they might be on to a good thong": -3.7727920398712156,
+            "They felt they might be on to a good zing": -3.8363224029541017,
+            "They felt they might be on to a good ring": -3.8631008682250974,
+            "They felt they might be on to a good thin": -3.864946937561035,
+            "They felt they might be on to a good think": -3.904018068313598,
+            "They felt they might be on to a good ping": -3.915000036239624,
+            "They felt they might be on to a good sing": -3.9191518821716302,
+            "They felt they might be on to a good ding": -3.9361119232177733
+        }
+    },
+    {
+        "id": 245,
+        "I think it was tough for my daughter": "Original sentence",
+        "think": {
+            "I things it was tough for my daughter": -3.945753183364868,
+            "I cinque it was tough for my daughter": -3.9494220218658445,
+            "I thing it was tough for my daughter": -4.030947875976563,
+            "I kink it was tough for my daughter": -4.058146503448486,
+            "I thank it was tough for my daughter": -4.18086838722229,
+            "I chink it was tough for my daughter": -4.188005657196045,
+            "I mink it was tough for my daughter": -4.24947957611084,
+            "I jink it was tough for my daughter": -4.377841365814208,
+            "I ink it was tough for my daughter": -4.431300163269043,
+            "I sink it was tough for my daughter": -4.559803482055663
+        },
+        "tough": {
+            "I think it was rough for my daughter": -3.466022943496704,
+            "I think it was ruff for my daughter": -3.598909496307373,
+            "I think it was tuck for my daughter": -3.609182525634765,
+            "I think it was tuft for my daughter": -3.6540385723114013,
+            "I think it was tiff for my daughter": -3.703549535751342,
+            "I think it was tush for my daughter": -3.7317831573486324,
+            "I think it was toughed for my daughter": -3.763899230957031,
+            "I think it was tonne for my daughter": -3.7832216148376463,
+            "I think it was sough for my daughter": -3.81654204750061,
+            "I think it was toff for my daughter": -3.8404839878082275
+        },
+        "daughter": {
+            "I think it was tough for my dauber": -3.398038526535034,
+            "I think it was tough for my porta": -3.617775197982788,
+            "I think it was tough for my aorta": -3.6586229324340818,
+            "I think it was tough for my doubter": -3.662343160629272,
+            "I think it was tough for my dora": -3.7558910598754878,
+            "I think it was tough for my porter": -3.757295413970947,
+            "I think it was tough for my water": -3.7966453399658198,
+            "I think it was tough for my data": -3.8140997676849366,
+            "I think it was tough for my forter": -3.821856157302856,
+            "I think it was tough for my dater": -3.842240932464599
+        }
+    },
+    {
+        "id": 246,
+        "I just wasn't sure whether he would be proud": "Original sentence",
+        "sure": {
+            "I just wasn't shew whether he would be proud": -3.9318880558013913,
+            "I just wasn't shear whether he would be proud": -4.075458129882812,
+            "I just wasn't show whether he would be proud": -4.128640222549438,
+            "I just wasn't shea whether he would be proud": -4.1305398311614985,
+            "I just wasn't moor whether he would be proud": -4.2413555393219,
+            "I just wasn't shy whether he would be proud": -4.242974903106689,
+            "I just wasn't she whether he would be proud": -4.255685985565186,
+            "I just wasn't dour whether he would be proud": -4.2692037868499755,
+            "I just wasn't poor whether he would be proud": -4.324785911560058,
+            "I just wasn't shoo whether he would be proud": -4.409312309265136
+        },
+        "proud": {
+            "I just wasn't sure whether he would be ploughed": -3.2049345512390137,
+            "I just wasn't sure whether he would be pried": -3.4193656253814693,
+            "I just wasn't sure whether he would be prout": -3.4582300186157227,
+            "I just wasn't sure whether he would be crowd": -3.5108444042205806,
+            "I just wasn't sure whether he would be prude": -3.519758916854858,
+            "I just wasn't sure whether he would be preyed": -3.5617122936248777,
+            "I just wasn't sure whether he would be browed": -3.563358926773071,
+            "I just wasn't sure whether he would be prows": -3.568947565078735,
+            "I just wasn't sure whether he would be pride": -3.673961906433105,
+            "I just wasn't sure whether he would be prayed": -3.6940631198883054
+        }
+    },
+    {
+        "id": 247,
+        "I hardly saw anyone from beginning to end": "Original sentence",
+        "hardly": {
+            "I hartly saw anyone from beginning to end": -4.147979784011841,
+            "I hartley saw anyone from beginning to end": -4.266091966629028,
+            "I heartly saw anyone from beginning to end": -4.304611873626708,
+            "I hardy saw anyone from beginning to end": -4.453337989807128,
+            "I headly saw anyone from beginning to end": -4.469602968215942,
+            "I hardley saw anyone from beginning to end": -4.55748974609375,
+            "I hardily saw anyone from beginning to end": -4.644185543060302,
+            "I harley saw anyone from beginning to end": -4.654513488769531,
+            "I hadlee saw anyone from beginning to end": -4.708786218643188,
+            "I headlee saw anyone from beginning to end": -4.773659994125366
+        },
+        "saw": {
+            "I hardly bore anyone from beginning to end": -4.007289974212647,
+            "I hardly thaw anyone from beginning to end": -4.087757221221923,
+            "I hardly snore anyone from beginning to end": -4.1327476406097405,
+            "I hardly sue anyone from beginning to end": -4.200880500793457,
+            "I hardly seer anyone from beginning to end": -4.2050450325012205,
+            "I hardly source anyone from beginning to end": -4.259707975387573,
+            "I hardly awe anyone from beginning to end": -4.294968309402466,
+            "I hardly slaw anyone from beginning to end": -4.315658388137817,
+            "I hardly boar anyone from beginning to end": -4.356761924743652,
+            "I hardly saws anyone from beginning to end": -4.357533159255982
+        },
+        "beginning": {
+            "I hardly saw anyone from beginings to end": -4.35233507156372,
+            "I hardly saw anyone from beginnings to end": -4.638271856307983,
+            "I hardly saw anyone from bargaining to end": -4.7875855445861815
+        },
+        "end": {
+            "I hardly saw anyone from beginning to endow": -4.540607738494873,
+            "I hardly saw anyone from beginning to genned": -4.582720518112182,
+            "I hardly saw anyone from beginning to enow": -4.818988275527953,
+            "I hardly saw anyone from beginning to wend": -4.831023931503295,
+            "I hardly saw anyone from beginning to rende": -4.8472765502929684,
+            "I hardly saw anyone from beginning to and": -4.865482521057128,
+            "I hardly saw anyone from beginning to kenned": -4.89220323562622,
+            "I hardly saw anyone from beginning to inned": -4.897150018692017,
+            "I hardly saw anyone from beginning to enc": -4.937727108001709,
+            "I hardly saw anyone from beginning to ebbed": -4.9380679626464845
+        }
+    },
+    {
+        "id": 248,
+        "I wish I could go back there": "Original sentence",
+        "wish": {
+            "I which I could go back there": -4.026994235992431,
+            "I whiz I could go back there": -4.051089962005616,
+            "I pish I could go back there": -4.059990701675415,
+            "I shish I could go back there": -4.110646577835083,
+            "I swish I could go back there": -4.170162343978881,
+            "I will I could go back there": -4.207516618728638,
+            "I witch I could go back there": -4.211233432769775,
+            "I whin I could go back there": -4.228104175567626,
+            "I wig I could go back there": -4.2609116687774655,
+            "I whig I could go back there": -4.2715811386108395
+        }
+    },
+    {
+        "id": 249,
+        "A man began to leave a message": "Original sentence",
+        "man": {
+            "A fan began to leave a message": -3.9289449481964107,
+            "A van began to leave a message": -4.288107786178588,
+            "A mine began to leave a message": -4.403672552108764,
+            "A mad began to leave a message": -4.417315280914306,
+            "A madge began to leave a message": -4.481264617919921,
+            "A map began to leave a message": -4.49849274635315,
+            "A can began to leave a message": -4.502704174041748,
+            "A match began to leave a message": -4.514768781661987,
+            "A mass began to leave a message": -4.515436008453369,
+            "A ban began to leave a message": -4.528388584136962
+        },
+        "began": {
+            "A man begad to leave a message": -4.249368953704834,
+            "A man begone to leave a message": -4.258031860351562,
+            "A man biggin to leave a message": -4.267300371170044,
+            "A man begans to leave a message": -4.502096509933471,
+            "A man begat to leave a message": -4.504340990066528,
+            "A man begand to leave a message": -4.75893233680725
+        },
+        "leave": {
+            "A man began to weave a message": -4.079100324630737,
+            "A man began to live a message": -4.162923973083496,
+            "A man began to lead a message": -4.212927965164185,
+            "A man began to heave a message": -4.226964378356933,
+            "A man began to lave a message": -4.227063625335693,
+            "A man began to reeve a message": -4.310600378036499,
+            "A man began to leech a message": -4.366133487701416,
+            "A man began to cleave a message": -4.366709899902343,
+            "A man began to leak a message": -4.401477979660034,
+            "A man began to vive a message": -4.408952302932739
+        },
+        "message": {
+            "A man began to leave a messes": -4.22175850868225,
+            "A man began to leave a messuage": -4.3396378517150875,
+            "A man began to leave a messing": -4.790401914596558
+        }
+    },
+    {
+        "id": 250,
+        "I'm sure you must have plenty to occupy yourself with": "Original sentence",
+        "sure": {
+            "I'm shew you must have plenty to occupy yourself with": -3.54365553855896,
+            "I'm poor you must have plenty to occupy yourself with": -3.6235545749664304,
+            "I'm shy you must have plenty to occupy yourself with": -3.800604297637939,
+            "I'm dour you must have plenty to occupy yourself with": -3.849313335418701,
+            "I'm moor you must have plenty to occupy yourself with": -3.856563354492187,
+            "I'm shea you must have plenty to occupy yourself with": -3.870537885665893,
+            "I'm shay you must have plenty to occupy yourself with": -3.8743883037567137,
+            "I'm shear you must have plenty to occupy yourself with": -3.875505622863769,
+            "I'm show you must have plenty to occupy yourself with": -3.9033299922943114,
+            "I'm shire you must have plenty to occupy yourself with": -3.908529409408569
+        },
+        "plenty": {
+            "I'm sure you must have plentie to occupy yourself with": -3.840714883804321,
+            "I'm sure you must have plante to occupy yourself with": -3.878253650665283
+        },
+        "occupy": {
+            "I'm sure you must have plenty to oculi yourself with": -3.8320119380950923,
+            "I'm sure you must have plenty to occupier yourself with": -3.8688513755798337
+        }
+    },
+    {
+        "id": 251,
+        "This is not your fault or theirs": "Original sentence",
+        "fault": {
+            "This is not your forked or theirs": -4.006854158401489,
+            "This is not your faltes or theirs": -4.097417068481445,
+            "This is not your fawley or theirs": -4.144688129425049,
+            "This is not your feldt or theirs": -4.177547386169433,
+            "This is not your fort or theirs": -4.3704419002532955,
+            "This is not your vault or theirs": -4.372504949569702,
+            "This is not your malt or theirs": -4.397833654403686,
+            "This is not your false or theirs": -4.406347572326659,
+            "This is not your falter or theirs": -4.456328773498535,
+            "This is not your gault or theirs": -4.466839956283569
+        },
+        "theirs": {
+            "This is not your fault or their": -3.7258458118438718,
+            "This is not your fault or tears": -3.7776962757110595,
+            "This is not your fault or there": -3.82545189666748,
+            "This is not your fault or wares": -3.8422047252655025,
+            "This is not your fault or fairs": -3.888448135375976,
+            "This is not your fault or those": -3.905681665420532,
+            "This is not your fault or tares": -3.9086648941040036,
+            "This is not your fault or pears": -4.0557005500793455,
+            "This is not your fault or these": -4.058221685409546,
+            "This is not your fault or cares": -4.059264305114746
+        }
+    },
+    {
+        "id": 252,
+        "All is not happy in their marriage": "Original sentence",
+        "happy": {
+            "All is not sappy in their marriage": -3.973563491821289,
+            "All is not chappie in their marriage": -4.249830595016479,
+            "All is not hippy in their marriage": -4.2808699111938475,
+            "All is not hippie in their marriage": -4.296715400695801,
+            "All is not harry in their marriage": -4.3456088676452636,
+            "All is not harpy in their marriage": -4.4151892013549805,
+            "All is not happed in their marriage": -4.448634004592895,
+            "All is not hap in their marriage": -4.471983337402343,
+            "All is not chappy in their marriage": -4.508605876922608,
+            "All is not haply in their marriage": -4.615815084457397
+        },
+        "marriage": {
+            "All is not happy in their carriage": -4.152256034851074,
+            "All is not happy in their marries": -4.1586688690185545,
+            "All is not happy in their manage": -4.346354446411132,
+            "All is not happy in their maris": -4.364607612609863,
+            "All is not happy in their married": -4.498605751037597,
+            "All is not happy in their marris": -4.543713514328003,
+            "All is not happy in their marille": -4.554514791488647,
+            "All is not happy in their marish": -4.622500991821289,
+            "All is not happy in their marill": -4.638461639404297,
+            "All is not happy in their arriage": -5.039040040969848
+        }
+    },
+    {
+        "id": 253,
+        "He couldn't sort himself out of a paper bag": "Original sentence",
+        "sort": {
+            "He couldn't soot himself out of a paper bag": -3.0852472438812253,
+            "He couldn't saw himself out of a paper bag": -3.2543119430541987,
+            "He couldn't set himself out of a paper bag": -3.292993743896484,
+            "He couldn't saws himself out of a paper bag": -3.29381531715393,
+            "He couldn't snort himself out of a paper bag": -3.319105854034424,
+            "He couldn't sawn himself out of a paper bag": -3.399679536819458,
+            "He couldn't taut himself out of a paper bag": -3.4114202919006344,
+            "He couldn't soard himself out of a paper bag": -3.421331605911255,
+            "He couldn't suit himself out of a paper bag": -3.4691077442169185,
+            "He couldn't sawed himself out of a paper bag": -3.471034345626831
+        },
+        "paper": {
+            "He couldn't sort himself out of a vapour bag": -3.667689695358276,
+            "He couldn't sort himself out of a gaper bag": -3.7669429492950437,
+            "He couldn't sort himself out of a peeper bag": -3.7683175086975096,
+            "He couldn't sort himself out of a pauper bag": -3.836432054519653,
+            "He couldn't sort himself out of a papal bag": -3.853735542297363,
+            "He couldn't sort himself out of a popper bag": -3.854873466491699,
+            "He couldn't sort himself out of a taper bag": -3.8580692291259764,
+            "He couldn't sort himself out of a caper bag": -3.88518798828125,
+            "He couldn't sort himself out of a pepper bag": -3.9166537303924556,
+            "He couldn't sort himself out of a shaper bag": -3.9238734531402586
+        },
+        "bag": {
+            "He couldn't sort himself out of a paper shag": -3.5095679092407224,
+            "He couldn't sort himself out of a paper fag": -3.5175764560699463,
+            "He couldn't sort himself out of a paper back": -3.6093740386962887,
+            "He couldn't sort himself out of a paper bagger": -3.6713158130645747,
+            "He couldn't sort himself out of a paper baggy": -3.6858762264251705,
+            "He couldn't sort himself out of a paper berg": -3.705869846343994,
+            "He couldn't sort himself out of a paper hag": -3.748697443008423,
+            "He couldn't sort himself out of a paper bache": -3.7497554340362544,
+            "He couldn't sort himself out of a paper nag": -3.767900316238403,
+            "He couldn't sort himself out of a paper ban": -3.7818951492309565
+        }
+    },
+    {
+        "id": 254,
+        "You will never guess what I have just seen": "Original sentence",
+        "guess": {
+            "You will never get what I have just seen": -3.321419979095459,
+            "You will never mess what I have just seen": -3.807119024276733,
+            "You will never gas what I have just seen": -3.8380604743957516,
+            "You will never guessd what I have just seen": -3.8423424243926996,
+            "You will never tess what I have just seen": -3.8543321514129634,
+            "You will never ness what I have just seen": -3.892401350021362,
+            "You will never fesse what I have just seen": -3.9949737319946284,
+            "You will never gorse what I have just seen": -4.022795366287231,
+            "You will never geese what I have just seen": -4.023049318313599,
+            "You will never jess what I have just seen": -4.032948871612549
+        },
+        "seen": {
+            "You will never guess what I have just been": -3.154976976394653,
+            "You will never guess what I have just sewn": -3.24299871635437,
+            "You will never guess what I have just sown": -3.278085634231567,
+            "You will never guess what I have just seethe": -3.4960679149627687,
+            "You will never guess what I have just ween": -3.562281850814819,
+            "You will never guess what I have just sawn": -3.5669311885833737,
+            "You will never guess what I have just mean": -3.5704387550354,
+            "You will never guess what I have just sheen": -3.5814023876190184,
+            "You will never guess what I have just se": -3.5872091979980465,
+            "You will never guess what I have just mien": -3.5963929538726807
+        }
+    },
+    {
+        "id": 255,
+        "The French accent of this list is no coincidence": "Original sentence",
+        "French": {
+            "The trench accent of this list is no coincidence": -4.096450881958008,
+            "The drench accent of this list is no coincidence": -4.109265182495117,
+            "The brench accent of this list is no coincidence": -4.162322294235229,
+            "The frenchy accent of this list is no coincidence": -4.300183677673339,
+            "The friend accent of this list is no coincidence": -4.326153875350952,
+            "The flench accent of this list is no coincidence": -4.352201414108276,
+            "The wrench accent of this list is no coincidence": -4.683617687225341,
+            "The frencher accent of this list is no coincidence": -4.728631401062011
+        },
+        "accent": {
+            "The French absentment of this list is no coincidence": -4.458831615447997,
+            "The French absent of this list is no coincidence": -4.484884281158447
+        },
+        "list": {
+            "The French accent of this lisp is no coincidence": -3.820706558227539,
+            "The French accent of this lilt is no coincidence": -3.9619480609893793,
+            "The French accent of this lift is no coincidence": -3.982901859283447,
+            "The French accent of this listen is no coincidence": -4.1043568801879875,
+            "The French accent of this cyst is no coincidence": -4.13555850982666,
+            "The French accent of this last is no coincidence": -4.171184638977051,
+            "The French accent of this illest is no coincidence": -4.191682386398315,
+            "The French accent of this lint is no coincidence": -4.200049579620361,
+            "The French accent of this lisped is no coincidence": -4.210440301895141,
+            "The French accent of this schist is no coincidence": -4.314349504470825
+        },
+        "coincidence": {
+            "The French accent of this list is no coincident": -3.794733047485351,
+            "The French accent of this list is no coincidents": -4.589924621582031,
+            "The French accent of this list is no coincidency": -4.675106811523437
+        }
+    },
+    {
+        "id": 256,
+        "Go to bed now father Grace said": "Original sentence",
+        "bed": {
+            "Go to bawd now father Grace said": -5.389927124023438,
+            "Go to bedeau now father Grace said": -5.634717559814453,
+            "Go to zed now father Grace said": -5.811466800689697,
+            "Go to bide now father Grace said": -5.830650119781494,
+            "Go to boughed now father Grace said": -5.8446779098510735,
+            "Go to bade now father Grace said": -5.86141653060913,
+            "Go to bid now father Grace said": -5.872372596740722,
+            "Go to read now father Grace said": -5.8894283561706535,
+            "Go to baaed now father Grace said": -5.889961627960204,
+            "Go to belle now father Grace said": -5.91956978225708
+        },
+        "said": {
+            "Go to bed now father Grace sired": -5.181687831878661,
+            "Go to bed now father Grace sowed": -5.25800414276123,
+            "Go to bed now father Grace would": -5.258232992172241,
+            "Go to bed now father Grace sewed": -5.294757320404052,
+            "Go to bed now father Grace soard": -5.319312700271606,
+            "Go to bed now father Grace sad": -5.32755241203308,
+            "Go to bed now father Grace saids": -5.425587978363037,
+            "Go to bed now father Grace sudd": -5.4259930934906,
+            "Go to bed now father Grace seared": -5.431127498626709,
+            "Go to bed now father Grace had": -5.464051397323608
+        }
+    },
+    {
+        "id": 257,
+        "Unfortunately this conclusion didn't make her feel any better": "Original sentence",
+        "Unfortunately": {
+            "infortunately this conclusion didn't make her feel any better": -3.9585533695220945
+        },
+        "conclusion": {
+            "infortunately this conclusion didn't make her feel any better": -3.9585533695220945
+        },
+        "feel": {
+            "Unfortunately this conclusion didn't make her file any better": -3.99993399810791,
+            "Unfortunately this conclusion didn't make her meal any better": -4.10742046546936,
+            "Unfortunately this conclusion didn't make her deal any better": -4.116190692901611,
+            "Unfortunately this conclusion didn't make her veal any better": -4.138467216491699,
+            "Unfortunately this conclusion didn't make her kneel any better": -4.194937871932983,
+            "Unfortunately this conclusion didn't make her seal any better": -4.237424676895141,
+            "Unfortunately this conclusion didn't make her keel any better": -4.2378441390991215,
+            "Unfortunately this conclusion didn't make her feet any better": -4.2520812911987305,
+            "Unfortunately this conclusion didn't make her reel any better": -4.271134984970092,
+            "Unfortunately this conclusion didn't make her foal any better": -4.280979013442993
+        },
+        "better": {
+            "Unfortunately this conclusion didn't make her feel any abettor": -4.01503849029541,
+            "Unfortunately this conclusion didn't make her feel any wetter": -4.022852531433105,
+            "Unfortunately this conclusion didn't make her feel any betters": -4.165228357315063,
+            "Unfortunately this conclusion didn't make her feel any bettors": -4.210359230041504,
+            "Unfortunately this conclusion didn't make her feel any beater": -4.2877494297027585,
+            "Unfortunately this conclusion didn't make her feel any besser": -4.2904474201202385,
+            "Unfortunately this conclusion didn't make her feel any bettered": -4.321121797561645,
+            "Unfortunately this conclusion didn't make her feel any fetter": -4.340637674331664,
+            "Unfortunately this conclusion didn't make her feel any betty": -4.3498844814300535,
+            "Unfortunately this conclusion didn't make her feel any bitter": -4.35702148246765
+        }
+    },
+    {
+        "id": 258,
+        "Perhaps he wrote that is enough for a lifetime": "Original sentence",
+        "wrote": {
+            "Perhaps he rowed that is enough for a lifetime": -3.9760379314422605,
+            "Perhaps he rolle that is enough for a lifetime": -4.054760019302368,
+            "Perhaps he tote that is enough for a lifetime": -4.139843193054198,
+            "Perhaps he dote that is enough for a lifetime": -4.177578044891358,
+            "Perhaps he rose that is enough for a lifetime": -4.270476423263549,
+            "Perhaps he cote that is enough for a lifetime": -4.315717565536499,
+            "Perhaps he wroth that is enough for a lifetime": -4.3190921020507815,
+            "Perhaps he mote that is enough for a lifetime": -4.325320863723755,
+            "Perhaps he roes that is enough for a lifetime": -4.350726591110229,
+            "Perhaps he rut that is enough for a lifetime": -4.352076560974121
+        },
+        "lifetime": {
+            "Perhaps he rowed that is enough for a lifetime": -3.9760379314422605,
+            "Perhaps he rolle that is enough for a lifetime": -4.054760019302368,
+            "Perhaps he tote that is enough for a lifetime": -4.139843193054198,
+            "Perhaps he dote that is enough for a lifetime": -4.177578044891358,
+            "Perhaps he rose that is enough for a lifetime": -4.270476423263549,
+            "Perhaps he cote that is enough for a lifetime": -4.315717565536499,
+            "Perhaps he wroth that is enough for a lifetime": -4.3190921020507815,
+            "Perhaps he mote that is enough for a lifetime": -4.325320863723755,
+            "Perhaps he roes that is enough for a lifetime": -4.350726591110229,
+            "Perhaps he rut that is enough for a lifetime": -4.352076560974121
+        }
+    },
+    {
+        "id": 259,
+        "There was no hint of apprehension in her tone": "Original sentence",
+        "hint": {
+            "There was no hissed of apprehension in her tone": -3.5979314804077145,
+            "There was no dint of apprehension in her tone": -3.608871488571167,
+            "There was no hilt of apprehension in her tone": -3.749028486251831,
+            "There was no hit of apprehension in her tone": -3.9211859474182127,
+            "There was no hintz of apprehension in her tone": -3.925244451522827,
+            "There was no lint of apprehension in her tone": -3.9943946361541744,
+            "There was no hitched of apprehension in her tone": -4.021663133621216,
+            "There was no tint of apprehension in her tone": -4.114539810180664,
+            "There was no vint of apprehension in her tone": -4.133635511398315,
+            "There was no mint of apprehension in her tone": -4.170295209884643
+        },
+        "apprehension": {
+            "There was no hissed of apprehension in her tone": -3.5979314804077145,
+            "There was no dint of apprehension in her tone": -3.608871488571167,
+            "There was no hilt of apprehension in her tone": -3.749028486251831,
+            "There was no hit of apprehension in her tone": -3.9211859474182127,
+            "There was no hintz of apprehension in her tone": -3.925244451522827,
+            "There was no lint of apprehension in her tone": -3.9943946361541744,
+            "There was no hitched of apprehension in her tone": -4.021663133621216,
+            "There was no tint of apprehension in her tone": -4.114539810180664,
+            "There was no vint of apprehension in her tone": -4.133635511398315,
+            "There was no mint of apprehension in her tone": -4.170295209884643
+        },
+        "tone": {
+            "There was no hint of apprehension in her tome": -3.290457948684692,
+            "There was no hint of apprehension in her phone": -3.420490877151489,
+            "There was no hint of apprehension in her turn": -3.5137601051330565,
+            "There was no hint of apprehension in her town": -3.5513219661712645,
+            "There was no hint of apprehension in her tote": -3.5765453014373776,
+            "There was no hint of apprehension in her toad": -3.5806312541961667,
+            "There was no hint of apprehension in her none": -3.585702053070068,
+            "There was no hint of apprehension in her bone": -3.593554721832275,
+            "There was no hint of apprehension in her sewn": -3.5959037303924557,
+            "There was no hint of apprehension in her tan": -3.6076558876037597
+        }
+    },
+    {
+        "id": 260,
+        "Then he went to his own room": "Original sentence",
+        "went": {
+            "Then he wept to his own room": -3.7354132671356197,
+            "Then he wens to his own room": -3.8871609077453613,
+            "Then he wend to his own room": -3.8942186355590818,
+            "Then he sent to his own room": -3.9220459556579588,
+            "Then he wentes to his own room": -4.001030015945434,
+            "Then he wenched to his own room": -4.058941841125488,
+            "Then he wen to his own room": -4.1514075756072994,
+            "Then he leant to his own room": -4.1613662261962885,
+            "Then he whens to his own room": -4.184452425003051,
+            "Then he gwent to his own room": -4.2111509323120115
+        },
+        "room": {
+            "Then he went to his own loom": -3.478358699798584,
+            "Then he went to his own roof": -3.5040738792419432,
+            "Then he went to his own rhyme": -3.5982844924926756,
+            "Then he went to his own tomb": -3.6256274852752686,
+            "Then he went to his own rood": -3.684823667526245,
+            "Then he went to his own ruse": -3.6974582729339596,
+            "Then he went to his own rule": -3.735277387619018,
+            "Then he went to his own rumour": -3.7767938613891596,
+            "Then he went to his own doom": -3.8039393196105955,
+            "Then he went to his own route": -3.8047776718139645
+        }
+    },
+    {
+        "id": 261,
+        "You can place him just where you want him": "Original sentence",
+        "place": {
+            "You can play him just where you want him": -3.353320264816284,
+            "You can playes him just where you want him": -3.4774534225463865,
+            "You can pace him just where you want him": -3.5666237697601315,
+            "You can plane him just where you want him": -3.632282136917114,
+            "You can played him just where you want him": -3.650787673950195,
+            "You can plate him just where you want him": -3.6872409934997554,
+            "You can player him just where you want him": -3.814450597763061,
+            "You can plays him just where you want him": -3.828225469589233,
+            "You can plaine him just where you want him": -3.86324503326416,
+            "You can plague him just where you want him": -3.9394410362243653
+        },
+        "want": {
+            "You can place him just where you wanna him": -3.7989939689636225,
+            "You can place him just where you waner him": -3.8400199413299556,
+            "You can place him just where you wanner him": -3.847615575790405,
+            "You can place him just where you waft him": -3.892631887435913,
+            "You can place him just where you wan him": -3.9419805526733396,
+            "You can place him just where you whopped him": -4.000090553283691,
+            "You can place him just where you wot him": -4.057679176330566,
+            "You can place him just where you washed him": -4.0702657241821285,
+            "You can place him just where you watched him": -4.096641122817993,
+            "You can place him just where you went him": -4.212823059082031
+        }
+    },
+    {
+        "id": 262,
+        "We don't want to hear about them": "Original sentence",
+        "want": {
+            "We don't wan to hear about them": -3.1855309963226315,
+            "We don't what to hear about them": -3.3430233001708984,
+            "We don't wanner to hear about them": -3.3891077518463133,
+            "We don't waner to hear about them": -3.4375828266143795,
+            "We don't wot to hear about them": -3.4612549781799316,
+            "We don't wanna to hear about them": -3.5110164165496824,
+            "We don't wont to hear about them": -3.706387983322143,
+            "We don't went to hear about them": -3.710689403533935,
+            "We don't waft to hear about them": -3.77727410697937,
+            "We don't watched to hear about them": -3.953799736022949
+        },
+        "hear": {
+            "We don't want to here about them": -3.3753134841918944,
+            "We don't want to hare about them": -3.380786247253418,
+            "We don't want to hoy about them": -3.4249604988098143,
+            "We don't want to jeer about them": -3.460210847854614,
+            "We don't want to her about them": -3.4621924533843993,
+            "We don't want to hoe about them": -3.480455379486084,
+            "We don't want to fear about them": -3.4910617160797117,
+            "We don't want to veer about them": -3.504939733505249,
+            "We don't want to hey about them": -3.524645090103149,
+            "We don't want to cheer about them": -3.5696530761718748
+        }
+    },
+    {
+        "id": 263,
+        "Site supervision should be both systematic and comprehensive": "Original sentence",
+        "Site": {
+            "eyesight supervision should be both systematic and comprehensive": -4.419619512557983,
+            "sighs supervision should be both systematic and comprehensive": -4.533393421173095,
+            "cites supervision should be both systematic and comprehensive": -4.569308185577392,
+            "scythe supervision should be both systematic and comprehensive": -4.705581825256347,
+            "soot supervision should be both systematic and comprehensive": -4.715992198944091,
+            "sought supervision should be both systematic and comprehensive": -4.773540775299072,
+            "kite supervision should be both systematic and comprehensive": -4.789039636611938,
+            "rheydt supervision should be both systematic and comprehensive": -4.791825719833374,
+            "side supervision should be both systematic and comprehensive": -4.7962696170806876,
+            "sights supervision should be both systematic and comprehensive": -4.805437755584716
+        },
+        "supervision": {
+            "Site coopervision should be both systematic and comprehensive": -4.49726595878601,
+            "Site snoopervision should be both systematic and comprehensive": -4.5651805877685545
+        },
+        "systematic": {
+            "Site coopervision should be both systematic and comprehensive": -4.49726595878601,
+            "Site snoopervision should be both systematic and comprehensive": -4.5651805877685545
+        },
+        "comprehensive": {
+            "Site coopervision should be both systematic and comprehensive": -4.49726595878601,
+            "Site snoopervision should be both systematic and comprehensive": -4.5651805877685545
+        }
+    },
+    {
+        "id": 264,
+        "That is the nature of creative writing to me": "Original sentence",
+        "nature": {
+            "That is the namer of creative writing to me": -3.929756139755249,
+            "That is the nurture of creative writing to me": -4.0709789276123045,
+            "That is the nicher of creative writing to me": -4.133199071884155,
+            "That is the notcher of creative writing to me": -4.253062105178833,
+            "That is the nailer of creative writing to me": -4.334805110931396,
+            "That is the nacre of creative writing to me": -4.337414609909057,
+            "That is the natured of creative writing to me": -4.409969715118408,
+            "That is the nazer of creative writing to me": -4.4155335636138915,
+            "That is the neighbour of creative writing to me": -4.541919496536254
+        },
+        "creative": {
+            "That is the nature of creating writing to me": -3.859119457244873,
+            "That is the nature of created writing to me": -4.162203073501587,
+            "That is the nature of crative writing to me": -4.5313308238983145
+        },
+        "writing": {
+            "That is the nature of creative rutting to me": -3.472463186264038,
+            "That is the nature of creative rhyming to me": -3.706032215118408,
+            "That is the nature of creative fighting to me": -3.7774749488830563,
+            "That is the nature of creative riding to me": -3.833094730377197,
+            "That is the nature of creative ratting to me": -3.840193897247314,
+            "That is the nature of creative lighting to me": -3.8786259307861326,
+            "That is the nature of creative retting to me": -3.91346640586853,
+            "That is the nature of creative whiting to me": -3.9300974445343013,
+            "That is the nature of creative siting to me": -3.9362559528350825,
+            "That is the nature of creative knighting to me": -3.9818078575134277
+        }
+    },
+    {
+        "id": 265,
+        "The following year he was also made president": "Original sentence",
+        "following": {
+            "The furloughing year he was also made president": -4.046913385391235,
+            "The furlowing year he was also made president": -4.334469032287597,
+            "The followings year he was also made president": -4.3756768531799315,
+            "The fallowing year he was also made president": -4.47773696899414,
+            "The holloaing year he was also made president": -4.535515340805054,
+            "The wallowing year he was also made president": -4.793712610244751,
+            "The fellowing year he was also made president": -4.835803369522095,
+            "The hollowing year he was also made president": -4.8634390678405754,
+            "The flowing year he was also made president": -5.293545532226562
+        },
+        "year": {
+            "The following were he was also made president": -4.263375144958496,
+            "The following whirr he was also made president": -4.3510393676757815,
+            "The following yah he was also made president": -4.3945295753479,
+            "The following yore he was also made president": -4.494756994247436,
+            "The following myrrh he was also made president": -4.498378297805786,
+            "The following you he was also made president": -4.554387954711913,
+            "The following yeares he was also made president": -4.57983511352539,
+            "The following sir he was also made president": -4.599657258987426,
+            "The following purr he was also made president": -4.628857791900634,
+            "The following ugh he was also made president": -4.629384311676025
+        },
+        "president": {
+            "The following year he was also made resident": -4.22573504447937,
+            "The following year he was also made presidentes": -4.345248508453369,
+            "The following year he was also made presidence": -4.373603832244872,
+            "The following year he was also made precedent": -4.52431583404541
+        }
+    },
+    {
+        "id": 266,
+        "His voice was low and breaking with emotion": "Original sentence",
+        "voice": {
+            "His voile was low and breaking with emotion": -4.368787586212157,
+            "His verse was low and breaking with emotion": -4.557900568008423,
+            "His voiceed was low and breaking with emotion": -4.639271211624145,
+            "His joyce was low and breaking with emotion": -4.778396820068359,
+            "His void was low and breaking with emotion": -5.046125173568726,
+            "His neuss was low and breaking with emotion": -5.154399181365966,
+            "His vice was low and breaking with emotion": -5.156481838226318,
+            "His vis was low and breaking with emotion": -5.259571559906006,
+            "His choice was low and breaking with emotion": -5.263669197082519
+        },
+        "low": {
+            "His voice was slow and breaking with emotion": -3.8422931995391845,
+            "His voice was roe and breaking with emotion": -4.1298080329895015,
+            "His voice was leer and breaking with emotion": -4.164516164779663,
+            "His voice was lope and breaking with emotion": -4.16802110671997,
+            "His voice was loath and breaking with emotion": -4.217656755447387,
+            "His voice was loam and breaking with emotion": -4.221018648147583,
+            "His voice was lareau and breaking with emotion": -4.238402891159057,
+            "His voice was doe and breaking with emotion": -4.263992906570435,
+            "His voice was woe and breaking with emotion": -4.277735702514648,
+            "His voice was lone and breaking with emotion": -4.305266746520996
+        },
+        "breaking": {
+            "His voice was low and bracing with emotion": -3.4042434616088864,
+            "His voice was low and braying with emotion": -3.6226201057434078,
+            "His voice was low and raking with emotion": -3.6870858669281,
+            "His voice was low and bricking with emotion": -3.750807476043701,
+            "His voice was low and braiding with emotion": -3.765278230667114,
+            "His voice was low and bracking with emotion": -3.8077278003692627,
+            "His voice was low and brazing with emotion": -3.808364252090454,
+            "His voice was low and braining with emotion": -3.871740919113159,
+            "His voice was low and brooking with emotion": -3.933245655059814,
+            "His voice was low and broking with emotion": -4.086610303878784
+        },
+        "emotion": {
+            "His voice was low and breaking with emotioned": -4.227995115280152,
+            "His voice was low and breaking with immersion": -4.229423570632934,
+            "His voice was low and breaking with emission": -4.304941841125488,
+            "His voice was low and breaking with motion": -4.355241680145263,
+            "His voice was low and breaking with remotion": -4.68031122970581
+        }
+    },
+    {
+        "id": 267,
+        "But it's no use running away from it": "Original sentence",
+        "use": {
+            "But it's no jews running away from it": -3.5186710796356198,
+            "But it's no ooze running away from it": -3.587379625320434,
+            "But it's no youth running away from it": -3.6260815811157223,
+            "But it's no ruse running away from it": -3.632322212219238,
+            "But it's no woos running away from it": -3.633344507217407,
+            "But it's no you running away from it": -3.644800498962402,
+            "But it's no zoos running away from it": -3.7133377208709715,
+            "But it's no years running away from it": -3.717510126113891,
+            "But it's no ewers running away from it": -3.725535678863525,
+            "But it's no sues running away from it": -3.793860319137573
+        },
+        "running": {
+            "But it's no use rushing away from it": -3.178718379974365,
+            "But it's no use runnin away from it": -3.1857885360717773,
+            "But it's no use rutting away from it": -3.2601137866973877,
+            "But it's no use rucking away from it": -3.3139446849823,
+            "But it's no use shunning away from it": -3.3923661174774167,
+            "But it's no use dunning away from it": -3.4575564498901366,
+            "But it's no use gunning away from it": -3.472923006057739,
+            "But it's no use punning away from it": -3.4776683139801023,
+            "But it's no use roughening away from it": -3.537208271026611,
+            "But it's no use tunning away from it": -3.5832561779022214
+        },
+        "away": {
+            "But it's no use running way from it": -3.8740534305572507,
+            "But it's no use running awake from it": -3.9973643302917474,
+            "But it's no use running aware from it": -4.086009418487548,
+            "But it's no use running whey from it": -4.111648654937744,
+            "But it's no use running wey from it": -4.255009746551513,
+            "But it's no use running forway from it": -4.275447130203247,
+            "But it's no use running sway from it": -4.2817713737487795,
+            "But it's no use running obey from it": -4.328988061904907,
+            "But it's no use running airway from it": -4.345737648010253,
+            "But it's no use running assay from it": -4.403173583984374
+        }
+    },
+    {
+        "id": 268,
+        "I'm glad to get away from the camp he said": "Original sentence",
+        "glad": {
+            "I'm plaid to get away from the camp he said": -3.762816352844238,
+            "I'm glared to get away from the camp he said": -3.97234091758728,
+            "I'm clad to get away from the camp he said": -4.015013418197632,
+            "I'm glade to get away from the camp he said": -4.034470767974853,
+            "I'm glowed to get away from the camp he said": -4.078985816955567,
+            "I'm glued to get away from the camp he said": -4.159814142227172,
+            "I'm glide to get away from the camp he said": -4.165243295669556,
+            "I'm gladden to get away from the camp he said": -4.167427005767822,
+            "I'm gad to get away from the camp he said": -4.326246747970581,
+            "I'm gladder to get away from the camp he said": -4.373168992996216
+        },
+        "away": {
+            "I'm glad to get airway from the camp he said": -3.999251079559326,
+            "I'm glad to get whey from the camp he said": -4.092137861251831,
+            "I'm glad to get way from the camp he said": -4.144191789627075,
+            "I'm glad to get aware from the camp he said": -4.2016625995635986,
+            "I'm glad to get obey from the camp he said": -4.234736906051635,
+            "I'm glad to get forway from the camp he said": -4.249338388442993,
+            "I'm glad to get allay from the camp he said": -4.258970125198364,
+            "I'm glad to get assay from the camp he said": -4.275800508499145,
+            "I'm glad to get wey from the camp he said": -4.28988037109375,
+            "I'm glad to get qua from the camp he said": -4.343004417419433
+        },
+        "camp": {
+            "I'm glad to get away from the cams he said": -3.455613471984863,
+            "I'm glad to get away from the kemp he said": -3.46343674659729,
+            "I'm glad to get away from the vamp he said": -3.490737224578857,
+            "I'm glad to get away from the cramp he said": -3.5253350105285644,
+            "I'm glad to get away from the damp he said": -3.5605306911468504,
+            "I'm glad to get away from the lamp he said": -3.6008430500030517,
+            "I'm glad to get away from the gamp he said": -3.601501695632934,
+            "I'm glad to get away from the scamp he said": -3.608534845352173,
+            "I'm glad to get away from the cam he said": -3.684297084808349,
+            "I'm glad to get away from the tamp he said": -3.702745904922485
+        },
+        "said": {
+            "I'm glad to get away from the camp he sowed": -3.528684522628784,
+            "I'm glad to get away from the camp he had": -3.559215410232544,
+            "I'm glad to get away from the camp he sewed": -3.5830375690460206,
+            "I'm glad to get away from the camp he side": -3.7065503482818603,
+            "I'm glad to get away from the camp he sad": -3.7230897884368894,
+            "I'm glad to get away from the camp he seared": -3.7252369861602777,
+            "I'm glad to get away from the camp he would": -3.794746892929077,
+            "I'm glad to get away from the camp he sired": -3.7998891830444332,
+            "I'm glad to get away from the camp he sighed": -3.8116919403076173,
+            "I'm glad to get away from the camp he sered": -3.8609280090332025
+        }
+    },
+    {
+        "id": 269,
+        "It isn't her fault he is nasty Nick said": "Original sentence",
+        "fault": {
+            "It isn't her faltes he is nasty Nick said": -4.872679471969604,
+            "It isn't her feldt he is nasty Nick said": -4.88954065132141,
+            "It isn't her vault he is nasty Nick said": -4.895539283752441,
+            "It isn't her gault he is nasty Nick said": -4.9762357940673825,
+            "It isn't her forked he is nasty Nick said": -4.998866516113281,
+            "It isn't her faultier he is nasty Nick said": -5.00297713279724,
+            "It isn't her salt he is nasty Nick said": -5.01628462600708,
+            "It isn't her false he is nasty Nick said": -5.0192421073913565,
+            "It isn't her falls he is nasty Nick said": -5.070132575988769,
+            "It isn't her falter he is nasty Nick said": -5.103392648696899
+        },
+        "nasty": {
+            "It isn't her fault he is nastia Nick said": -3.951918888092041,
+            "It isn't her fault he is nastes Nick said": -4.520298862457275,
+            "It isn't her fault he is nastri Nick said": -4.52734493637085,
+            "It isn't her fault he is vasty Nick said": -4.5462683620452875
+        },
+        "said": {
+            "It isn't her fault he is nasty Nick sighed": -4.210197723388672,
+            "It isn't her fault he is nasty Nick sawed": -4.254060014724731,
+            "It isn't her fault he is nasty Nick sad": -4.29130039024353,
+            "It isn't her fault he is nasty Nick surd": -4.294155693054199,
+            "It isn't her fault he is nasty Nick sudd": -4.299761709213256,
+            "It isn't her fault he is nasty Nick would": -4.313851898193359,
+            "It isn't her fault he is nasty Nick side": -4.322192943572998,
+            "It isn't her fault he is nasty Nick sired": -4.328472375869751,
+            "It isn't her fault he is nasty Nick seared": -4.347594354629517,
+            "It isn't her fault he is nasty Nick had": -4.38406406211853
+        }
+    },
+    {
+        "id": 270,
+        "Of course I've never been able to cook": "Original sentence",
+        "course": {
+            "Of sauce I've never been able to cook": -3.592774272918701,
+            "Of corks I've never been able to cook": -3.638776540756225,
+            "Of cork I've never been able to cook": -3.699840808868408,
+            "Of caulk I've never been able to cook": -3.7870537528991695,
+            "Of cause I've never been able to cook": -3.856794509887695,
+            "Of caughts I've never been able to cook": -3.8639016628265375,
+            "Of gorse I've never been able to cook": -3.884380254745483,
+            "Of corn I've never been able to cook": -3.8846054439544675,
+            "Of calks I've never been able to cook": -3.896555471420288,
+            "Of corsair I've never been able to cook": -3.897174787521362
+        },
+        "able": {
+            "Of course I've never been abe to cook": -3.7939268207550048,
+            "Of course I've never been babel to cook": -3.8136273384094235,
+            "Of course I've never been mable to cook": -3.9737092494964594,
+            "Of course I've never been anal to cook": -3.9901865043640132,
+            "Of course I've never been ale to cook": -4.034925603866577,
+            "Of course I've never been ail to cook": -4.065516090393066,
+            "Of course I've never been table to cook": -4.085556936264038,
+            "Of course I've never been sable to cook": -4.092340841293335,
+            "Of course I've never been fable to cook": -4.09739031791687,
+            "Of course I've never been label to cook": -4.100374555587768
+        },
+        "cook": {
+            "Of course I've never been able to look": -3.0761451263427735,
+            "Of course I've never been able to book": -3.1368681240081786,
+            "Of course I've never been able to kick": -3.1461070861816403,
+            "Of course I've never been able to coke": -3.1825090885162353,
+            "Of course I've never been able to cuckoo": -3.228029632568359,
+            "Of course I've never been able to cork": -3.236790107727051,
+            "Of course I've never been able to could": -3.286889247894287,
+            "Of course I've never been able to hook": -3.33813557434082,
+            "Of course I've never been able to caulk": -3.3799432506561278,
+            "Of course I've never been able to kirk": -3.4066069717407226
+        }
+    },
+    {
+        "id": 271,
+        "Why do they have any strength at all": "Original sentence",
+        "strength": {
+            "Why do they have any strengthed at all": -3.809170293807983,
+            "Why do they have any strengthen at all": -4.311516418457031,
+            "Why do they have any strengthy at all": -4.614587068557738
+        }
+    },
+    {
+        "id": 272,
+        "The most popular form of payment is cash": "Original sentence",
+        "popular": {
+            "The most populous form of payment is cash": -3.765162086486816,
+            "The most copula form of payment is cash": -3.852459690093994,
+            "The most populi form of payment is cash": -3.9415284633636474,
+            "The most populares form of payment is cash": -4.315127277374267,
+            "The most populace form of payment is cash": -4.4562593460083,
+            "The most papula form of payment is cash": -4.5634537677764895
+        },
+        "form": {
+            "The most popular forma of payment is cash": -3.5091525554656977,
+            "The most popular force of payment is cash": -3.7727950420379637,
+            "The most popular norm of payment is cash": -3.836608585357666,
+            "The most popular shawm of payment is cash": -3.988815053939819,
+            "The most popular fours of payment is cash": -4.164943212509155,
+            "The most popular formal of payment is cash": -4.219207935333252,
+            "The most popular farm of payment is cash": -4.315537830352783,
+            "The most popular for of payment is cash": -4.3226911697387695,
+            "The most popular ford of payment is cash": -4.355413791656494,
+            "The most popular foam of payment is cash": -4.366882570266724
+        },
+        "payment": {
+            "The most popular form of raiment is cash": -3.663737886428833,
+            "The most popular form of paymen is cash": -3.947268390655517,
+            "The most popular form of pavement is cash": -4.036297992706299,
+            "The most popular form of raimant is cash": -4.210605543136596,
+            "The most popular form of rayment is cash": -4.298207347869873,
+            "The most popular form of piment is cash": -4.330843782424926
+        },
+        "cash": {
+            "The most popular form of payment is can": -3.3669085044860836,
+            "The most popular form of payment is cashier": -3.4010856628417967,
+            "The most popular form of payment is gnash": -3.4652600059509275,
+            "The most popular form of payment is caff": -3.5078560371398924,
+            "The most popular form of payment is cat": -3.5379061050415035,
+            "The most popular form of payment is dash": -3.5600430488586428,
+            "The most popular form of payment is cap": -3.6174880332946775,
+            "The most popular form of payment is sash": -3.621457201004028,
+            "The most popular form of payment is cadge": -3.6535583839416503,
+            "The most popular form of payment is gash": -3.655393075942993
+        }
+    },
+    {
+        "id": 273,
+        "Mike would like Mother being in there": "Original sentence",
+        "like": {
+            "Mike would ike Mother being in there": -5.329942617416381,
+            "Mike would mike Mother being in there": -5.463948442459106,
+            "Mike would lurk Mother being in there": -5.515973937988281,
+            "Mike would lice Mother being in there": -5.521068407058716,
+            "Mike would lick Mother being in there": -5.601291095733642,
+            "Mike would reich Mother being in there": -5.630834299087525,
+            "Mike would lithe Mother being in there": -5.631256540298462,
+            "Mike would lark Mother being in there": -5.632442098617553,
+            "Mike would look Mother being in there": -5.657838188171386,
+            "Mike would luke Mother being in there": -5.678024271011352
+        }
+    },
+    {
+        "id": 274,
+        "It made him feel a lot better": "Original sentence",
+        "feel": {
+            "It made him veal a lot better": -3.88235821723938,
+            "It made him teal a lot better": -3.922811178207397,
+            "It made him kneel a lot better": -3.945997261047363,
+            "It made him keel a lot better": -4.004997354507446,
+            "It made him fell a lot better": -4.029130781173706,
+            "It made him peal a lot better": -4.065761672973633,
+            "It made him weal a lot better": -4.071964488983154,
+            "It made him eel a lot better": -4.184307861328125,
+            "It made him heal a lot better": -4.222059961318969,
+            "It made him feed a lot better": -4.227514650344848
+        },
+        "lot": {
+            "It made him feel a lotta better": -3.5660120010375973,
+            "It made him feel a jot better": -4.179576393127442,
+            "It made him feel a lotto better": -4.19905686378479,
+            "It made him feel a lough better": -4.261462257385253,
+            "It made him feel a light better": -4.28506876373291,
+            "It made him feel a loll better": -4.309565122604369,
+            "It made him feel a loss better": -4.34270486831665,
+            "It made him feel a lottes better": -4.356893369674683,
+            "It made him feel a lop better": -4.392862686157226,
+            "It made him feel a sot better": -4.411863594055176
+        },
+        "better": {
+            "It made him feel a lot wetter": -3.5094228897094726,
+            "It made him feel a lot biter": -3.6670427780151367,
+            "It made him feel a lot betty": -3.7148926448822017,
+            "It made him feel a lot bettered": -3.7490509605407714,
+            "It made him feel a lot bettors": -3.7579847240447997,
+            "It made him feel a lot abettor": -3.7707919120788573,
+            "It made him feel a lot besser": -3.804888242721557,
+            "It made him feel a lot betters": -3.8255303287506104,
+            "It made him feel a lot bette": -3.8839919090270993,
+            "It made him feel a lot beater": -3.888918539047241
+        }
+    },
+    {
+        "id": 275,
+        "Curious she went over to see what the paper said": "Original sentence",
+        "Curious": {
+            "furious she went over to see what the paper said": -3.6907712039947507,
+            "curiouser she went over to see what the paper said": -4.220710563659668,
+            "curial she went over to see what the paper said": -4.309312711715698,
+            "curias she went over to see what the paper said": -4.360933256149291,
+            "curia she went over to see what the paper said": -4.420423460006713,
+            "curium she went over to see what the paper said": -4.482278177261352
+        },
+        "went": {
+            "Curious she wept over to see what the paper said": -3.7181932468414303,
+            "Curious she wend over to see what the paper said": -3.7382571220397947,
+            "Curious she leant over to see what the paper said": -3.7391906757354736,
+            "Curious she bent over to see what the paper said": -3.7448804397583,
+            "Curious she sent over to see what the paper said": -3.860282859802246,
+            "Curious she wens over to see what the paper said": -3.9096146926879882,
+            "Curious she welt over to see what the paper said": -3.953123710632324,
+            "Curious she wende over to see what the paper said": -3.987998819351196,
+            "Curious she weft over to see what the paper said": -3.990787004470825,
+            "Curious she wenched over to see what the paper said": -3.993751764297485
+        },
+        "paper": {
+            "Curious she went over to see what the piper said": -3.6002327499389644,
+            "Curious she went over to see what the pauper said": -3.6565103797912597,
+            "Curious she went over to see what the pager said": -3.7182319869995113,
+            "Curious she went over to see what the taper said": -3.7789465904235837,
+            "Curious she went over to see what the peeper said": -3.7893446922302245,
+            "Curious she went over to see what the shaper said": -3.8170282173156735,
+            "Curious she went over to see what the payer said": -3.836795091629028,
+            "Curious she went over to see what the gaper said": -3.8502198886871337,
+            "Curious she went over to see what the pacer said": -3.8684900779724116,
+            "Curious she went over to see what the raper said": -3.891603778839111
+        },
+        "said": {
+            "Curious she went over to see what the paper sewed": -3.874245836257934,
+            "Curious she went over to see what the paper had": -3.9731574611663816,
+            "Curious she went over to see what the paper would": -3.9782447509765624,
+            "Curious she went over to see what the paper sowed": -4.009569694519042,
+            "Curious she went over to see what the paper saids": -4.020425977706909,
+            "Curious she went over to see what the paper sawed": -4.041550144195557,
+            "Curious she went over to see what the paper seared": -4.078445671081543,
+            "Curious she went over to see what the paper sudd": -4.114355930328369,
+            "Curious she went over to see what the paper sad": -4.1529848079681395,
+            "Curious she went over to see what the paper surd": -4.156658887863159
+        }
+    },
+    {
+        "id": 276,
+        "They will use a car or take the plane": "Original sentence",
+        "use": {
+            "They will choose a car or take the plane": -4.047999675750733,
+            "They will ooze a car or take the plane": -4.083818223953247,
+            "They will lose a car or take the plane": -4.114205472946167,
+            "They will ruse a car or take the plane": -4.183411260604858,
+            "They will sous a car or take the plane": -4.214566139221191,
+            "They will bouse a car or take the plane": -4.2440133495330805,
+            "They will woos a car or take the plane": -4.26583662033081,
+            "They will yule a car or take the plane": -4.288250352859497,
+            "They will ewe a car or take the plane": -4.340971973419189,
+            "They will you a car or take the plane": -4.364752891540527
+        },
+        "car": {
+            "They will use a card or take the plane": -4.233475028991699,
+            "They will use a bar or take the plane": -4.247667764663696,
+            "They will use a parr or take the plane": -4.296616697311401,
+            "They will use a carl or take the plane": -4.315863096237182,
+            "They will use a czar or take the plane": -4.345078588485718,
+            "They will use a caw or take the plane": -4.390930095672607,
+            "They will use a baa or take the plane": -4.3926053276062005,
+            "They will use a tsar or take the plane": -4.397733331680298,
+            "They will use a cart or take the plane": -4.400313806533813,
+            "They will use a quay or take the plane": -4.440609788894653
+        },
+        "plane": {
+            "They will use a car or take the plaice": -3.8885316104888914,
+            "They will use a car or take the pain": -4.295135770797729,
+            "They will use a car or take the plague": -4.313444648742675,
+            "They will use a car or take the lane": -4.336218214035034,
+            "They will use a car or take the airplane": -4.338252305984497,
+            "They will use a car or take the plan": -4.368632984161377,
+            "They will use a car or take the blain": -4.376912927627563,
+            "They will use a car or take the place": -4.408104249954223,
+            "They will use a car or take the plate": -4.419652509689331,
+            "They will use a car or take the play": -4.447811937332153
+        }
+    },
+    {
+        "id": 277,
+        "Such detachment could not of course go unnoticed": "Original sentence",
+        "detachment": {
+            "They will use a car or take the plaice": -3.8885316104888914,
+            "They will use a car or take the pain": -4.295135770797729,
+            "They will use a car or take the plague": -4.313444648742675,
+            "They will use a car or take the lane": -4.336218214035034,
+            "They will use a car or take the airplane": -4.338252305984497,
+            "They will use a car or take the plan": -4.368632984161377,
+            "They will use a car or take the blain": -4.376912927627563,
+            "They will use a car or take the place": -4.408104249954223,
+            "They will use a car or take the plate": -4.419652509689331,
+            "They will use a car or take the play": -4.447811937332153
+        },
+        "course": {
+            "Such detachment could not of coarsen go unnoticed": -5.268908824920654,
+            "Such detachment could not of corsair go unnoticed": -5.271910524368286,
+            "Such detachment could not of court go unnoticed": -5.373758262634277,
+            "Such detachment could not of caulk go unnoticed": -5.400539947509766,
+            "Such detachment could not of cause go unnoticed": -5.42614384651184,
+            "Such detachment could not of case go unnoticed": -5.449836137771606,
+            "Such detachment could not of force go unnoticed": -5.470541215896606,
+            "Such detachment could not of gorse go unnoticed": -5.560543451309203,
+            "Such detachment could not of cork go unnoticed": -5.566136194229126,
+            "Such detachment could not of source go unnoticed": -5.570507789611816
+        },
+        "unnoticed": {
+            "Such detachment could not of coarsen go unnoticed": -5.268908824920654,
+            "Such detachment could not of corsair go unnoticed": -5.271910524368286,
+            "Such detachment could not of court go unnoticed": -5.373758262634277,
+            "Such detachment could not of caulk go unnoticed": -5.400539947509766,
+            "Such detachment could not of cause go unnoticed": -5.42614384651184,
+            "Such detachment could not of case go unnoticed": -5.449836137771606,
+            "Such detachment could not of force go unnoticed": -5.470541215896606,
+            "Such detachment could not of gorse go unnoticed": -5.560543451309203,
+            "Such detachment could not of cork go unnoticed": -5.566136194229126,
+            "Such detachment could not of source go unnoticed": -5.570507789611816
+        }
+    },
+    {
+        "id": 278,
+        "The only people not involved were the crowd": "Original sentence",
+        "people": {
+            "The only teeple not involved were the crowd": -3.8969873428344726,
+            "The only peeps not involved were the crowd": -3.9389271736145015,
+            "The only peal not involved were the crowd": -4.271076726913452,
+            "The only peeped not involved were the crowd": -4.304461839675903,
+            "The only papal not involved were the crowd": -4.373741912841797,
+            "The only popple not involved were the crowd": -4.410568714141846,
+            "The only peep not involved were the crowd": -4.506589660644531,
+            "The only peepul not involved were the crowd": -4.652591943740844,
+            "The only peel not involved were the crowd": -4.665290689468383,
+            "The only peeper not involved were the crowd": -4.671283626556396
+        },
+        "involved": {
+            "The only people not evolved were the crowd": -4.084521722793579,
+            "The only people not involver were the crowd": -4.630975627899169
+        },
+        "crowd": {
+            "The only people not involved were the crowed": -3.693659610748291,
+            "The only people not involved were the cloud": -3.9083117485046386,
+            "The only people not involved were the crown": -3.9607230739593504,
+            "The only people not involved were the proud": -3.9760942535400385,
+            "The only people not involved were the crewed": -3.9763421401977537,
+            "The only people not involved were the cowed": -3.9931574764251705,
+            "The only people not involved were the shroud": -4.095630613327026,
+            "The only people not involved were the browed": -4.119420818328858,
+            "The only people not involved were the crouch": -4.135396839141846,
+            "The only people not involved were the cried": -4.227581003189087
+        }
+    },
+    {
+        "id": 279,
+        "But there was still no real money": "Original sentence",
+        "real": {
+            "But there was still no rail money": -4.270719718933106,
+            "But there was still no rachel money": -4.464492511749267,
+            "But there was still no racial money": -4.468240928649902,
+            "But there was still no rale money": -4.545866203308105
+        },
+        "money": {
+            "But there was still no real muzzy": -3.717113624572754,
+            "But there was still no real mushy": -3.751272117614746,
+            "But there was still no real sonny": -3.9366095390319824,
+            "But there was still no real tunny": -3.9413468952178956,
+            "But there was still no real mummy": -3.9437124252319333,
+            "But there was still no real manny": -3.9585425586700436,
+            "But there was still no real munch": -4.015383768081665,
+            "But there was still no real moony": -4.033469381332397,
+            "But there was still no real funny": -4.04732564163208,
+            "But there was still no real bunny": -4.052872909545898
+        }
+    },
+    {
+        "id": 280,
+        "They bend too much to the left": "Original sentence",
+        "bend": {
+            "They tend too much to the left": -3.6117663917541503,
+            "They bent too much to the left": -3.784539262771606,
+            "They lend too much to the left": -3.975640699386596,
+            "They wend too much to the left": -3.9995986022949217,
+            "They send too much to the left": -4.0062305469512935,
+            "They bind too much to the left": -4.018962125778198,
+            "They kenned too much to the left": -4.037644748687744,
+            "They beaned too much to the left": -4.160352193832398,
+            "They burned too much to the left": -4.170694707870483,
+            "They genned too much to the left": -4.1738003044128416
+        },
+        "left": {
+            "They bend too much to the reft": -4.232074823379516,
+            "They bend too much to the weft": -4.2396325073242185,
+            "They bend too much to the lift": -4.242689729690552,
+            "They bend too much to the refed": -4.304486026763915,
+            "They bend too much to the leant": -4.3676129245758055,
+            "They bend too much to the lefty": -4.394631767272949,
+            "They bend too much to the cleft": -4.396025657653809,
+            "They bend too much to the lefts": -4.4209005088806155,
+            "They bend too much to the loft": -4.492707841873169,
+            "They bend too much to the eft": -4.563687379837035
+        }
+    },
+    {
+        "id": 281,
+        "Her slap had had real anger behind it": "Original sentence",
+        "slap": {
+            "Her clap had had real anger behind it": -4.49491077041626,
+            "Her slam had had real anger behind it": -4.635653781890869,
+            "Her slag had had real anger behind it": -4.807847309112549,
+            "Her slop had had real anger behind it": -4.8302973442077635,
+            "Her slip had had real anger behind it": -4.889802181243896,
+            "Her snap had had real anger behind it": -4.899559257507324,
+            "Her flap had had real anger behind it": -4.931886165618896,
+            "Her slash had had real anger behind it": -4.95924838256836,
+            "Her slat had had real anger behind it": -5.031351726531982,
+            "Her slamme had had real anger behind it": -5.038756465911865
+        },
+        "real": {
+            "Her slap had had racial anger behind it": -5.330001640319824,
+            "Her slap had had rale anger behind it": -5.516641092300414,
+            "Her slap had had rachel anger behind it": -5.6893189430236815,
+            "Her slap had had rail anger behind it": -5.863120985031127
+        },
+        "anger": {
+            "Her slap had had real angeres behind it": -4.871186780929564,
+            "Her slap had had real panga behind it": -4.985812520980835,
+            "Her slap had had real languor behind it": -4.998186908721923,
+            "Her slap had had real angus behind it": -5.017050266265868,
+            "Her slap had had real bangor behind it": -5.043173313140868,
+            "Her slap had had real anchor behind it": -5.092805480957031,
+            "Her slap had had real anker behind it": -5.101540660858154,
+            "Her slap had had real angler behind it": -5.1238396511077875,
+            "Her slap had had real ongar behind it": -5.244863574981689,
+            "Her slap had had real wanger behind it": -5.252751541137695
+        }
+    },
+    {
+        "id": 282,
+        "Separation is advisable to avoid confusion and aid development": "Original sentence",
+        "Separation": {
+            "reparation is advisable to avoid confusion and aid development": -4.257185213088989,
+            "repreparation is advisable to avoid confusion and aid development": -4.323488800048827,
+            "severation is advisable to avoid confusion and aid development": -4.329997968673705,
+            "sporation is advisable to avoid confusion and aid development": -4.6693536758422844
+        },
+        "advisable": {
+            "Separation is advisably to avoid confusion and aid development": -4.920272636413574
+        },
+        "avoid": {
+            "Separation is advisable to averred confusion and aid development": -4.938004266738891,
+            "Separation is advisable to ovoid confusion and aid development": -5.090839071273804,
+            "Separation is advisable to avowed confusion and aid development": -5.29644432067871,
+            "Separation is advisable to void confusion and aid development": -5.31344985961914,
+            "Separation is advisable to alloyd confusion and aid development": -5.3403181667327875,
+            "Separation is advisable to alloyed confusion and aid development": -5.410298072814941,
+            "Separation is advisable to savoyed confusion and aid development": -5.51385597038269,
+            "Separation is advisable to annoyed confusion and aid development": -5.649716396331787
+        },
+        "confusion": {
+            "Separation is advisable to avoid contusion and aid development": -4.576225042343139,
+            "Separation is advisable to avoid confucian and aid development": -4.645171403884888
+        },
+        "aid": {
+            "Separation is advisable to avoid confusion and ache development": -4.249926172256469,
+            "Separation is advisable to avoid confusion and erred development": -4.284518753051757,
+            "Separation is advisable to avoid confusion and aim development": -4.3378011417388915,
+            "Separation is advisable to avoid confusion and age development": -4.379329973220824,
+            "Separation is advisable to avoid confusion and add development": -4.3900545463562,
+            "Separation is advisable to avoid confusion and abe development": -4.409735000610351,
+            "Separation is advisable to avoid confusion and ailed development": -4.422762445449829,
+            "Separation is advisable to avoid confusion and jade development": -4.443561792373657,
+            "Separation is advisable to avoid confusion and ad development": -4.458769403457641,
+            "Separation is advisable to avoid confusion and a development": -4.468417695999145
+        },
+        "development": {
+            "Separation is advisable to avoid confusion and ache development": -4.249926172256469,
+            "Separation is advisable to avoid confusion and erred development": -4.284518753051757,
+            "Separation is advisable to avoid confusion and aim development": -4.3378011417388915,
+            "Separation is advisable to avoid confusion and age development": -4.379329973220824,
+            "Separation is advisable to avoid confusion and add development": -4.3900545463562,
+            "Separation is advisable to avoid confusion and abe development": -4.409735000610351,
+            "Separation is advisable to avoid confusion and ailed development": -4.422762445449829,
+            "Separation is advisable to avoid confusion and jade development": -4.443561792373657,
+            "Separation is advisable to avoid confusion and ad development": -4.458769403457641,
+            "Separation is advisable to avoid confusion and a development": -4.468417695999145
+        }
+    },
+    {
+        "id": 283,
+        "I had my baby on the kitchen floor": "Original sentence",
+        "baby": {
+            "I had my gaby on the kitchen floor": -3.6022254123687745,
+            "I had my babes on the kitchen floor": -3.6223504066467282,
+            "I had my baillie on the kitchen floor": -3.654386507034302,
+            "I had my beebee on the kitchen floor": -3.6931375980377195,
+            "I had my bailey on the kitchen floor": -3.7437179908752443,
+            "I had my bobby on the kitchen floor": -3.746793104171753,
+            "I had my babe on the kitchen floor": -3.7489284038543698,
+            "I had my bawbee on the kitchen floor": -3.836525062561035,
+            "I had my booby on the kitchen floor": -3.8686828212738034,
+            "I had my bailee on the kitchen floor": -3.8970275745391847
+        },
+        "kitchen": {
+            "I had my baby on the bitchin floor": -3.716203861236572,
+            "I had my baby on the kippin floor": -3.879166891098022,
+            "I had my baby on the kitching floor": -3.950775867462158,
+            "I had my baby on the kickin floor": -4.020145664215088,
+            "I had my baby on the kirin floor": -4.13454726600647,
+            "I had my baby on the killin floor": -4.1657306060791015,
+            "I had my baby on the kitches floor": -4.167847728729248,
+            "I had my baby on the pitchin floor": -4.168297201156617,
+            "I had my baby on the kitsches floor": -4.275309801101685,
+            "I had my baby on the cochin floor": -4.481658447265625
+        },
+        "floor": {
+            "I had my baby on the kitchen flue": -4.067355581283569,
+            "I had my baby on the kitchen fly": -4.086925750732422,
+            "I had my baby on the kitchen slaw": -4.1940686225891115,
+            "I had my baby on the kitchen floe": -4.241939123153687,
+            "I had my baby on the kitchen flow": -4.245038326263428,
+            "I had my baby on the kitchen for": -4.374444465637207,
+            "I had my baby on the kitchen flea": -4.383616436004639,
+            "I had my baby on the kitchen flew": -4.392094322204589,
+            "I had my baby on the kitchen flay": -4.408260110855102,
+            "I had my baby on the kitchen flu": -4.412970634460449
+        }
+    },
+    {
+        "id": 284,
+        "And she didn't wait for a reply": "Original sentence",
+        "wait": {
+            "And she didn't bate for a reply": -3.531595832824707,
+            "And she didn't fait for a reply": -3.5643380317687985,
+            "And she didn't thwaite for a reply": -3.5999199867248532,
+            "And she didn't wake for a reply": -3.649725528717041,
+            "And she didn't wave for a reply": -3.6673735218048096,
+            "And she didn't wail for a reply": -3.6736371936798093,
+            "And she didn't wain for a reply": -3.7482284412384033,
+            "And she didn't wane for a reply": -3.757342134475708,
+            "And she didn't await for a reply": -3.771818113327026,
+            "And she didn't waif for a reply": -3.806127040863037
+        },
+        "reply": {
+            "And she didn't wait for a rippler": -3.505476427078247,
+            "And she didn't wait for a replier": -3.592304992675781,
+            "And she didn't wait for a ripple": -3.6178222656249996,
+            "And she didn't wait for a ripples": -3.800258350372314,
+            "And she didn't wait for a rippled": -3.8332757949829097,
+            "And she didn't wait for a ripley": -3.9777369632720943,
+            "And she didn't wait for a rippley": -4.012226404190064,
+            "And she didn't wait for a rely": -4.131163454055786
+        }
+    },
+    {
+        "id": 285,
+        "So I can't go out through the garden": "Original sentence",
+        "garden": {
+            "So I can't go out through the guards": -3.556171945571899,
+            "So I can't go out through the gordon": -3.6269069747924805,
+            "So I can't go out through the carden": -3.6613127708435056,
+            "So I can't go out through the guard": -3.702923727035522,
+            "So I can't go out through the garde": -3.762721824645996,
+            "So I can't go out through the gardes": -3.797536615371704,
+            "So I can't go out through the garten": -3.8566149711608886,
+            "So I can't go out through the pardon": -3.9500356197357176,
+            "So I can't go out through the bardon": -3.976925498962402,
+            "So I can't go out through the guardian": -4.025545883178711
+        }
+    },
+    {
+        "id": 286,
+        "What could you smell and taste during the fight": "Original sentence",
+        "smell": {
+            "What could you snell and taste during the fight": -4.186104066848755,
+            "What could you smile and taste during the fight": -4.4562455177307125,
+            "What could you smelly and taste during the fight": -4.495935487747192,
+            "What could you stell and taste during the fight": -4.513477598190307,
+            "What could you spell and taste during the fight": -4.600071584701538,
+            "What could you sell and taste during the fight": -4.683327960968017,
+            "What could you smella and taste during the fight": -4.6946372985839835,
+            "What could you swell and taste during the fight": -4.713598186492919,
+            "What could you stelle and taste during the fight": -4.800764213562011,
+            "What could you small and taste during the fight": -4.893717443466186
+        },
+        "taste": {
+            "What could you smell and taint during the fight": -4.268575513839721,
+            "What could you smell and baste during the fight": -4.325363489151001,
+            "What could you smell and test during the fight": -4.458443166732788,
+            "What could you smell and chaste during the fight": -4.494028722763061,
+            "What could you smell and maced during the fight": -4.676224628448486,
+            "What could you smell and toast during the fight": -4.677350322723388,
+            "What could you smell and paste during the fight": -4.686346197128295,
+            "What could you smell and cased during the fight": -4.724200849533081,
+            "What could you smell and waste during the fight": -4.731227870941162,
+            "What could you smell and faced during the fight": -4.771270086288452
+        },
+        "fight": {
+            "What could you smell and taste during the night": -3.580212963104248,
+            "What could you smell and taste during the flight": -3.6823615169525143,
+            "What could you smell and taste during the fit": -3.787685167312622,
+            "What could you smell and taste during the kite": -3.8497531185150144,
+            "What could you smell and taste during the five": -3.8521061820983884,
+            "What could you smell and taste during the fete": -3.8622744617462157,
+            "What could you smell and taste during the light": -3.8658423118591307,
+            "What could you smell and taste during the fire": -3.892239761352539,
+            "What could you smell and taste during the white": -3.9001308917999262,
+            "What could you smell and taste during the fife": -3.906484939575195
+        }
+    },
+    {
+        "id": 287,
+        "It's good to have something to do he told her": "Original sentence",
+        "good": {
+            "It's gourd to have something to do he told her": -3.454578399658203,
+            "It's gourg to have something to do he told her": -3.75453085899353,
+            "It's goodes to have something to do he told her": -3.775385990142822,
+            "It's god to have something to do he told her": -3.826799196243286,
+            "It's could to have something to do he told her": -3.8398244953155514,
+            "It's gird to have something to do he told her": -3.842970155715942,
+            "It's gored to have something to do he told her": -3.8458097114562984,
+            "It's pud to have something to do he told her": -3.855685634613037,
+            "It's goody to have something to do he told her": -3.8808870315551753,
+            "It's would to have something to do he told her": -3.9148468990325926
+        },
+        "told": {
+            "It's good to have something to do he tailed her": -3.2464644355773924,
+            "It's good to have something to do he trolled her": -3.2752210044860837,
+            "It's good to have something to do he sold her": -3.3103715839385983,
+            "It's good to have something to do he soled her": -3.333944553375244,
+            "It's good to have something to do he knolled her": -3.350831289291382,
+            "It's good to have something to do he totalled her": -3.382051706314087,
+            "It's good to have something to do he wold her": -3.3853449306488033,
+            "It's good to have something to do he bowled her": -3.3979871234893797,
+            "It's good to have something to do he tolls her": -3.4044214668273924,
+            "It's good to have something to do he toned her": -3.446271165847778
+        }
+    },
+    {
+        "id": 288,
+        "It fastens with buttons at the front": "Original sentence",
+        "fastens": {
+            "It arsons with buttons at the front": -4.4238256931304925,
+            "It fasteners with buttons at the front": -4.550605964660644,
+            "It fastener with buttons at the front": -4.57835259437561,
+            "It parsons with buttons at the front": -4.585555219650268,
+            "It farceurs with buttons at the front": -4.95992875099182,
+            "It farces with buttons at the front": -5.087621593475341,
+            "It farcers with buttons at the front": -5.208075618743896
+        },
+        "buttons": {
+            "It fastens with battens at the front": -3.781967628479004,
+            "It fastens with burtons at the front": -3.827689409255981,
+            "It fastens with suttons at the front": -3.848784656524658,
+            "It fastens with buns at the front": -4.023555850982666,
+            "It fastens with muttons at the front": -4.309168033599853,
+            "It fastens with butties at the front": -4.376887035369872,
+            "It fastens with buttoner at the front": -4.377714490890503,
+            "It fastens with buttoners at the front": -4.446140289306641,
+            "It fastens with buttony at the front": -4.5555600166320795,
+            "It fastens with butters at the front": -4.566661405563354
+        }
+    },
+    {
+        "id": 289,
+        "Perhaps he could pick up someone new today": "Original sentence",
+        "pick": {
+            "Perhaps he could tic up someone new today": -4.329919116973876,
+            "Perhaps he could peck up someone new today": -4.396843585968017,
+            "Perhaps he could perk up someone new today": -4.449896457672119,
+            "Perhaps he could wick up someone new today": -4.492837469100952,
+            "Perhaps he could pike up someone new today": -4.525301082611084,
+            "Perhaps he could sic up someone new today": -4.538465122222901,
+            "Perhaps he could kick up someone new today": -4.568432695388794,
+            "Perhaps he could peke up someone new today": -4.573759143829345,
+            "Perhaps he could pitch up someone new today": -4.606265211105347,
+            "Perhaps he could pique up someone new today": -4.6073386840820305
+        },
+        "new": {
+            "Perhaps he could pick up someone whew today": -4.508577236175537,
+            "Perhaps he could pick up someone anew today": -4.6329002380371085,
+            "Perhaps he could pick up someone mew today": -4.651925563812256,
+            "Perhaps he could pick up someone phew today": -4.671531566619873,
+            "Perhaps he could pick up someone ewe today": -4.676804632186889,
+            "Perhaps he could pick up someone newt today": -4.687760639190674,
+            "Perhaps he could pick up someone due today": -4.729278577804565,
+            "Perhaps he could pick up someone dew today": -4.757529891967772,
+            "Perhaps he could pick up someone nude today": -4.7815816211700435,
+            "Perhaps he could pick up someone pew today": -4.793589031219482
+        },
+        "today": {
+            "Perhaps he could pick up someone new todate": -4.357301330566406
+        }
+    },
+    {
+        "id": 290,
+        "I know many people will agree with him": "Original sentence",
+        "know": {
+            "I so many people will agree with him": -3.6604335708618163,
+            "I shew many people will agree with him": -3.794822612762451,
+            "I nee many people will agree with him": -3.8357556266784667,
+            "I nor many people will agree with him": -3.8438827743530273,
+            "I knowes many people will agree with him": -3.9129031562805174,
+            "I though many people will agree with him": -3.9164044132232663,
+            "I now many people will agree with him": -3.936825813293457,
+            "I joe many people will agree with him": -3.989989070892334,
+            "I non many people will agree with him": -4.032049226760864,
+            "I show many people will agree with him": -4.036538759231567
+        },
+        "people": {
+            "I know many peeps will agree with him": -3.537322187423706,
+            "I know many teeple will agree with him": -3.587672185897827,
+            "I know many papal will agree with him": -3.8325119018554688,
+            "I know many popple will agree with him": -4.096351909637451,
+            "I know many peeped will agree with him": -4.117353418350219,
+            "I know many peal will agree with him": -4.168243932723999,
+            "I know many peeper will agree with him": -4.1970371246337885,
+            "I know many peep will agree with him": -4.220658884048461,
+            "I know many peeble will agree with him": -4.282570276260375,
+            "I know many peepul will agree with him": -4.346581602096557
+        },
+        "agree": {
+            "I know many people will agreeed with him": -3.7072420597076414,
+            "I know many people will aggrieve with him": -3.884477424621582,
+            "I know many people will agreees with him": -3.9900223731994626
+        }
+    },
+    {
+        "id": 291,
+        "But the ball could only find the side netting": "Original sentence",
+        "ball": {
+            "But the shawl could only find the side netting": -3.5855476093292236,
+            "But the balles could only find the side netting": -3.6809175395965577,
+            "But the boar could only find the side netting": -3.7103971538543696,
+            "But the bawd could only find the side netting": -3.740590396881103,
+            "But the maul could only find the side netting": -3.7664329338073728,
+            "But the bauble could only find the side netting": -3.8521806240081786,
+            "But the yawl could only find the side netting": -3.8533678054809566,
+            "But the bull could only find the side netting": -3.8690645828247066,
+            "But the bawler could only find the side netting": -3.87496166229248,
+            "But the baulk could only find the side netting": -3.8782517299652097
+        },
+        "find": {
+            "But the ball could only findes the side netting": -3.760549142837524,
+            "But the ball could only fiend the side netting": -3.938181711196899,
+            "But the ball could only fend the side netting": -3.9854713916778564,
+            "But the ball could only fanned the side netting": -4.011860376358032,
+            "But the ball could only bind the side netting": -4.017619491577148,
+            "But the ball could only fained the side netting": -4.091893829345703,
+            "But the ball could only phoned the side netting": -4.112027853012084,
+            "But the ball could only finned the side netting": -4.115623540878295,
+            "But the ball could only fine the side netting": -4.142368118286132,
+            "But the ball could only pined the side netting": -4.158839630126953
+        },
+        "netting": {
+            "But the ball could only find the side nutting": -3.8298470439910886,
+            "But the ball could only find the side jetting": -3.8420725765228267,
+            "But the ball could only find the side nettling": -3.9200414257049556,
+            "But the ball could only find the side whetting": -3.9393653278350826,
+            "But the ball could only find the side petting": -3.9573000812530514,
+            "But the ball could only find the side nettings": -3.991530084609985,
+            "But the ball could only find the side necking": -4.0377653732299805,
+            "But the ball could only find the side netties": -4.043453382492065,
+            "But the ball could only find the side knotting": -4.048762454986572,
+            "But the ball could only find the side wetting": -4.049819124221801
+        }
+    },
+    {
+        "id": 292,
+        "No town got a new morning paper": "Original sentence",
+        "town": {
+            "No tout got a new morning paper": -4.715339851379395,
+            "No tern got a new morning paper": -4.774114187240601,
+            "No tine got a new morning paper": -4.886580781936646,
+            "No down got a new morning paper": -4.904973411560058,
+            "No tau got a new morning paper": -4.9573482990264885,
+            "No tyne got a new morning paper": -5.005834178924561,
+            "No teen got a new morning paper": -5.092257486343383,
+            "No townes got a new morning paper": -5.140479660034179,
+            "No tone got a new morning paper": -5.154157510757446,
+            "No ten got a new morning paper": -5.158577249526977
+        },
+        "got": {
+            "No town jot a new morning paper": -5.026195442199707,
+            "No town wot a new morning paper": -5.0266504611968985,
+            "No town goth a new morning paper": -5.061499408721923,
+            "No town gong a new morning paper": -5.099108207702637,
+            "No town shot a new morning paper": -5.141689975738525,
+            "No town not a new morning paper": -5.248384664535522,
+            "No town cot a new morning paper": -5.256700086593628,
+            "No town girt a new morning paper": -5.260746202468871,
+            "No town gosh a new morning paper": -5.273941764831542,
+            "No town gatt a new morning paper": -5.317242862701416
+        },
+        "new": {
+            "No town got a pew morning paper": -5.263989650726318,
+            "No town got a mew morning paper": -5.571410226821899,
+            "No town got a few morning paper": -5.628157600402831,
+            "No town got a nude morning paper": -5.630276279449462,
+            "No town got a yew morning paper": -5.630329460144043,
+            "No town got a phew morning paper": -5.7081874694824215,
+            "No town got a gnu morning paper": -5.720372575759888,
+            "No town got a dew morning paper": -5.7251468315124505,
+            "No town got a news morning paper": -5.7701998176574705,
+            "No town got a feu morning paper": -5.824845680236816
+        },
+        "morning": {
+            "No town got a new fawning paper": -4.458038665771484,
+            "No town got a new borning paper": -4.735988363265991,
+            "No town got a new mornin paper": -4.753508123397827,
+            "No town got a new mauling paper": -4.760305156707763,
+            "No town got a new awning paper": -4.804120779037475,
+            "No town got a new yawning paper": -5.0754753131866455,
+            "No town got a new dawning paper": -5.152431650161743,
+            "No town got a new warning paper": -5.1963645362854,
+            "No town got a new pawning paper": -5.205386810302734,
+            "No town got a new mooning paper": -5.246761295318604
+        },
+        "paper": {
+            "No town got a new morning pauper": -4.841498449325561,
+            "No town got a new morning payer": -4.858848524093627,
+            "No town got a new morning taper": -4.952816581726074,
+            "No town got a new morning pager": -4.968500923156738,
+            "No town got a new morning shaper": -5.029039268493652,
+            "No town got a new morning pacer": -5.083785583496094,
+            "No town got a new morning caper": -5.099406032562256,
+            "No town got a new morning papper": -5.131829328536987,
+            "No town got a new morning paler": -5.136225791931152,
+            "No town got a new morning paver": -5.139351549148559
+        }
+    },
+    {
+        "id": 293,
+        "I'm sorry to be so much trouble": "Original sentence",
+        "sorry": {
+            "I'm soggy to be so much trouble": -3.6689400005340578,
+            "I'm sorrier to be so much trouble": -3.8017979145050047,
+            "I'm soppy to be so much trouble": -3.8453363647460934,
+            "I'm surrey to be so much trouble": -4.115233266830444,
+            "I'm sari to be so much trouble": -4.119371318817138,
+            "I'm horry to be so much trouble": -4.208092077255248,
+            "I'm lorry to be so much trouble": -4.241469478607178,
+            "I'm corrie to be so much trouble": -4.2597504863739015,
+            "I'm sorrow to be so much trouble": -4.774827423095703,
+            "I'm spree to be so much trouble": -4.8876891136169425
+        },
+        "trouble": {
+            "I'm sorry to be so much trussel": -3.27985488319397,
+            "I'm sorry to be so much treble": -3.391660572052002,
+            "I'm sorry to be so much truffle": -3.429124546051025,
+            "I'm sorry to be so much grubble": -3.4963624401092526,
+            "I'm sorry to be so much truckle": -3.5917187614440915,
+            "I'm sorry to be so much tribal": -3.7387759151458737,
+            "I'm sorry to be so much rubble": -3.775535154342651,
+            "I'm sorry to be so much trumble": -3.9624002456665033,
+            "I'm sorry to be so much troubly": -4.0391443252563475,
+            "I'm sorry to be so much trustle": -4.0975792064666745
+        }
+    },
+    {
+        "id": 294,
+        "So I don't feel the same towards them any more": "Original sentence",
+        "feel": {
+            "So I don't deal the same towards them any more": -3.4213934154510497,
+            "So I don't weal the same towards them any more": -3.5277834758758546,
+            "So I don't teal the same towards them any more": -3.5822075881958004,
+            "So I don't feed the same towards them any more": -3.5865003128051756,
+            "So I don't kneel the same towards them any more": -3.587305473327637,
+            "So I don't peal the same towards them any more": -3.609570991516113,
+            "So I don't fail the same towards them any more": -3.6675915412902826,
+            "So I don't fell the same towards them any more": -3.670113885879516,
+            "So I don't veal the same towards them any more": -3.6980148792266845,
+            "So I don't keel the same towards them any more": -3.7273227748870847
+        }
+    },
+    {
+        "id": 295,
+        "This may be my last question Mr. Speaker": "Original sentence",
+        "question": {
+            "This may be my last questiond Mr. Speaker": -3.8960337638854976,
+            "This may be my last questionnaire Mr. Speaker": -4.33751163482666
+        }
+    },
+    {
+        "id": 296,
+        "A wave of clammy perspiration broke out on my skin": "Original sentence",
+        "wave": {
+            "A wade of clammy perspiration broke out on my skin": -3.4184561767578123,
+            "A wale of clammy perspiration broke out on my skin": -3.4391086769104002,
+            "A waif of clammy perspiration broke out on my skin": -3.448614978790283,
+            "A weight of clammy perspiration broke out on my skin": -3.501084491729736,
+            "A weave of clammy perspiration broke out on my skin": -3.5023854904174803,
+            "A wail of clammy perspiration broke out on my skin": -3.5125469398498534,
+            "A weighes of clammy perspiration broke out on my skin": -3.5745543651580807,
+            "A wane of clammy perspiration broke out on my skin": -3.5918276844024657,
+            "A waite of clammy perspiration broke out on my skin": -3.6451345176696774,
+            "A lave of clammy perspiration broke out on my skin": -3.671771575927734
+        },
+        "clammy": {
+            "A wave of clangy perspiration broke out on my skin": -3.4593489780426023,
+            "A wave of slammy perspiration broke out on my skin": -3.739629072189331,
+            "A wave of clammier perspiration broke out on my skin": -3.7621445178985593,
+            "A wave of clarry perspiration broke out on my skin": -3.856478229522705,
+            "A wave of clamed perspiration broke out on my skin": -4.033569431304931,
+            "A wave of clammed perspiration broke out on my skin": -4.068647336959839,
+            "A wave of clashy perspiration broke out on my skin": -4.0725434894561765,
+            "A wave of clam perspiration broke out on my skin": -4.116142416000366,
+            "A wave of clarrie perspiration broke out on my skin": -4.130604330062866,
+            "A wave of clams perspiration broke out on my skin": -4.158390045166016
+        },
+        "perspiration": {
+            "A wave of clangy perspiration broke out on my skin": -3.4593489780426023,
+            "A wave of slammy perspiration broke out on my skin": -3.739629072189331,
+            "A wave of clammier perspiration broke out on my skin": -3.7621445178985593,
+            "A wave of clarry perspiration broke out on my skin": -3.856478229522705,
+            "A wave of clamed perspiration broke out on my skin": -4.033569431304931,
+            "A wave of clammed perspiration broke out on my skin": -4.068647336959839,
+            "A wave of clashy perspiration broke out on my skin": -4.0725434894561765,
+            "A wave of clam perspiration broke out on my skin": -4.116142416000366,
+            "A wave of clarrie perspiration broke out on my skin": -4.130604330062866,
+            "A wave of clams perspiration broke out on my skin": -4.158390045166016
+        },
+        "broke": {
+            "A wave of clammy perspiration brook out on my skin": -3.8502206325531003,
+            "A wave of clammy perspiration bloke out on my skin": -3.8548331146240233,
+            "A wave of clammy perspiration broked out on my skin": -3.8790211677551265,
+            "A wave of clammy perspiration croak out on my skin": -3.899855213165283,
+            "A wave of clammy perspiration brokes out on my skin": -3.9886012878417967,
+            "A wave of clammy perspiration brake out on my skin": -4.007037456512451,
+            "A wave of clammy perspiration breck out on my skin": -4.054822860717773,
+            "A wave of clammy perspiration brack out on my skin": -4.088667486190796,
+            "A wave of clammy perspiration brogue out on my skin": -4.091181529998779,
+            "A wave of clammy perspiration brick out on my skin": -4.135269500732422
+        },
+        "skin": {
+            "A wave of clammy perspiration broke out on my skein": -3.430435991287231,
+            "A wave of clammy perspiration broke out on my skid": -3.499016805648804,
+            "A wave of clammy perspiration broke out on my skinnier": -3.590431451797485,
+            "A wave of clammy perspiration broke out on my skit": -3.600091205596924,
+            "A wave of clammy perspiration broke out on my spin": -3.639997001647949,
+            "A wave of clammy perspiration broke out on my scone": -3.6550538749694823,
+            "A wave of clammy perspiration broke out on my skint": -3.663437795639038,
+            "A wave of clammy perspiration broke out on my skiff": -3.6695586719512936,
+            "A wave of clammy perspiration broke out on my skinch": -3.7583745479583737,
+            "A wave of clammy perspiration broke out on my skinner": -3.7633873462676997
+        }
+    },
+    {
+        "id": 297,
+        "A management agreement is an exclusive agreement": "Original sentence",
+        "management": {
+            "A wave of clammy perspiration broke out on my skein": -3.430435991287231,
+            "A wave of clammy perspiration broke out on my skid": -3.499016805648804,
+            "A wave of clammy perspiration broke out on my skinnier": -3.590431451797485,
+            "A wave of clammy perspiration broke out on my skit": -3.600091205596924,
+            "A wave of clammy perspiration broke out on my spin": -3.639997001647949,
+            "A wave of clammy perspiration broke out on my scone": -3.6550538749694823,
+            "A wave of clammy perspiration broke out on my skint": -3.663437795639038,
+            "A wave of clammy perspiration broke out on my skiff": -3.6695586719512936,
+            "A wave of clammy perspiration broke out on my skinch": -3.7583745479583737,
+            "A wave of clammy perspiration broke out on my skinner": -3.7633873462676997
+        },
+        "agreement": {
+            "A management agreemen is an exclusive agreemen": -5.176569890975951
+        },
+        "exclusive": {
+            "A management agreemen is an exclusive agreemen": -5.176569890975951
+        }
+    },
+    {
+        "id": 298,
+        "Conflict and the potential for growth therefore belong together": "Original sentence",
+        "Conflict": {
+            "conflicta and the potential for growth therefore belong together": -5.021908330917358
+        },
+        "potential": {
+            "Conflict and the potention for growth therefore belong together": -4.883355125427245
+        },
+        "growth": {
+            "Conflict and the potential for grove therefore belong together": -4.471008865356445,
+            "Conflict and the potential for troth therefore belong together": -4.557834321975708,
+            "Conflict and the potential for grope therefore belong together": -4.574361963272095,
+            "Conflict and the potential for groan therefore belong together": -4.5939070491790766,
+            "Conflict and the potential for groat therefore belong together": -4.610482282638549,
+            "Conflict and the potential for crowth therefore belong together": -4.642445039749145,
+            "Conflict and the potential for grows therefore belong together": -4.6488827629089355,
+            "Conflict and the potential for grower therefore belong together": -4.6639156341552725,
+            "Conflict and the potential for wroth therefore belong together": -4.671244573593139,
+            "Conflict and the potential for growes therefore belong together": -4.689582960128784
+        },
+        "belong": {
+            "Conflict and the potential for growth therefore biltong together": -4.534154987335205,
+            "Conflict and the potential for growth therefore belongd together": -4.653635549545288,
+            "Conflict and the potential for growth therefore billing together": -4.797910047531127
+        }
+    },
+    {
+        "id": 299,
+        "He may be on the other team": "Original sentence",
+        "team": {
+            "He may be on the other teat": -3.7124314327239984,
+            "He may be on the other time": -3.7155897064208983,
+            "He may be on the other seam": -3.740105354309082,
+            "He may be on the other beam": -3.740934391021728,
+            "He may be on the other tees": -3.74315124130249,
+            "He may be on the other tome": -3.751332378387451,
+            "He may be on the other teal": -3.7609154911041256,
+            "He may be on the other thyme": -3.8764068050384517,
+            "He may be on the other feme": -3.888032344818115,
+            "He may be on the other theme": -3.907688827514648
+        }
+    },
+    {
+        "id": 300,
+        "And in the desert you are alone": "Original sentence",
+        "desert": {
+            "And in the desand you are alone": -4.67673279762268
+        }
+    }
+]

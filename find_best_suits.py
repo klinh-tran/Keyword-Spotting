@@ -140,6 +140,8 @@ def main(sentences, word_alt_phonemes_dict):
         new_dict.update(word_new_sentences_scores)
         if i==0 and i!=1 or (i+1)%100 == 1:
             filename = f"questions_{i+1}_{i+100}.json"
+        else:
+            filename = f"questions_{i-i%100+1}_{(i-i%100)+100}.json"
         update_json_file(current_directory+'\\test_designs\\'+filename, new_dict)
         print('completed',i+1,'th sentence')
 
@@ -152,10 +154,6 @@ if __name__ == '__main__':
     
     # Load spaCy English model
     nlp = spacy.load("en_core_web_sm")
-    
-    nltk.download("punkt")
-    # Initialize Python porter stemmer
-    ps = PorterStemmer()
     
     ''' Gather sentences'''
     prompt_sentences = []
